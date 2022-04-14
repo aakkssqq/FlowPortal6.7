@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        body
+        {
+            padding:5px 60px 20px 60px;
+            text-align:center;
+            font-family:Verdana;
+        }
+        
+        .caption
+        {
+            font-size:2em;
+            font-weight:bold;
+            text-align:left;
+            margin:30px 0px 20px 10px;
+        }
+        
+        .copyright
+        {
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            color: blue;
+            padding:3px;
+            font-size:10px;
+        }
+        
+        .navigator
+        {
+            text-align:left;
+        }
+        
+        .link
+        {
+            display:inline-block;
+            background-color:#C0FFC0;
+            border:solid 3px Lime;
+            width:230px;
+            text-align:center;
+            padding:22px 0px;
+            margin:10px;
+            font-weight:bold;
+            font-size:1em;
+        }
+        
+        .disabled
+        {
+            border-color:#dcdcdc;
+            background-color:#f5f5f5;
+            cursor:default;
+        }
+        
+        .enabled:hover
+        {
+            border-color:Fuchsia;
+            background-color:Aqua;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var samples = {
+            Form3pt1: {
+                text: '第三方表单审批(BPM)',
+                enabled: true,
+                url: 'YZSoft/Forms/Post.aspx?pn=Demo3ptForm&wd=BPM'
+            },
+            Form3pt2: {
+                text: '第三方表单审批(CRM)',
+                enabled: true,
+                url: 'YZSoft/Forms/Post.aspx?pn=Demo3ptForm&wd=CRM'
+            }
+        }
+
+        function initMenu(containerId,data) {
+            var el = document.getElementById(containerId,data),
+                newLink;
+
+            for (var controlName in data) {
+                var item = data[controlName];
+
+                if (item.enabled) {
+                    newLink = document.createElement('a');
+                    newLink.className = 'link enabled';
+                    newLink.target = '_blank';
+                    newLink.href = '../../../' + item.url;
+                }
+                else {
+                    newLink = document.createElement('span');
+                    newLink.className = 'link disabled';
+                }
+
+                newLink.innerHTML = item.text;
+                el.appendChild(newLink);
+            }
+        }
+
+        window.onload = function () {
+            initMenu('samples', samples);
+        }
+    </script>
+</head>
+<body>
+    <div class="copyright"><div></div></div>
+    <div class="caption">Third Party Form Approvement</div>
+    <div class="navigator" id="samples">
+    </div>
+</body>
+</html>

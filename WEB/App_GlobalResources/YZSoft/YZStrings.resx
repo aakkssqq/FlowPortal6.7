@@ -2129,7 +2129,7 @@
     <value>Label</value>
   </data>
   <data name="All_LangPostfix" xml:space="preserve">
-    <value />
+    <value>EN</value>
     <comment>Diff</comment>
   </data>
   <data name="All_Language" xml:space="preserve">
@@ -10648,5 +10648,11 @@
   </data>
   <data name="ESB_K3WISE_JsonBugFix_Desc" xml:space="preserve">
     <value>Some API must passed in JSON with no line breaks and "}" at the end, such as GetList may return only one row when input is normal json</value>
+  </data>
+  <data name="V2020_Site_PMS" xml:space="preserve">
+    <value>PMS</value>
+  </data>
+  <data name="All_AppName_PMS" xml:space="preserve">
+    <value>PMS</value>
   </data>
 </root>

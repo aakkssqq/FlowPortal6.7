@@ -146,62 +146,62 @@ Ext.define('2020.src.AdminPortal', {
                     }]
                 });
 
-                var dlg = Ext.create('YZSoft.connection.connections.Oracle.Dlg', {
-                    autoShow: true,
-                    objectName: 'Oracle',
-                    fn: function (ds) {
-                    }
-                });
+                //var dlg = Ext.create('YZSoft.connection.connections.Oracle.Dlg', {
+                //    autoShow: true,
+                //    objectName: 'Oracle',
+                //    fn: function (ds) {
+                //    }
+                //});
 
-                Ext.create('YZSoft.src.jschema.editdlg.Table', {
-                    title: 'Header 字段',
-                    autoShow: true,
-                    nameField: {
-                        hidden: true
-                    },
-                    typeWrap: {
-                        hidden: true
-                    },
-                    childFieldsEditor: {
-                        margin: '0 0 10 0',
-                        childFieldColumnName:'字段名'
+                //Ext.create('YZSoft.src.jschema.editdlg.Table', {
+                //    title: 'Header 字段',
+                //    autoShow: true,
+                //    nameField: {
+                //        hidden: true
+                //    },
+                //    typeWrap: {
+                //        hidden: true
+                //    },
+                //    childFieldsEditor: {
+                //        margin: '0 0 10 0',
+                //        childFieldColumnName:'字段名'
 
-                    },
-                    fn: function (schema) {
-                    }
-                });
+                //    },
+                //    fn: function (schema) {
+                //    }
+                //});
 
-                var dlg = Ext.create('YZSoft.esb.designer.dialogs.JsonSchemaFieldDlg', {
-                    autoShow: true,
-                    title:'新建字段',
-                    fn: function (ds) {
-                    }
-                });
-                var pnl = Ext.create('YZSoft.esb.sprites.RESTful.propertypages.InputMap', {
-                    region: 'center',
-                    sprite: {
-                        properties: {}
-                    }
-                });
+                //var dlg = Ext.create('YZSoft.esb.designer.dialogs.JsonSchemaFieldDlg', {
+                //    autoShow: true,
+                //    title:'新建字段',
+                //    fn: function (ds) {
+                //    }
+                //});
+                //var pnl = Ext.create('YZSoft.esb.sprites.RESTful.propertypages.InputMap', {
+                //    region: 'center',
+                //    sprite: {
+                //        properties: {}
+                //    }
+                //});
 
-                var pnl = Ext.create('YZSoft.esb.sprites.WebService.propertypages.General', {
-                    region: 'center'
-                });
+                //var pnl = Ext.create('YZSoft.esb.sprites.WebService.propertypages.General', {
+                //    region: 'center'
+                //});
 
-                var pnl = Ext.create('YZSoft.esb.designer.DSFlowDesigner', {
-                    region: 'center',
-                    designMode: 'edit', 
-                    folder: '',
-                    flowName: 'PO1'
-                });
+                //var pnl = Ext.create('YZSoft.esb.designer.DSFlowDesigner', {
+                //    region: 'center',
+                //    designMode: 'edit', 
+                //    folder: '',
+                //    flowName: 'PO1'
+                //});
 
-                var pnl = Ext.create('YZSoft.esb.trace.TracePanel', {
-                    region: 'center',
-                    taskId: 9
-                });
+                //var pnl = Ext.create('YZSoft.esb.trace.TracePanel', {
+                //    region: 'center',
+                //    taskId: 9
+                //});
 
-                YZSoft.frame.add(pnl);
-                YZSoft.frame.setActiveItem(pnl);
+                //YZSoft.frame.add(pnl);
+                //YZSoft.frame.setActiveItem(pnl);
 
                 me.tab.el.set({
                     draggable:false

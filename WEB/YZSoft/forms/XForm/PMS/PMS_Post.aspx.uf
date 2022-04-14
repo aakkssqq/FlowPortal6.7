@@ -1,0 +1,476 @@
+﻿{
+  "generateAt": "2022-04-14T15:54:09.9869203+08:00",
+  "docVersion": 1,
+  "src": {
+    "funcs": {},
+    "components": {
+      "XTextBox4": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox4",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "width": "52px",
+          "max": "0",
+          "min": "0",
+          "xdatabind": "PMS:InstProjects.FillUser",
+          "valuetodisplaytext": "",
+          "hiddeninput": "False",
+          "placeholder": "",
+          "disableexpress": "1"
+        }
+      },
+      "XTextBox5": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox5",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "width": "116px",
+          "max": "0",
+          "min": "0",
+          "xdatabind": "PMS:InstProjects.FillName",
+          "valuetodisplaytext": "",
+          "hiddeninput": "False",
+          "placeholder": "",
+          "disableexpress": "1"
+        }
+      },
+      "XTextBox6": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox6",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "width": "58px",
+          "max": "0",
+          "min": "0",
+          "xdatabind": "PMS:InstProjects.ApplyUser",
+          "valuetodisplaytext": "",
+          "hiddeninput": "False",
+          "placeholder": "",
+          "disableexpress": "1"
+        }
+      },
+      "XTextBox7": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox7",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "width": "96px",
+          "max": "0",
+          "min": "0",
+          "xdatabind": "PMS:InstProjects.ApplyName",
+          "valuetodisplaytext": "",
+          "hiddeninput": "False",
+          "placeholder": "",
+          "disableexpress": "1"
+        }
+      },
+      "XSelectUserButton1": {
+        "ctype": "aspxform:xselectuserbutton",
+        "attrs": {
+          "id": "XSelectUserButton1",
+          "runat": "server",
+          "width": "21px",
+          "datamap": "Account->PMS:InstProjects.ApplyUser;DisplayName->PMS:InstProjects.ApplyName"
+        }
+      },
+      "XDateTimePicker1": {
+        "ctype": "aspxform:xdatetimepicker",
+        "attrs": {
+          "id": "XDateTimePicker1",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "xdatabind": "PMS:InstProjects.FillAt",
+          "width": "163px",
+          "disableexpress": "1"
+        }
+      },
+      "XTextBox1": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox1",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "width": "100%",
+          "xdatabind": "PMS:InstProjects.PID"
+        }
+      },
+      "XTextBox2": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox2",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "width": "100%",
+          "xdatabind": "PMS:InstProjects.Name"
+        }
+      },
+      "XTextBox3": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox3",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "width": "100%",
+          "maxlength": "5",
+          "xdatabind": "PMS:InstProjects.Desc",
+          "textmode": "MultiLine",
+          "rows": "5"
+        }
+      },
+      "XDropDownList1": {
+        "ctype": "aspxform:xdropdownlist",
+        "attrs": {
+          "id": "XDropDownList1",
+          "runat": "server",
+          "xdatabind": "PMS:InstProjects.ProjectType"
+        }
+      },
+      "XTextBox8": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox8",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "width": "50px",
+          "max": "0",
+          "min": "0",
+          "xdatabind": "PMS:InstProjects.ManagerID",
+          "valuetodisplaytext": "",
+          "hiddeninput": "False",
+          "placeholder": "",
+          "disableexpress": "1"
+        }
+      },
+      "XTextBox9": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox9",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "width": "110px",
+          "max": "0",
+          "min": "0",
+          "xdatabind": "PMS:InstProjects.ManagerName",
+          "valuetodisplaytext": "",
+          "hiddeninput": "False",
+          "placeholder": "",
+          "disableexpress": "1"
+        }
+      },
+      "XSelectUserButton2": {
+        "ctype": "aspxform:xselectuserbutton",
+        "attrs": {
+          "id": "XSelectUserButton2",
+          "runat": "server",
+          "width": "21px",
+          "datamap": "Account->PMS:InstProjects.ManagerID;DisplayName->PMS:InstProjects.ManagerName"
+        }
+      },
+      "XDropDownList2": {
+        "ctype": "aspxform:xdropdownlist",
+        "attrs": {
+          "id": "XDropDownList2",
+          "runat": "server",
+          "xdatabind": "PMS:InstProjects.ProjectStatus"
+        }
+      },
+      "XTextBox10": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox10",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "width": "100%",
+          "xdatabind": "PMS:InstGoals.Name"
+        }
+      },
+      "XTextBox11": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox11",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "width": "100%",
+          "xdatabind": "PMS:InstGoals.Desc",
+          "textmode": "MultiLine",
+          "rows": "5"
+        }
+      },
+      "XDropDownList3": {
+        "ctype": "aspxform:xdropdownlist",
+        "attrs": {
+          "id": "XDropDownList3",
+          "runat": "server",
+          "xdatabind": "PMS:InstGoals.GoalType"
+        }
+      },
+      "XTextBox12": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox12",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "width": "58px",
+          "max": "0",
+          "min": "0",
+          "xdatabind": "PMS:InstGoals.ManagerID",
+          "valuetodisplaytext": "",
+          "hiddeninput": "False",
+          "placeholder": "",
+          "disableexpress": "1"
+        }
+      },
+      "XTextBox13": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox13",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "width": "109px",
+          "max": "0",
+          "min": "0",
+          "xdatabind": "PMS:InstGoals.ManagerName",
+          "valuetodisplaytext": "",
+          "hiddeninput": "False",
+          "placeholder": "",
+          "disableexpress": "1"
+        }
+      },
+      "XSelectUserButton3": {
+        "ctype": "aspxform:xselectuserbutton",
+        "attrs": {
+          "id": "XSelectUserButton3",
+          "runat": "server",
+          "width": "21px",
+          "datamap": "Account->PMS:InstGoals.ManagerID;DisplayName->PMS:InstProjects.ManagerName"
+        }
+      },
+      "XDropDownList4": {
+        "ctype": "aspxform:xdropdownlist",
+        "attrs": {
+          "id": "XDropDownList4",
+          "runat": "server",
+          "xdatabind": "PMS:InstGoals.GoalStatus"
+        }
+      },
+      "XDateTimePicker4": {
+        "ctype": "aspxform:xdatetimepicker",
+        "attrs": {
+          "id": "XDateTimePicker4",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "xdatabind": "PMS:InstGoals.StartDate"
+        }
+      },
+      "XDateTimePicker5": {
+        "ctype": "aspxform:xdatetimepicker",
+        "attrs": {
+          "id": "XDateTimePicker5",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "xdatabind": "PMS:InstGoals.EndDate"
+        }
+      },
+      "XTextBox14": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox14",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "width": "100%",
+          "xdatabind": "PMS:InstWorks.Name"
+        }
+      },
+      "XTextBox15": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox15",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "width": "100%",
+          "xdatabind": "PMS:InstWorks.Desc",
+          "textmode": "MultiLine",
+          "rows": "5"
+        }
+      },
+      "XDropDownList5": {
+        "ctype": "aspxform:xdropdownlist",
+        "attrs": {
+          "id": "XDropDownList5",
+          "runat": "server",
+          "xdatabind": "PMS:InstWorks.WorkType"
+        }
+      },
+      "XTextBox16": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox16",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "width": "61px",
+          "max": "0",
+          "min": "0",
+          "xdatabind": "PMS:InstWorks.ManagerID",
+          "valuetodisplaytext": "",
+          "hiddeninput": "False",
+          "placeholder": "",
+          "disableexpress": "1"
+        }
+      },
+      "XTextBox17": {
+        "ctype": "aspxform:xtextbox",
+        "attrs": {
+          "id": "XTextBox17",
+          "runat": "server",
+          "bordercolor": "Gainsboro",
+          "borderwidth": "1px",
+          "width": "125px",
+          "max": "0",
+          "min": "0",
+          "xdatabind": "PMS:InstWorks.ManagerName",
+          "valuetodisplaytext": "",
+          "hiddeninput": "False",
+          "placeholder": "",
+          "disableexpress": "1"
+        }
+      },
+      "XSelectUserButton4": {
+        "ctype": "aspxform:xselectuserbutton",
+        "attrs": {
+          "id": "XSelectUserButton4",
+          "runat": "server",
+          "width": "21px",
+          "datamap": "Account->PMS:InstWorks.ManagerID;DisplayName->PMS:InstProjects.ManagerName"
+        }
+      },
+      "XDropDownList6": {
+        "ctype": "aspxform:xdropdownlist",
+        "attrs": {
+          "id": "XDropDownList6",
+          "runat": "server",
+          "xdatabind": "PMS:InstWorks.WorkStatus"
+        }
+      },
+      "XDateTimePicker6": {
+        "ctype": "aspxform:xdatetimepicker",
+        "attrs": {
+          "id": "XDateTimePicker6",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "xdatabind": "PMS:InstWorks.StartDate"
+        }
+      },
+      "XDateTimePicker7": {
+        "ctype": "aspxform:xdatetimepicker",
+        "attrs": {
+          "id": "XDateTimePicker7",
+          "runat": "server",
+          "bordercolor": "#DCDCDC",
+          "borderwidth": "1",
+          "xdatabind": "PMS:InstWorks.EndDate"
+        }
+      },
+      "table2": {
+        "ctype": "grid",
+        "attrs": {
+          "width": "100%",
+          "style": "BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none",
+          "border": "0",
+          "cellspacing": "0",
+          "cellpadding": "0",
+          "dynamicarea": "0,5",
+          "xdatasource": "DataSource:PMS;TableName:InstWorks",
+          "id": "table2"
+        },
+        "ctypeorg": "table",
+        "items": [
+          "XTextBox14",
+          "XTextBox15",
+          "XDropDownList5",
+          "XTextBox16",
+          "XTextBox17",
+          "XSelectUserButton4",
+          "XDropDownList6",
+          "XDateTimePicker6",
+          "XDateTimePicker7"
+        ],
+        "dynamicArea": {
+          "startRowIndex": 0,
+          "rows": 5
+        }
+      },
+      "table1": {
+        "ctype": "grid",
+        "attrs": {
+          "width": "100%",
+          "style": "BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none",
+          "border": "0",
+          "cellspacing": "0",
+          "cellpadding": "0",
+          "dynamicarea": "0,8",
+          "xdatasource": "DataSource:PMS;TableName:InstGoals",
+          "id": "table1"
+        },
+        "ctypeorg": "table",
+        "items": [
+          "XTextBox10",
+          "XTextBox11",
+          "XDropDownList3",
+          "XTextBox12",
+          "XTextBox13",
+          "XSelectUserButton3",
+          "XDropDownList4",
+          "XDateTimePicker4",
+          "XDateTimePicker5",
+          "table2"
+        ],
+        "dynamicArea": {
+          "startRowIndex": 0,
+          "rows": 8
+        }
+      }
+    },
+    "validators": {},
+    "items": [
+      "XTextBox4",
+      "XTextBox5",
+      "XTextBox6",
+      "XTextBox7",
+      "XSelectUserButton1",
+      "XDateTimePicker1",
+      "XTextBox1",
+      "XTextBox2",
+      "XTextBox3",
+      "XDropDownList1",
+      "XTextBox8",
+      "XTextBox9",
+      "XSelectUserButton2",
+      "XDropDownList2",
+      "table1"
+    ]
+  }
+}

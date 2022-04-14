@@ -55,6 +55,13 @@ namespace BPMApp
                     modulePerm = new YZModulePermision("cc0d778c-23be-4dfd-b1cb-d88433e0116a", YZModuleDeniedBehavior.Hide),
                     startApp = "2020/Developer",
                     style = "background-color:#4caf50"
+                },//Add by Xine at 20220414 Reason Add PMS
+                new {
+                    icon = "YZSoft/frame/images/siteswitch/developer.png",
+                    text = Resources.YZStrings.V2020_Site_PMS,
+                    //modulePerm = new YZModulePermision("cc0d778c-23be-4dfd-b1cb-d88433e0116a", YZModuleDeniedBehavior.Hide),//Mark By Xine at 20220414 關閉模組權限驗證
+                    startApp = "PMS/Routing",
+                    style = "background-color:#acaf4c"
                 }
             };
 

@@ -10650,4 +10650,10 @@
   <data name="ESB_K3WISE_JsonBugFix_Desc" xml:space="preserve">
     <value>部分API必需傳入不帶換行和末尾“}”的JSON，例如傳入正常GetList有時只返回一條資料</value>
   </data>
+  <data name="V2020_Site_PMS" xml:space="preserve">
+    <value>專案管理</value>
+  </data>
+  <data name="All_AppName_PMS" xml:space="preserve">
+    <value>專案管理</value>
+  </data>
 </root>
