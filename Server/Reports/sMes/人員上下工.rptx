@@ -1,0 +1,118 @@
+﻿{
+  "author": {
+    "uid": "T01081",
+    "name": "T01081",
+    "createat": "2022-03-31 08:40:07"
+  },
+  "lastModifier": {
+    "uid": "T01081",
+    "name": "T01081",
+    "date": "2022-03-31 08:40:16"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "人員上下工": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "sMes_Prod",
+          "query": "With\nDataTable as (\nselect '上工中' as DataType, SHIFTNO as LotNo,'' as LogGroupSerial,OPNo,LOGINDATE as EventTime,UserNo ,null as AreaNo, 0 as InputQty,0 as GOODQTY,0 as SCRAPQTY,LOGINPLACENO as EQUIPMENTNO,'' as C_CombineLotSerial\nfrom [TBLWIPOPERATORSTATE] \nwhere @EqNo is null or LOGINPLACENO =@EqNo\nunion \nselect '上工' as DataType, SHIFTNO as LotNo,'' as LogGroupSerial,OPNo,LOGINDATE as EventTime,UserNo ,null as AreaNo, 0 as InputQty,0 as GOODQTY,0 as SCRAPQTY,LOGINPLACENO as EQUIPMENTNO,'' as C_CombineLotSerial\nfrom [TBLWIPOPERATORLOG] \nwhere @EqNo is null or LOGINPLACENO =@EqNo\nunion \nselect '下工' as DataType, SHIFTNO as LotNo,'' as LogGroupSerial,OPNo,LOGOUTDATE as EventTime,UserNo ,null as AreaNo, 0 as InputQty,0 as GOODQTY,0 as SCRAPQTY,LOGINPLACENO as EQUIPMENTNO,'' as C_CombineLotSerial\nfrom [TBLWIPOPERATORLOG] \nwhere @EqNo is null or LOGINPLACENO =@EqNo\n)\nSelect * from DataTable\norder by EventTime desc",
+          "queryParams": [
+            {
+              "name": "@EqNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 100
+        },
+        "paramNames": [
+          "@EqNo"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.text1": {
+        "ctype": "report.search.field.text",
+        "binddsid": "人員上下工",
+        "xdatabind": "@EqNo",
+        "fieldLabel": "設備編號",
+        "emptyText": ""
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.text1"
+        ]
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "人員上下工",
+        "pagingBarDisplay": false,
+        "export2Excel": false,
+        "exportTemplate": null,
+        "title": null,
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "動作",
+            "dataIndex": "DataType",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "班別",
+            "dataIndex": "LotNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "時間",
+            "dataIndex": "EventTime",
+            "align": "start",
+            "dataFormat": {
+              "type": "date",
+              "format": "Y-m-d H:i"
+            },
+            "width": 145
+          },
+          {
+            "text": "人員",
+            "dataIndex": "UserNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "設備編號",
+            "dataIndex": "EQUIPMENTNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "report.grid1"
+    ]
+  }
+}

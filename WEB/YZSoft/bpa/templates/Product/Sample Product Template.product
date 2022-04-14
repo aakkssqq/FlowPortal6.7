@@ -1,0 +1,958 @@
+﻿{
+  "categories": [
+    "Product",
+    "General"
+  ],
+  "Property": {
+    "LastChange": "2016-10-11T16:00:05.2067613+08:00",
+    "ChangeBy": "99199"
+  },
+  "Nodes": [
+    {
+      "Id": "Consumer",
+      "Name": "客户来电",
+      "xclass": "YZSoft.bpa.sprite.Product.Consumer",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 272,
+        "translationY": 15,
+        "x": 0,
+        "y": 0,
+        "width": 39,
+        "height": 43,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "客户来电",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Consumer",
+        "reportType": "Product"
+      }
+    },
+    {
+      "Id": "Procuct",
+      "Name": "产品故障",
+      "xclass": "YZSoft.bpa.sprite.Product.Product",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 231.5,
+        "translationY": 132,
+        "x": 0,
+        "y": 0,
+        "width": 120,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "产品故障",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Product",
+        "reportType": "Product"
+      }
+    },
+    {
+      "Id": "Service",
+      "Name": "服务部",
+      "xclass": "YZSoft.bpa.sprite.Product.Service",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 231.5,
+        "translationY": 260,
+        "x": 0,
+        "y": 0,
+        "width": 120,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "服务部",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Service",
+        "reportType": "Product"
+      }
+    },
+    {
+      "Id": "Diamond",
+      "Name": "产品是否在包换期",
+      "xclass": "YZSoft.bpa.sprite.General.Diamond",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 221.5,
+        "translationY": 394,
+        "x": 0,
+        "y": 0,
+        "width": 140,
+        "height": 68,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "产品是否在包换期",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle",
+      "Name": "更换产品",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 236.5,
+        "translationY": 547,
+        "x": 0,
+        "y": 0,
+        "width": 110,
+        "height": 40,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "更换产品",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle1",
+      "Name": "咨询",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 476,
+        "translationY": 147,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 40,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "咨询",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle3",
+      "Name": "有偿保修",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 702,
+        "translationY": 406.75,
+        "x": 0,
+        "y": 0,
+        "width": 91,
+        "height": 42.5,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "有偿保修",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle4",
+      "Name": "免费保修",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 497.5,
+        "translationY": 546.5,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 41,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "免费保修",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Diamond1",
+      "Name": "是否在保修期",
+      "xclass": "YZSoft.bpa.sprite.General.Diamond",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 474,
+        "translationY": 394,
+        "x": 0,
+        "y": 0,
+        "width": 140,
+        "height": 68,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "是否在保修期",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text",
+      "Name": "否",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 381,
+        "translationY": 164,
+        "x": 0,
+        "y": 0,
+        "width": 59,
+        "height": 29,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "否",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text1",
+      "Name": "是",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 277,
+        "translationY": 209,
+        "x": 0,
+        "y": 0,
+        "width": 59,
+        "height": 29,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "是",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text2",
+      "Name": "否",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 381,
+        "translationY": 429,
+        "x": 0,
+        "y": 0,
+        "width": 59,
+        "height": 29,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "否",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text3",
+      "Name": "是",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 277,
+        "translationY": 486,
+        "x": 0,
+        "y": 0,
+        "width": 59,
+        "height": 29,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "是",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text4",
+      "Name": "是",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 527,
+        "translationY": 486,
+        "x": 0,
+        "y": 0,
+        "width": 59,
+        "height": 29,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "是",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text5",
+      "Name": "否",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 620,
+        "translationY": 429,
+        "x": 0,
+        "y": 0,
+        "width": 59,
+        "height": 29,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "否",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    }
+  ],
+  "Links": [
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Consumer",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Procuct",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 20,
+        "translationY": -48,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 271.5,
+            "y": 106
+          },
+          {
+            "x": 271.5,
+            "y": 180
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Procuct",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Rectangle1",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": -48,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 331.5,
+            "y": 215
+          },
+          {
+            "x": 456,
+            "y": 215
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Procuct",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Service",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 20,
+        "translationY": -48,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 271.5,
+            "y": 250
+          },
+          {
+            "x": 271.5,
+            "y": 308
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Service",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Diamond",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 20,
+        "translationY": -48,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 271.5,
+            "y": 378
+          },
+          {
+            "x": 271.5,
+            "y": 442
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Diamond",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Rectangle",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 20,
+        "translationY": -48,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 271.5,
+            "y": 510
+          },
+          {
+            "x": 271.5,
+            "y": 595
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Diamond",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Diamond1",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": -48,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 341.5,
+            "y": 476
+          },
+          {
+            "x": 454,
+            "y": 476
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Diamond1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Rectangle4",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 20,
+        "translationY": -48,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 524,
+            "y": 510
+          },
+          {
+            "x": 524,
+            "y": 594.5
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Diamond1",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Rectangle3",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": -48,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 594,
+            "y": 476
+          },
+          {
+            "x": 682,
+            "y": 476
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    }
+  ]
+}

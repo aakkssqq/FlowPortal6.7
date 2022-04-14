@@ -1,0 +1,240 @@
+﻿{
+  "author": {
+    "uid": "T01081",
+    "name": "T01081",
+    "createat": "2022-03-31 09:25:00"
+  },
+  "lastModifier": {
+    "uid": "T01081",
+    "name": "T01081",
+    "date": "2022-04-12 08:08:05"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "資料來源1": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "sMes_Prod",
+          "query": "with result \nas(\n\tSelect \n\t\tlotStatus.EQUIPMENTNO ,\n\t\t(select EquipmentName From TBLEQPEQUIPMENTBASIS where EQUIPMENTNO = lotStatus.EquipmentNo ) EquipmentName,\n\t\t(Select EQUIPMENTTYPE from TBLEQPEQUIPMENTBASIS where EQUIPMENTNO = lotStatus.EquipmentNo) EquipmentType,\n\t\t(Select USERNO + ',' from TBLWIPOPERATORSTATE where LOGINPLACENO =lotStatus.EquipmentNo FOR XML PATH('')) USERNO,\n\t\t(Select LOGINDATE from TBLWIPOPERATORSTATE where LOGINPLACENO =lotStatus.EquipmentNo FOR XML PATH(''))  LOGINDATE,\n\t\tTBLWIPLOTSTATE.PROCESSNO,\n\t\tTBLWIPLOTSTATE.OPNO,\n\t\tTBLWIPLOTSTATE.NODEID,\n\t\tTBLWIPLOTSTATE.LOTNO,\n\t\tcase STATUS \n\t\t\twhen 0 then '佇列中' \n\t\t\twhen 1 then '生產中' \n\t\t\twhen 2 then '暫停' \n\t\t\twhen 5 then 'OS' \n\t\t\twhen 6 then '網狀工藝等待移到下作業站狀態' \n\t\t\twhen 11 then '良品線邊倉' \n\t\t\twhen 12 then '不良品線邊倉' \n\t\t\telse '' END as Status,\n\t\tTBLWIPLOTSTATE.CURQTY,\n\t\tTBLWIPLOTSTATE.SYSQTY,\n\t\tTBLWIPLOTSTATE.C_OCCUPYMOLDCAVITY,\n\t\tTBLWIPLOTSTATE.C_LOTNOACCQTY\n\tfrom dbo.TBLWIPLOTSTATE \n\t\t\t\tLEFT OUTER JOIN\n\t\t\t\t\tdbo.TBLWIPDISPATCHSTATE AS lotStatus ON \n\t\t\t\t\tdbo.TBLWIPLOTSTATE.OPNO = lotStatus.OPNO AND dbo.TBLWIPLOTSTATE.LOTNO = lotStatus.LOTNO\n\twhere EQUIPMENTNO is not null and  EQUIPMENTNO <> 'N/A' and CURQTY <> 0  and  STATUS = 1\n)\nSelect * from result\nwhere EquipmentName not in ('B99-虛擬成型機')  and @eqType is null or EquipmentType =@eqType\norder by <%=String.IsNullOrEmpty(Context.Current.RequestParams[\"sortstring\"])?\"EquipmentName  desc\":Context.Current.RequestParams[\"sortstring\"]%>",
+          "queryParams": [
+            {
+              "name": "@eqType",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 18
+        },
+        "paramNames": [
+          "@eqType"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.combobox1": {
+        "ctype": "report.search.field.combobox",
+        "binddsid": "資料來源1",
+        "xdatabind": "@eqType",
+        "fieldLabel": "設備類別",
+        "emptyText": "",
+        "use": "options",
+        "ds": null,
+        "dsDisplayField": null,
+        "dsValueField": null,
+        "options": [
+          {
+            "text": "一廠射出",
+            "value": "一廠射出"
+          },
+          {
+            "text": "二廠射出",
+            "value": "二廠射出"
+          },
+          {
+            "text": "一廠加工站",
+            "value": "一廠加工站"
+          },
+          {
+            "text": "二廠加工站",
+            "value": "二廠加工站"
+          },
+          {
+            "text": "二廠印刷機",
+            "value": "二廠印刷機"
+          },
+          {
+            "text": "二廠組裝線",
+            "value": "二廠組裝線"
+          }
+        ]
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.combobox1"
+        ]
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "資料來源1",
+        "pagingBarDisplay": true,
+        "export2Excel": true,
+        "exportTemplate": null,
+        "title": null,
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "設備編號",
+            "dataIndex": "EQUIPMENTNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 87
+          },
+          {
+            "text": "設備名稱",
+            "dataIndex": "EquipmentName",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 191
+          },
+          {
+            "text": "設備類別",
+            "dataIndex": "EquipmentType",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 103
+          },
+          {
+            "text": "上工人員",
+            "dataIndex": "USERNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 84
+          },
+          {
+            "text": "上工時間",
+            "dataIndex": "LOGINDATE",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 106
+          },
+          {
+            "text": "製程代碼",
+            "dataIndex": "PROCESSNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 73
+          },
+          {
+            "text": "作業站編號",
+            "dataIndex": "OPNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 61
+          },
+          {
+            "text": "節點ID",
+            "dataIndex": "NODEID",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "生產批號",
+            "dataIndex": "LOTNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 167
+          },
+          {
+            "text": "狀態",
+            "dataIndex": "Status",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 106
+          },
+          {
+            "text": "目前數量",
+            "dataIndex": "CURQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 86
+          },
+          {
+            "text": "系統數量",
+            "dataIndex": "SYSQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 92
+          },
+          {
+            "text": "使用模穴數",
+            "dataIndex": "C_OCCUPYMOLDCAVITY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 72
+          },
+          {
+            "text": "待出站數量",
+            "dataIndex": "C_LOTNOACCQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 72
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "report.grid1"
+    ]
+  }
+}

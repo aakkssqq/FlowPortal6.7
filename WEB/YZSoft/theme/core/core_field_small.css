@@ -1,0 +1,42 @@
+﻿
+/*yz-size-s*/
+/*trigger*/
+.yz-size-s .x-form-trigger-default {
+    line-height: 24px;
+    font-size: 12px;
+    width: 17px;
+    color: #6c757d;
+}
+
+/*input*/
+.yz-size-s .x-form-text-default {
+    font-size: 13px;
+    line-height: 21px;
+    min-height: 24px;
+    padding: 2px 3px 1px;
+}
+
+/*btn*/
+.yz-size-s.x-btn {
+    padding: 3px 2px;
+}
+
+.yz-size-s .x-btn-button {
+    min-height:18px;
+}
+
+/*btn arrow*/
+.yz-size-s .x-btn-wrap.x-btn-arrow:after {
+    font-size: 12px;
+    color: #6c757d
+}
+
+/*boundlist*/
+.yz-size-s.x-boundlist .x-boundlist-item {
+    line-height: 22px;
+}
+
+/*menu*/
+.yz-size-m.x-menu .x-menu-item-text-default {
+    line-height: 68px;
+}

@@ -1,0 +1,17 @@
+﻿.yz-tab-banner .logo 
+{
+	background-image: url(ui/logo.png);
+	background-repeat: no-repeat;
+	height: 60px;
+	width: 200px;
+	_background-image:none;
+	_filter : progid:DXImageTransform.Microsoft.AlphaImageLoader (sizingMethod='scale',src='BPM/Styles/ui/logo.png');
+}
+
+.yz-tab-banner .site_switch
+{
+    left:200px;
+}
+
+.yz-tab-banner .site_switch .switch:hover { background-image: none; }
+

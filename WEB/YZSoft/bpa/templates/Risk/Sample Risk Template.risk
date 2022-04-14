@@ -1,0 +1,1339 @@
+﻿{
+  "categories": [
+    "Risk",
+    "General"
+  ],
+  "Property": {
+    "CreateAt": "2016-08-24T14:14:55",
+    "Creator": "99199",
+    "LastChange": "2016-09-12T13:38:30.8409265+08:00",
+    "ChangeBy": "99199",
+    "CreatorShortName": "全茂林",
+    "ChangeByShortName": "全茂林"
+  },
+  "Nodes": [
+    {
+      "Id": "Risk",
+      "Name": "采购计划编制",
+      "xclass": "YZSoft.bpa.sprite.Risk.Risk",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 31,
+        "translationY": 184,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff9999",
+        "sprites": {
+          "text": {
+            "text": "采购计划编制",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP101",
+        "Description": "具体流程：企业实务中，需求部门一般根据生产经营需要向采购部门提出物资需求计划，采购部门根据该需求计划归类汇总平衡现有库存物资后，统筹安排采购计划，并按规定的权限和程序审批后执行。\n该环节的主要风险：三个“不”\n1.需求或采购计划不合理\n2.不按实际需求安排采购或随意超计划采购\n3.与企业生产经营计划不协调",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Control",
+      "Name": "采购\n计划\n编制控制",
+      "xclass": "YZSoft.bpa.sprite.Risk.Control",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 31,
+        "translationY": 352,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#66cc00",
+        "sprites": {
+          "text": {
+            "text": "采购\n计划\n编制控制",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP1011",
+        "Description": "1.根据实际需要编制需求计划\n生产、经营、项目建设等部门，应当根据实际需求准确、及时编制需求计划。需求部门提出需求计划时，不能指定或变相指定供应商。对独家代理、专有、专利等特殊产品应提供相应的独家、专有资料，经专业技术部门研讨后，经具备相应审批权限的部门或人员审批。\n2.科学安排采购买计划\n采购计划是企业年度生产经营计划的一部分，在制定年度生产经营计划过程中，企业应当根据发展目标实际需要，结合库存和在途情况，科学安排采购计划，防止采购过高或过低。\n3.采购计划应纳入预算管理\n采购计划应纳入采购预算管理，经相关负责人审批后，作为企业刚性指令严格执行。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Risk1",
+      "Name": "请购",
+      "xclass": "YZSoft.bpa.sprite.Risk.Risk",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 173,
+        "translationY": 184,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff9999",
+        "sprites": {
+          "text": {
+            "text": "请购",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP102",
+        "Description": "请购是指企业生产经营部门根据采购计划和实际需要，提出的采购申请。\n该环节的主要风险：\n1.缺乏采购申请制度\n2.请购未经适当审批或超越授权审批\n后果：可能导致采购物资过量或短缺，影响企业正常生产经营。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Risk2",
+      "Name": "供应商选择",
+      "xclass": "YZSoft.bpa.sprite.Risk.Risk",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 315,
+        "translationY": 184,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff9999",
+        "sprites": {
+          "text": {
+            "text": "供应商选择",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP103",
+        "Description": "该环节的主要风险：\n供应商选择不当。\n后果：可能导致采购物资质次价高，甚至出现舞弊行为。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Risk3",
+      "Name": "采购价格风险",
+      "xclass": "YZSoft.bpa.sprite.Risk.Risk",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 457,
+        "translationY": 184,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff9999",
+        "sprites": {
+          "text": {
+            "text": "采购价格风险",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP104",
+        "Description": "如何以最优“性价比”采购到符合需求的物资，是采购部门的永恒主题。\n该环节的主要风险：三个“不”\n1.采购定价机制不科学\n2.采购定价方式选择不当\n3.缺乏对重要物资品种价格跟踪监控，引起采购价格不合理\n后果：可能造成企业资金损失。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Risk4",
+      "Name": "采购合同签订",
+      "xclass": "YZSoft.bpa.sprite.Risk.Risk",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 599,
+        "translationY": 184,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff9999",
+        "sprites": {
+          "text": {
+            "text": "采购合同签订",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP105",
+        "Description": "采购合同是指企业根据采购需要、确定的供应商、采购方式、采购价格等情况与供应商签订的具有法律约束力的协议，该协议对双方的权利、义务和违约责任等情况作出了明确规定（企业向供应商支付合同规定的金额、履行规定的结算方式，供应商按照约定时间、期限、数量与质量、规格交付物资给采购方）。\n该环节的主要风险：\n1.框架协议签订不当，可能导致物资采购不顺畅\n2.未经授权对外订立采购合同\n3.合同对方主体资格、履约能力等未达要求\n4.合同内容存在重大疏漏和欺诈\n后果：可能导致企业合法权益受到侵害。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Risk5",
+      "Name": "付款",
+      "xclass": "YZSoft.bpa.sprite.Risk.Risk",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 883,
+        "translationY": 184,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff9999",
+        "sprites": {
+          "text": {
+            "text": "付款",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP107",
+        "Description": "付款是指企业在对采购预算、合同、相关单据凭证、审批程序等内容审核无误后，按照采购合同规定及时向供应商办理支付款项的过程。\n该环节的主要风险：三个“不”\n1.付款审核不严格\n2.付款方式不恰当\n3.付款金额控制不严\n后果：可能导致企业资金损失或信用受损。　　",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Risk6",
+      "Name": "验收",
+      "xclass": "YZSoft.bpa.sprite.Risk.Risk",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 741,
+        "translationY": 184,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff9999",
+        "sprites": {
+          "text": {
+            "text": "验收",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP106",
+        "Description": "验收是指企业对采购物资和劳务的检验接收，以确保其符合合同相关规定或产品质量要求。\n该环节的主要风险：三个“不”\n1.验收标准不明确\n2.验收程序不规范\n3.对验收中存在的异常情况不作处理\n后果：可能造成账实不符、采购物资损失。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Risk7",
+      "Name": "采购风险",
+      "xclass": "YZSoft.bpa.sprite.Risk.Risk",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 457,
+        "translationY": 18,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 80,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffff66",
+        "sprites": {
+          "text": {
+            "text": "采购风险",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP100",
+        "Description": "物资采购是企业经营的一个核心环节,是企业降低成本、获取利润的重要来源。企业的物资采购包括了采购计划制订、采购审批、供应商选择、价格咨询、采购招标、合同签订与执行、货物验收、核算、付款等诸多环节,由于受各种因素的影响,采购的各个环节中都存在各种不同的风险,如果对这些风险认识不足、控制不力,企业采购过程也就最容易滋生“暗箱操作”、以权谋私、弄虚作假、舍贱求贵、以次充好、收受回扣等现象,容易出现积压浪费。提高对企业物资采购风险的认识,加强对风险的控制与管理,可以为提高企业产品质量和经济效益提供有力保证。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Control1",
+      "Name": "请购\n控制",
+      "xclass": "YZSoft.bpa.sprite.Risk.Control",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 173,
+        "translationY": 352,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#66cc00",
+        "sprites": {
+          "text": {
+            "text": "请购\n控制",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP1021",
+        "Description": "1.建立采购申请制度\n依据购买物资或接受劳务的类型，确定归口管理部门，授予相应的请购权，明确相关部门或人员的职责权限及相应的请购程序。\n企业可以根据实际需要设置专门的请购部门，对需求部门提出的采购需求进行审核，并进行归类汇总，统筹安排企业的采购计划。\n2.严格按照预算进度办理请购手续\n具有请购权的部门对于预算内采购项目，应当严格按照预算执行进度办理请购手续，并根据市场变化提出合理采购申请。\n对于超预算和预算外采购项目，应先履行预算调整程序，由具备相应审批权限的部门或人员审批后，再行办理请购手续。\n3.严格审核采购申请\n具备相应审批权限的部门或人员审批采购申请时，应重点关注采购申请内容：\n（1）.是否准确、完整\n（2）.是否符合生产经营需要\n（3）.是否符合采购计划\n（4）.是否在采购预算范围内\n对不符合规定的采购申请，应要求请购部门调整请购内容或拒绝批准。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Control2",
+      "Name": "供应\n商选控制",
+      "xclass": "YZSoft.bpa.sprite.Risk.Control",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 315,
+        "translationY": 352,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#66cc00",
+        "sprites": {
+          "text": {
+            "text": "供应\n商选控制",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP1031",
+        "Description": "1.建立科学的供应商评估和准入制度\n1.1 对供应商资质信誉情况的真实性和合法性进行审查，确定合格的供应商清单，健全供应商网络。\n1.2 企业新增供应商的市场准入、供应商新增服务关系以及调整供应商物资目录，都要由采购部门根据需要提出申请，并按规定的权限和程序审核批准后，纳入供应商网络。\n1.3 企业可委托具有相应资质的中介机构对供应商进行资信调查。\n2.择优确定供应商\n采购部门应当按照公平、公正和竞争的原则，在切实防范舞弊风险的基础上，与供应商签订质量保证协议。\n3.建立供应商管理信息系统和供应商淘汰制度\n3.1 对供应商提供物资或劳务的质量、价格、交货及时性、供货条件及其资信、经营状况等进行实时管理和考核评价。\n3.2 根据考核评价结果，提出供应商淘汰和更换名单，经审批后对供应商进行合理选择和调整，并在供应商管理系统中作出相应记录。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Control3",
+      "Name": "采购\n价格控制",
+      "xclass": "YZSoft.bpa.sprite.Risk.Control",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 457,
+        "translationY": 352,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#66cc00",
+        "sprites": {
+          "text": {
+            "text": "采购\n价格控制",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP1041",
+        "Description": "1.健全采购定价机制\n采取协议采购、招标采购、询比价采购、动态竞价采购等多种方式，科学合理地确定采购价格。\n对标准化程度高、需求计划性强、价格相对稳定的物资，通过招标、联合谈判等公开、竞争方式签订框架协议。\n2.确定采购执行价格或参考价格\n采购部门应当定期研究大宗通用重要物资的成本构成与市场价格变动趋势,确定重要物资品种的采购执行价格或参考价格。\n建立采购价格数据库，定期开展重要物资的市场供求形势及价格走势商情分析并合理利用。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Control4",
+      "Name": "合同\n签订控制",
+      "xclass": "YZSoft.bpa.sprite.Risk.Control",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 599,
+        "translationY": 352,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#66cc00",
+        "sprites": {
+          "text": {
+            "text": "合同\n签订控制",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP1051",
+        "Description": "1.进行风险评估和引入竞争制度\n1.1 对拟签订框架协议的供应商的主体资格、信用状况等进行风险评估；\n1.2 框架协议的签订应引入竞争制度，确保供应商具备履约能力。\n2.按照规定权限签署采购合同\n根据确定的供应商、采购方式、采购价格等情况，拟订采购合同，准确描述合同条款，明确双方权利、义务和违约责任，按照规定权限签署采购合同。\n对于影响重大、涉及较高专业技术或法律关系复杂的合同，应当组织法律、技术、财会等专业人员参与谈判，必要时可聘请外部专家参与相关工作。\n3.统一规定量差允许度（合理损耗量）\n对重要物资验收量与合同量之间允许的差异，应当作出统一规定。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Control5",
+      "Name": "付款\n控制",
+      "xclass": "YZSoft.bpa.sprite.Risk.Control",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 883,
+        "translationY": 352,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#66cc00",
+        "sprites": {
+          "text": {
+            "text": "付款\n控制",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP1071",
+        "Description": "1.严审票据的真实性、合法性和有效性\n严格审查采购发票等票据的真实性、合法性和有效性，判断采购款项是否确实应予支付。\n1.1 审查发票填制的内容是否与发票种类相符合、发票加盖的印章是否与票据的种类相符合等。\n1.2 企业应当重视采购付款的过程控制和跟踪管理，如果发现异常情况，应当拒绝向供应商付款，避免出现资金损失和信用受损。\n2.合理选择付款方式\n根据国家有关支付结算的相关规定和企业生产经营的实际，合理选择付款方式，并严格遵循合同规定，防范付款方式不当带来的法律风险，保证资金安全。\n除了不足转账起点金额的采购可以支付现金外，采购价款应通过银行办理转账。\n3.加强预付款和定金的管理\n加强预付账款和定金的管理，涉及大额或长期的预付款项，应当定期进行追踪核查，综合分析预付账款的期限、占用款项的合理性、不可收回风险等情况，发现有疑问的预付款项，应当及时采取措施，尽快收回款项。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    },
+    {
+      "Id": "Control6",
+      "Name": "验收\n控制",
+      "xclass": "YZSoft.bpa.sprite.Risk.Control",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 741,
+        "translationY": 352,
+        "x": 0,
+        "y": 0,
+        "width": 80,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#66cc00",
+        "sprites": {
+          "text": {
+            "text": "验收\n控制",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "RiskP1061",
+        "Description": "1.制定采购验收标准\n制定明确的采购验收标准，结合物资特性确定必检物资目录，规定此类物资出具质量检验报告后方可入库。\n2.各部门各司其职\n验收机构或人员应当根据采购合同及质量检验部门出具的质量检验证明，重点关注采购合同、发票等原始单据与采购物资的数量、质量、规格型号等核对一致。对验收合格的物资，填制入库凭证，加盖物资“收讫章”，登记实物账，及时将入库凭证传递给财会部门。物资入库前，采购部门须检查质量保证书、商检证书或合格证等证明文件。验收时涉及技术性强、大宗和新、特物资，应进行专业测试，必要时可委托具有检验资质的机构或聘请外部专家协助验收。\n3.按规定处理异常情况、不合格物资和迟交货\n对于验收过程中发现的异常情况，比如无采购合同或大额超采购合同的物资、超采购预算采购的物资、毁损的物资等，验收机构或人员应当立即向企业有权管理的相关机构报告，相关机构应当查明原因并及时处理。\n对于不合格物资，采购部门依据检验结果办理让步接收、退货、索赔等事宜。\n对延迟交货造成生产建设损失的，采购部门要按照合同约定索赔。",
+        "Remark": "",
+        "spriteType": "Risk",
+        "reportType": "Risk"
+      }
+    }
+  ],
+  "Links": [
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk7",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Risk",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 497,
+            "y": 98
+          },
+          {
+            "x": 497,
+            "y": 127
+          },
+          {
+            "x": 71,
+            "y": 127
+          },
+          {
+            "x": 71,
+            "y": 184
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk7",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Risk1",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 497,
+            "y": 98
+          },
+          {
+            "x": 497,
+            "y": 127
+          },
+          {
+            "x": 213,
+            "y": 127
+          },
+          {
+            "x": 213,
+            "y": 184
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk7",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Risk2",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 497,
+            "y": 98
+          },
+          {
+            "x": 497,
+            "y": 127
+          },
+          {
+            "x": 355,
+            "y": 127
+          },
+          {
+            "x": 355,
+            "y": 184
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk7",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Risk3",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 497,
+            "y": 98
+          },
+          {
+            "x": 497,
+            "y": 184
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk7",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Risk4",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 497,
+            "y": 98
+          },
+          {
+            "x": 497,
+            "y": 127
+          },
+          {
+            "x": 639,
+            "y": 127
+          },
+          {
+            "x": 639,
+            "y": 184
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk7",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Risk5",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 497,
+            "y": 98
+          },
+          {
+            "x": 497,
+            "y": 127
+          },
+          {
+            "x": 923,
+            "y": 127
+          },
+          {
+            "x": 923,
+            "y": 184
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk7",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Risk6",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 497,
+            "y": 98
+          },
+          {
+            "x": 497,
+            "y": 127
+          },
+          {
+            "x": 781,
+            "y": 127
+          },
+          {
+            "x": 781,
+            "y": 184
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Control",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 71,
+            "y": 264
+          },
+          {
+            "x": 71,
+            "y": 352
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Control1",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 213,
+            "y": 264
+          },
+          {
+            "x": 213,
+            "y": 352
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk2",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Control2",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 355,
+            "y": 264
+          },
+          {
+            "x": 355,
+            "y": 352
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk3",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Control3",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 497,
+            "y": 264
+          },
+          {
+            "x": 497,
+            "y": 352
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk4",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Control4",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 639,
+            "y": 264
+          },
+          {
+            "x": 639,
+            "y": 352
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk5",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Control5",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 923,
+            "y": 264
+          },
+          {
+            "x": 923,
+            "y": 352
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk6",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Control6",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 781,
+            "y": 264
+          },
+          {
+            "x": 781,
+            "y": 352
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    }
+  ]
+}

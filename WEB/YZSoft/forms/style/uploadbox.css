@@ -1,0 +1,34 @@
+﻿body {
+}
+
+div.attach .item { background: #eff9d7; margin-bottom: -1px; border: 1px solid #bccb96; line-height: 28px; height: 28px; position: relative; }
+div.attach .item a { color: #355305; cursor: pointer; display: block; padding-left: 30px; padding-right: 5px; position: absolute; left: 0px; top: 0px; background: no-repeat 6px 5px; outline: none;text-decoration:none;}
+div.attach .item a:hover{color: #F90;text-decoration:none;}
+div.attach .item .flag { display: block; height: 28px; width: 28px; position: absolute; left: 0px; top: 0px; overflow: hidden;}
+div.attach .item .size { padding-left: 5px; color: #999; font-size: 10px}
+div.attach .item b { position: absolute; right: 30px; top:0px; background-color:Red; font-weight: normal; color: #355305; }
+div.attach .item .del { position: absolute; right: 0px; top:0px;background: url(ui/icon_cancel.png) no-repeat center center; height: 28px; width: 28px; overflow: hidden; cursor: pointer; }
+div.attach .add {float:left; background: #72a00f url(ui/icon_add.png) no-repeat 5px 5px; border: 1px solid #537a00; color: #FFF; height: 28px; position: relative; z-index: 3; overflow: hidden; line-height: 28px; padding-left: 25px; padding-right: 10px; text-decoration:none}
+div.attach .add:hover { background-color: #84BB11; cursor:wait}
+
+div.attach-msn .item {float:left;overflow:visible; margin-right:0px; margin-right:-1px;}
+div.attach-msn .item a {position: static;margin-right: 30px; white-space:nowrap}
+div.attach-msn .add {padding-left:0px; padding-right:0px; width:20px; background-position:2px 5px;}
+div.attach-msn .add span{display:none}
+
+div.attach .wait { background-color: #ffffff; }
+div.attach .uploading {background: #eff9d7 url(ui/attachment_ani_process.png) repeat-y -1px 0px; }
+
+div.attach .swfupload
+{
+	border:solid 1px red;
+	position:absolute;
+	top:100px;
+	left:0px;
+	cursor:pointer;
+}
+
+div.attach .swfloaded .swfupload
+{
+	top:0px;
+}

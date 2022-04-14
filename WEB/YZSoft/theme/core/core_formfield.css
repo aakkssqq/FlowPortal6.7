@@ -1,0 +1,176 @@
+﻿
+/*yz-passwordmeter-**/
+.yz-passwordmeter-wrap {
+    margin: 3px 0 5px 0;
+    background-image: url(ui/component/pwdmeter/background.gif);
+    position: relative;
+}
+
+.yz-passwordmeter-pass {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    bottom: -5px;
+    background-color: transparent;
+    border: 5px;
+    border: solid 5px red;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top: none;
+}
+
+.yz-passwordmeter-scorebar {
+    background-image: url(ui/component/pwdmeter/scorebar.gif);
+    height: 10px;
+    width: 0;
+    line-height: 1px;
+    font-size: 1px;
+}
+
+.x-item-disabled .yz-passwordmeter-wrap {
+    display: none;
+}
+
+/*yz-field-search-start*/
+.yz-field-search .x-form-text-default {
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
+.yz-field-search-start .x-form-trigger-wrap:before {
+    font-family: yzglyphs;
+    content: "\eada";
+    display: inline-block;
+    position: absolute;
+    font-size: 16px;
+    line-height: 30px;
+    height: 30px;
+    width: 24px;
+    left: 1px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    color: #919191;
+    background-color: #fff;
+    padding-left: 6px;
+}
+
+.yz-field-search-start .x-form-trigger-wrap {
+    padding-left: 24px
+}
+
+.yz-field-search-start .x-form-text-default {
+    padding-left: 5px;
+}
+
+.yz-field-livesearch .x-form-text-default {
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
+.yz-form-field-group-logo {
+    border-radius: 20px;
+    border: solid 3px #f5f5f5;
+}
+
+.yz-form-field-bpadoclib-logo {
+    opacity: 0.8;
+    border-radius: 50%;
+    border: solid 3px #f5f5f5;
+}
+
+.yz-form-field-bpaprocesslib-logo {
+    opacity: 0.8;
+    border-radius: 50%;
+    border: solid 3px #f5f5f5;
+}
+
+.yz-form-field-label-message.x-form-item-label-top > .x-form-item-label-inner {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:10px;
+}
+
+.yz-form-field-noborder .x-form-trigger-wrap {
+    border-width: 0;
+}
+
+.yz-textarea-1line .x-form-text-default.x-form-textarea {
+    min-height: 29px;
+}
+
+.yz-textarea-2line .x-form-text-default.x-form-textarea {
+    min-height: 49px;
+}
+
+.yz-textarea-3line .x-form-text-default.x-form-textarea {
+    min-height: 69px;
+}
+
+.yz-textarea-4line .x-form-text-default.x-form-textarea {
+    min-height: 89px;
+}
+
+.yz-textarea-codesuggest .x-form-text-default {
+    background-image: none;
+    background-color: #f5f5f5;
+}
+
+/*yz-form-field-strlist*/
+.yz-form-field-strlist .x-form-text-default {
+    padding: 2px 0px 0px 2px;
+    cursor: pointer;
+}
+
+.yz-form-field-strlist-empty-text {
+    padding: 3px 10px 0px 8px;
+    color: #aaa;
+}
+
+/*yz-form-field-report*/
+.yz-form-field-report .x-form-display-field-default {
+    border-bottom: solid 1px #ddd;
+    background-color: aliceblue;
+    padding: 0px 0 0 7px;
+    margin-top: 0px;
+    line-height: 31px;
+}
+
+/*yz-form-field-hasvalue*/
+.yz-form-field-clear {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    font-family: 'yzglyphs';
+    font-size: 16px;
+    line-height: 31px;
+    padding: 0px 3px 0px 1px;
+    color: #ccc;
+    cursor: pointer;
+    display: none;
+}
+
+.yz-form-field-hasvalue .yz-form-field-clear {
+    display: block;
+}
+
+.CodeMirror {
+    z-index:1;
+}
+
+.yz-syntax-error .CodeMirror-linenumber {
+    font-weight: bold;
+    color: red;
+}
+
+.yz-syntax-error .CodeMirror-line > span {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-decoration-color: red;
+}
+
+.yz-syntax-error .CodeMirror-line > span > * {
+    color: red;
+}

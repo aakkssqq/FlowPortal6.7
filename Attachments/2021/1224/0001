@@ -1,0 +1,940 @@
+﻿{
+  "categories": [
+    "EVC",
+    "General"
+  ],
+  "Property": {
+    "LastChange": "2021-12-24T10:20:34.0018107+08:00",
+    "ChangeBy": "sa",
+    "ChangeByShortName": "全茂林",
+    "Code": "",
+    "Responsible": [
+      {
+        "isBPAReference": true,
+        "LinkType": "SpriteToSprite",
+        "FileID": "201606270002",
+        "SpriteID": "Organization2",
+        "FileName": "产品部组织架构",
+        "SpriteName": "文档管理员"
+      }
+    ],
+    "Status": "InProcess",
+    "Since": "2016-08-17",
+    "Description": "",
+    "Remark": "",
+    "Milestone": "Launch",
+    "Color": "Yellow",
+    "Execute": "PartialOnlineExecute",
+    "CreateAt": "2021-12-24T10:20:34.0018107+08:00",
+    "Creator": "sa"
+  },
+  "Nodes": [
+    {
+      "Id": "Rectangle",
+      "Name": "战略流程",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 138,
+        "translationY": 58,
+        "x": 0,
+        "y": 0,
+        "width": 696,
+        "height": 86,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#f5f5f5",
+        "sprites": {
+          "text": {
+            "text": "战略流程",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "start",
+            "textBaseline": "top",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain3",
+      "Name": "战略规划",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 227,
+        "translationY": 79.5,
+        "x": 0,
+        "y": 0,
+        "width": 118,
+        "height": 43,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#faa533",
+        "fillStyle": {
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#fbe490"
+            },
+            {
+              "offset": 0.8,
+              "color": "#efaf1e"
+            },
+            {
+              "offset": 1,
+              "color": "#efaf1e"
+            }
+          ],
+          "type": "linear",
+          "degrees": 270,
+          "radians": 0
+        },
+        "sprites": {
+          "text": {
+            "text": "战略规划",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain1",
+      "Name": "流程管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 377,
+        "translationY": 79.5,
+        "x": 0,
+        "y": 0,
+        "width": 118,
+        "height": 43,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#faa533",
+        "fillStyle": {
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#fbe490"
+            },
+            {
+              "offset": 0.8,
+              "color": "#efaf1e"
+            },
+            {
+              "offset": 1,
+              "color": "#efaf1e"
+            }
+          ],
+          "type": "linear",
+          "degrees": 270,
+          "radians": 0
+        },
+        "sprites": {
+          "text": {
+            "text": "流程管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain2",
+      "Name": "运营管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 522,
+        "translationY": 79.5,
+        "x": 0,
+        "y": 0,
+        "width": 118,
+        "height": 43,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#faa533",
+        "fillStyle": {
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#fbe490"
+            },
+            {
+              "offset": 0.8,
+              "color": "#efaf1e"
+            },
+            {
+              "offset": 1,
+              "color": "#efaf1e"
+            }
+          ],
+          "type": "linear",
+          "degrees": 270,
+          "radians": 0
+        },
+        "sprites": {
+          "text": {
+            "text": "运营管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain4",
+      "Name": "研发管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 672,
+        "translationY": 79.5,
+        "x": 0,
+        "y": 0,
+        "width": 118,
+        "height": 43,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#faa533",
+        "fillStyle": {
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#fbe490"
+            },
+            {
+              "offset": 0.8,
+              "color": "#efaf1e"
+            },
+            {
+              "offset": 1,
+              "color": "#efaf1e"
+            }
+          ],
+          "type": "linear",
+          "degrees": 270,
+          "radians": 0
+        },
+        "sprites": {
+          "text": {
+            "text": "研发管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle1",
+      "Name": "业务流程",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 138,
+        "translationY": 162,
+        "x": 0,
+        "y": 0,
+        "width": 696,
+        "height": 226,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#cce5ff",
+        "sprites": {
+          "text": {
+            "text": "业务流程",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "start",
+            "textBaseline": "top",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain11",
+      "Name": "客户关系管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 241,
+        "translationY": 191,
+        "x": 0,
+        "y": 0,
+        "width": 490,
+        "height": 47,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": {
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#d5e7b7"
+            },
+            {
+              "offset": 0.8,
+              "color": "#7cc05a"
+            },
+            {
+              "offset": 1,
+              "color": "#7cc05a"
+            }
+          ],
+          "type": "linear",
+          "degrees": 270,
+          "radians": 0
+        },
+        "sprites": {
+          "text": {
+            "text": "客户关系管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain5",
+      "Name": "供应链管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 241,
+        "translationY": 248,
+        "x": 0,
+        "y": 0,
+        "width": 490,
+        "height": 47,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": {
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#d5e7b7"
+            },
+            {
+              "offset": 0.8,
+              "color": "#7cc05a"
+            },
+            {
+              "offset": 1,
+              "color": "#7cc05a"
+            }
+          ],
+          "type": "linear",
+          "degrees": 270,
+          "radians": 0
+        },
+        "sprites": {
+          "text": {
+            "text": "供应链管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain6",
+      "Name": "产品生命周期管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 241,
+        "translationY": 305,
+        "x": 0,
+        "y": 0,
+        "width": 490,
+        "height": 47,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": {
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#d5e7b7"
+            },
+            {
+              "offset": 0.8,
+              "color": "#7cc05a"
+            },
+            {
+              "offset": 1,
+              "color": "#7cc05a"
+            }
+          ],
+          "type": "linear",
+          "degrees": 270,
+          "radians": 0
+        },
+        "sprites": {
+          "text": {
+            "text": "产品生命周期管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle2",
+      "Name": "支持流程",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 138,
+        "translationY": 406,
+        "x": 0,
+        "y": 0,
+        "width": 696,
+        "height": 129,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#cfcfcf",
+        "sprites": {
+          "text": {
+            "text": "支持流程",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "start",
+            "textBaseline": "top",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain31",
+      "Name": "品牌与媒体",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 223,
+        "translationY": 434,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 32,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": "#7cc05a",
+        "sprites": {
+          "text": {
+            "text": "品牌与媒体",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain7",
+      "Name": "沟通管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 333,
+        "translationY": 434,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 32,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": "#7cc05a",
+        "sprites": {
+          "text": {
+            "text": "沟通管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain8",
+      "Name": "会计与财务",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 443,
+        "translationY": 434,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 32,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": "#7cc05a",
+        "sprites": {
+          "text": {
+            "text": "会计与财务",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain9",
+      "Name": "审计管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 553,
+        "translationY": 434,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 32,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": "#7cc05a",
+        "sprites": {
+          "text": {
+            "text": "审计管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain10",
+      "Name": "投资管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 663,
+        "translationY": 434,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 32,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": "#7cc05a",
+        "sprites": {
+          "text": {
+            "text": "投资管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain12",
+      "Name": "质量管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 663,
+        "translationY": 478,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 32,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": "#7cc05a",
+        "sprites": {
+          "text": {
+            "text": "质量管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain13",
+      "Name": "法务管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 223,
+        "translationY": 478,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 32,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": "#7cc05a",
+        "sprites": {
+          "text": {
+            "text": "法务管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain14",
+      "Name": "人力资源",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 333,
+        "translationY": 478,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 32,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": "#7cc05a",
+        "sprites": {
+          "text": {
+            "text": "人力资源",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain15",
+      "Name": "行政管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 443,
+        "translationY": 478,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 32,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": "#7cc05a",
+        "sprites": {
+          "text": {
+            "text": "行政管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain16",
+      "Name": "信息技术",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 553,
+        "translationY": 478,
+        "x": 0,
+        "y": 0,
+        "width": 93,
+        "height": 32,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#14ae67",
+        "fillStyle": "#7cc05a",
+        "sprites": {
+          "text": {
+            "text": "信息技术",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    }
+  ],
+  "Links": []
+}

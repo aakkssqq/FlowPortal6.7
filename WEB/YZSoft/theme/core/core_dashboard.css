@@ -1,0 +1,121 @@
+﻿/*yz-chart-kpi*/
+.yz-chart-kpi {
+    border-left: solid 1px #ececec;
+    padding: 6px 8px;
+}
+
+.yz-chart-kpi-first {
+    border-color: transparent;
+}
+
+.yz-chart-kpi .name {
+    color: #a0a7b8;
+    font-size: 12px;
+    text-align: center;
+}
+
+.yz-chart-kpi .value {
+    font-size: 23px;
+    color: cadetblue;
+    font-weight: 500;
+    text-align: center;
+    padding: 12px 0px 12px 0px;
+}
+
+/*yz-chart-progressbar*/
+.yz-chart-progressbar {
+    padding: 8px 0px;
+}
+
+.yz-chart-progressbar .title {
+    padding: 0px;
+    min-width:80px;
+}
+
+.yz-chart-progressbar .desc {
+    padding: 0px 0px 5px 0px;
+    color: #a0a7b8;
+}
+
+.yz-chart-progressbar .progress-wrap {
+    height: 7px;
+    background-color: #e6e7eb;
+    border-radius: 4px;
+}
+
+.yz-chart-progressbar .indicate {
+    height: 100%;
+    border-radius: 4px;
+    background-color: #30b5e6;
+}
+
+/*yz-chart-ring*/
+.yz-chart-ring {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    height: 38px;
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.yz-chart-ring .text {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+    color: green;
+    font-family: fantasy;
+}
+
+.yz-yzdashboard-main-body {
+    background-color: #f5f5f5;
+}
+
+.yz-container-kpi {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    -webkit-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 1px 10px 0 rgba(0,0,0,0.1);
+}
+
+.yz-kpi-meta {
+    border-right: 1px solid #ececec;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+
+.yz-kpi-name {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #a0a7b8;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 3px 0px 0px 8px;
+}
+
+.yz-kpi-value {
+    font-size: 22px;
+    line-height: 26px;
+    color: cadetblue;
+    font-weight: 500;
+    text-align: center;
+    padding: 23px 0px 0px 0px;
+}
+
+.x-title-text-yzdashboard-container {
+    margin-top: 0px;
+    color: #333;
+    font-size: 13px;
+    line-height: 40px;
+    padding: 0px 0px 0px 15px;
+    background-color: #fff;
+}

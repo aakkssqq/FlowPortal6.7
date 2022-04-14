@@ -1,0 +1,465 @@
+﻿{
+  "author": {
+    "uid": "sa",
+    "name": "sa",
+    "createat": "2022-03-17 09:50:54"
+  },
+  "lastModifier": {
+    "uid": "T01081",
+    "name": "T01081",
+    "date": "2022-03-18 08:56:39"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "資料來源1": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "sMes_Prod",
+          "query": "select * from \n(\nSELECT *\nFROM [SMES_Production].[dbo].[TBLWIPCONT_EQUIPMENT]\nwhere (@eNo is NULL OR EQUIPMENTNO=@eNo) and (@sTime is NULL OR STARTTIME>=@sTime)\n) a\norder by <%=String.IsNullOrEmpty(Context.Current.RequestParams[\"sortstring\"])?\"STARTTIME  desc\":Context.Current.RequestParams[\"sortstring\"]%>",
+          "queryParams": [
+            {
+              "name": "@eNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@sTime",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 4
+        },
+        "paramNames": [
+          "@eNo",
+          "@sTime"
+        ]
+      },
+      "資料來源2": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "sMes_Prod",
+          "query": "Select * from\n(\nselect [LotNo]\n      ,[LogGroupSerial]\n      ,[OPNo]\n      ,[EventTime]\n      ,[UserNo]\n      ,[AreaNo]\n      ,[InputQty]\n      ,[GOODQTY]\n      ,[SCRAPQTY]\n      ,a.[EQUIPMENTNO]\n      ,[RWOMESNO]\n      ,[C_CombineLotSerial]\n      ,[EQUIPCOUNTOUT]\n      ,[EQUIPCOUNTWAY]\n      ,[EQUIPCOUNTQTY]\n      ,[EQUIPCOUNTSET]\n      ,[EQUIPACCQTY]\n      ,[EQUIPLOTOUT]\n      ,[EQUIPLOTNO]\n      ,[EQUIPOUTTIME]\n      ,[EQUIPMONITORTIME]\n      ,[EQPTempQty]\n      ,[EQPdepositQty]\n      ,[C_AUTOEXCESSFACTOR] \nfrom TBLWIPCONT_PARTIALOUT a\nleft join TBLEQPCONFIG_CMS b on a.EQUIPMENTNO=b.EQUIPMENTNO\nwhere (@eNo is NULL OR a.EQUIPMENTNO=@eNo) and (@sTime is NULL OR a.EventTime>= @sTime)\n)  temp\norder by <%=String.IsNullOrEmpty(Context.Current.RequestParams[\"sortstring\"])?\"EventTime  desc\":Context.Current.RequestParams[\"sortstring\"]%>",
+          "queryParams": [
+            {
+              "name": "@eNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@sTime",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 8
+        },
+        "paramNames": [
+          "@eNo",
+          "@sTime"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.text1": {
+        "ctype": "report.search.field.text",
+        "binddsid": "資料來源1",
+        "xdatabind": "@eNo",
+        "fieldLabel": "設備編號",
+        "emptyText": ""
+      },
+      "report.search.field.date1": {
+        "ctype": "report.search.field.date",
+        "binddsid": "資料來源1",
+        "xdatabind": "@sTime",
+        "fieldLabel": "開始時間",
+        "emptyText": ""
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.text1",
+          "report.search.field.date1"
+        ]
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "資料來源1",
+        "pagingBarDisplay": true,
+        "export2Excel": true,
+        "exportTemplate": null,
+        "title": "",
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "設備編號",
+            "dataIndex": "EQUIPMENTNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "生產批號",
+            "dataIndex": "LOTSERIAL",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 257
+          },
+          {
+            "text": "設備類別",
+            "dataIndex": "EQUIPMENTTYPE",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 143
+          },
+          {
+            "text": "開始時間",
+            "dataIndex": "STARTTIME",
+            "align": "start",
+            "dataFormat": {
+              "type": "date",
+              "format": "Y-m-d"
+            },
+            "width": 140
+          },
+          {
+            "text": "結束時間",
+            "dataIndex": "ENDTIME",
+            "align": "start",
+            "dataFormat": {
+              "type": "date",
+              "format": "Y-m-d"
+            },
+            "width": 122
+          },
+          {
+            "text": "輸入產量",
+            "dataIndex": "InputQty",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 87
+          },
+          {
+            "text": "輸出產量",
+            "dataIndex": "OutputQty",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 81
+          },
+          {
+            "text": "暫停",
+            "dataIndex": "STATUS",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 50
+          },
+          {
+            "text": "原始輸入數量",
+            "dataIndex": "ORGInputQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 120
+          },
+          {
+            "text": "轉換輸出數量",
+            "dataIndex": "TransferOutputQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 120
+          }
+        ]
+      },
+      "report.grid2": {
+        "ctype": "report.grid",
+        "dsid": "資料來源2",
+        "pagingBarDisplay": true,
+        "export2Excel": true,
+        "exportTemplate": null,
+        "title": "",
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "設備編號",
+            "dataIndex": "EQUIPMENTNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 85
+          },
+          {
+            "text": "生產批號",
+            "dataIndex": "LotNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 169
+          },
+          {
+            "text": "作業站編號",
+            "dataIndex": "OPNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 79
+          },
+          {
+            "text": "出站時間",
+            "dataIndex": "EventTime",
+            "align": "start",
+            "dataFormat": {
+              "type": "date",
+              "format": "Y-m-d H:i"
+            },
+            "width": 140
+          },
+          {
+            "text": "操作人員",
+            "dataIndex": "UserNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 95
+          },
+          {
+            "text": "區域編號",
+            "dataIndex": "AreaNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 81
+          },
+          {
+            "text": "產出數",
+            "dataIndex": "InputQty",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 67
+          },
+          {
+            "text": "良品數",
+            "dataIndex": "GOODQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 67
+          },
+          {
+            "text": "報廢數",
+            "dataIndex": "SCRAPQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 69
+          },
+          {
+            "text": "MES報工單單號",
+            "dataIndex": "RWOMESNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 150
+          },
+          {
+            "text": "共模綁定編號",
+            "dataIndex": "C_CombineLotSerial",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "設定出站數",
+            "dataIndex": "EQUIPCOUNTOUT",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 88
+          },
+          {
+            "text": "計數器 N:不使用,A:累計,O覆寫",
+            "dataIndex": "EQUIPCOUNTWAY",
+            "align": "start",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 74
+          },
+          {
+            "text": "累計完工數",
+            "dataIndex": "EQUIPCOUNTQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 87
+          },
+          {
+            "text": "出站歸0",
+            "dataIndex": "EQUIPCOUNTSET",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 75
+          },
+          {
+            "text": "目前計數量",
+            "dataIndex": "EQUIPACCQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 120
+          },
+          {
+            "text": "允許多餘出站",
+            "dataIndex": "EQUIPLOTOUT",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "目前生產批",
+            "dataIndex": "EQUIPLOTNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 170
+          },
+          {
+            "text": "最近出站",
+            "dataIndex": "EQUIPOUTTIME",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 152
+          },
+          {
+            "text": "監控時間",
+            "dataIndex": "EQUIPMONITORTIME",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 80
+          },
+          {
+            "text": "暫存異常數量",
+            "dataIndex": "EQPTempQty",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 106
+          },
+          {
+            "text": "異常閉合數",
+            "dataIndex": "EQPdepositQty",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 96
+          },
+          {
+            "text": "多餘出站系數",
+            "dataIndex": "C_AUTOEXCESSFACTOR",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 102
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "report.grid1",
+      "report.grid2"
+    ]
+  }
+}

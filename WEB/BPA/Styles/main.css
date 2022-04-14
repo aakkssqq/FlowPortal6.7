@@ -1,0 +1,51 @@
+﻿
+/*bpa-panel-navigate*/
+.bpa-panel-navigate {
+    background-color: #28293b;
+    padding: 10px;
+}
+
+/*bpa-btn-mainmenu*/
+.bpa-btn-mainmenu {
+    padding: 15px;
+}
+
+.bpa-btn-mainmenu .x-btn-icon-el {
+    width: 36px;
+    height: 36px;
+    background-image: url(ui/main_menu.png);
+    background-repeat: no-repeat;
+    opacity: 0.3;
+}
+
+.bpa-btn-mainmenu.x-btn-over .x-btn-icon-el {
+    opacity: 0.5;
+}
+
+.bpa-btn-mainmenu.x-btn-pressed .x-btn-icon-el {
+    opacity: 1;
+}
+
+.bpa-mainmenu-group {
+    background-position: 0px 0px;
+}
+
+.bpa-mainmenu-lib {
+    background-position: 0px -36px;
+}
+
+.bpa-mainmenu-setting {
+    background-position: 0px -72px;
+}
+
+.bpa-mainmenu-help {
+    background-position: 0px -108px;
+}
+
+.bpa-mainmenu-recyclebin {
+    background-position: 0px -144px;
+}
+
+.bpa-mainmenu-doclib {
+    background-position: 0px -180px;
+}

@@ -1,0 +1,99 @@
+﻿
+
+/*yz-tbar-module,yz-btn-textonly*/
+/*.yz-tbar-module .x-btn:not(.x-segmented-button-item):not(.x-btn-over),
+.yz-btn-tbar:not(.x-btn-over) {
+    border-color: transparent;
+    background-color: transparent;
+}*/
+
+.yz-tbar-module .x-btn:not(.x-segmented-button-item),
+.yz-btn-tbar {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.yz-tbar-module .x-btn.x-btn-over:not(.x-segmented-button-item),
+.yz-btn-tbar.x-btn-over {
+    border-color: #dbdbdb;
+    background-color: #ececec;
+}
+
+.yz-tbar-module .x-btn.x-btn-pressed:not(.x-segmented-button-item),
+.yz-btn-tbar.x-btn.x-btn-pressed,
+.yz-tbar-module .x-btn.x-btn-menu-active,
+.yz-btn-tbar.x-btn.x-btn-menu-active {
+    border-color: #d2d2d2;
+    background-color: #e2e2e2;
+}
+
+.yz-tbar-module .x-btn.x-btn-disabled:not(.x-segmented-button-item),
+.yz-btn-tbar.x-btn.x-btn-disabled {
+    border-color: transparent;
+    background-color: transparent;
+}
+
+/*.yz-tbar-module .x-btn.x-btn-disabled:not(.x-segmented-button-item),
+.yz-btn-tbar.x-btn-disabled {
+    background-color: transparent;
+}
+
+.yz-tbar-module .x-segmented-button .x-btn {
+    background-color: #fff;
+}
+
+.yz-tbar-module .x-segmented-button .x-btn.x-btn-pressed {
+    background-color: #26b176;
+    border-color: #26b176;
+}
+
+.yz-tbar-module .x-segmented-button .x-btn-pressed .x-btn-inner {
+    color: #fff;
+}*/
+
+/*yz-tbar-navigator*/
+.yz-tbar-navigator .x-btn:not(.x-btn-over){
+    border-color: transparent;
+    background-color: transparent;
+}
+
+.yz-tbar-navigator .x-btn.x-btn-disabled {
+    background-color: transparent;
+}
+
+/*yz-tbar-item-sprite*/
+.yz-tbar-item-sprite {
+}
+
+.yz-tbar-item-sprite .drawwrap {
+    border: solid 1px transparent;
+}
+
+.yz-tbar-item-sprite .x-draw-container {
+    cursor: pointer;
+}
+
+.yz-tbar-item-sprite .text {
+    font-size: 12px;
+    line-height: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.yz-tbar-item-sprite.yz-btn-over .drawwrap {
+    background-color: #e0ffff;
+    border: solid 1px #7ab0b0;
+}
+
+.yz-tbar-item-sprite.yz-btn-over .text {
+    color: #439ff5;
+}
+
+.yz-bpmform-topmost .yz-tbar-bpmform {
+    background-color: #f5f5f5;
+}
+
+.yz-tbar-bpmform-loading {
+    opacity: 0.4;
+}

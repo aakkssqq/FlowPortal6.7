@@ -1,0 +1,81 @@
+﻿
+/*yz-color-flag*/
+.yz-grid-flag.yz-color-flag:before,
+.x-grid-cell-inner .yz-color-flag {
+    color: #bdb6b6;
+}
+
+/*yz-color-info*/
+.yz-grid-flag.yz-color-info:before,
+.x-grid-cell-inner .yz-color-info {
+    color: #1bbb29;
+}
+
+/*yz-color-warn*/
+.yz-grid-flag.yz-color-warn:before,
+.x-grid-cell-inner .yz-color-warn {
+    color: #dc225d;
+}
+
+/*yz-color-type*/
+.yz-grid-type.yz-color-info:before,
+.x-grid-cell-inner .yz-color-type {
+    color: #404040;
+}
+
+.yz-action-hot {
+    color: #dc225d;
+}
+
+.yz-action-disable {
+    color: #dc225d;
+}
+
+.yz-action-enable {
+    color: #1bbb29;
+}
+
+.yz-action-delete {
+    color: #dc225d;
+}
+
+.yz-action-restore {
+    color: #1bbb29;
+}
+
+.yz-action-download {
+    color: #1bbb29;
+    font-size:19px;
+    line-height:19px;
+    width:19px;
+}
+
+.yz-action-delete-msel {
+    color: #dc225d;
+}
+
+.yz-action-gray {
+    color: #aaa;
+}
+
+.yz-action-listitem {
+    color: #c9c9c9;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.yz-action-move {
+    cursor:move;
+}
+
+.yz-action-defaultposition {
+    color: #999;
+}
+
+.yz-action-defaultposition-yes {
+    color: #eb9945;
+}
+
+.yz-dark.x-btn-icon-el {
+    color: #717171;
+}

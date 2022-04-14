@@ -1,0 +1,81 @@
+﻿
+.yz-breadcrumb-wrap {
+    padding: 6px 10px;
+    line-height: 19px;
+}
+
+.yz-breadcrumb-wrap .back,
+.yz-breadcrumb-wrap .forward {
+    width: 20px;
+    height: 19px;
+    text-align: center;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.yz-breadcrumb-wrap .forward {
+    margin-left: 3px;
+}
+
+.yz-breadcrumb-wrap .back:after,
+.yz-breadcrumb-wrap .forward:after {
+    font-family: 'yzglyphs';
+    font-size: 15px;
+    pointer-events: none;
+}
+
+.yz-breadcrumb-wrap .back:after {
+    content: '\eb2e';
+}
+
+.yz-breadcrumb-wrap .forward:after {
+    content: '\eb2f';
+}
+
+.yz-breadcrumb-wrap .menus {
+    padding: 0px 0px 0px 10px;
+}
+
+.yz-breadcrumb-backable .back,
+.yz-breadcrumb-forwardable .forward {
+    color: #404040;
+}
+
+.yz-breadcrumb-wrap .name {
+    margin: 0px 3px;
+    cursor: pointer;
+}
+
+.yz-breadcrumb-wrap .more {
+    width: 12px;
+    height: 19px;
+    cursor: pointer;
+    text-align: center;
+    color: #ccc
+}
+
+.yz-breadcrumb-wrap .more:hover {
+    color: #404040;
+}
+    
+.yz-breadcrumb-wrap .more:after {
+    font-family: 'yzglyphs';
+    font-size: 13px;
+    pointer-events: none;
+    content: '\eb32';
+}
+
+.yz-breadcrumb-wrap .menu.leaf .more {
+    display: none;
+}
+
+.yz-breadcrumb-icon-folder:after {
+    font-size: 16px;
+    font-family: FontAwesome;
+    color: #5fa2dd;
+    content: "\f114";
+}
+
+.yz-tbar-navigator{
+    padding-left: 5px;
+}

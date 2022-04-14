@@ -1,0 +1,59 @@
+﻿
+.yz-esb-sprite-item {
+    padding:5px;
+}
+
+.yz-esb-sprite-item.yz-btn-over {
+    background-color: #f0f0f0;
+}
+
+.yz-tree-jsonschema .x-tree-icon {
+    display: none;
+}
+
+.yz-tree-jsonschema .x-tree-elbow-img {
+    margin-right: 0px;
+}
+
+.yz-tree-jsonschema .x-tree-node-text {
+    padding-left: 3px;
+}
+
+.yz-tree-jsonschema .x-grid-cell-inner {
+    padding: 3px 6px;
+}
+
+.yz-tree-jsonschema .x-panel-header-default-horizontal.x-header-noborder {
+    padding: 20px 16px 8px 12px;
+}
+
+.yz-tree-jsonschema .x-panel-header-default {
+    background-color:#fff;
+}
+
+.yz-tree-jsonschema .x-title-text {
+    font-size: 13px;
+    line-height: 16px;
+    color: #404040;
+}
+
+.yz-jsonschema-type-sp {
+    margin: 0px 4px;
+}
+
+.yz-jsonschema-type{
+    color:#aaa;
+    font-style:italic;
+    font-weight:100;
+}
+
+.yz-jsonschema-item-highlight .x-tree-node-text,
+.yz-jsonschema-item-highlight .x-tree-node-text .yz-jsonschema-type {
+    color: #03a9f4;
+}
+
+.yz-esbdesigner-filename {
+    font-size: 16px;
+    line-height: 22px;
+    color: #b5b5b5;
+}

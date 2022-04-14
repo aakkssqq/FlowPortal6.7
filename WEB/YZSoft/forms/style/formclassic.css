@@ -1,0 +1,281 @@
+﻿html { }
+html, body { color: #666666; margin: 0px; background-color:#FFF; overflow-x: hidden; }
+body { padding: 10px; }
+body, td, input, select, textarea { font: 9pt/22px Arial, Tahoma, "宋体"; }
+ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, p { margin: 0px; padding: 0px; }
+table { border:0; border-collapse:separate; border-spacing:0; border-collapse:collapse;
+}
+.formTable td, .formTable th { padding: 5px; vertical-align: top; }
+.formTable p { text-align: justify; text-justify:inter-ideograph; text-indent: 2em; margin-bottom: 0.75em; line-height: 1.75em; }
+.formTable li { list-style: none; }
+.formTable em { font-style: normal; color: #CCCCCC; }
+.formTable strong { color: #000000; }
+.formTable img { border: 0px none #FFFFFF; background-color: #FFFFFF; }
+.formTable hr { border-bottom: 1px solid #f5f5f5; border-top-style: none; border-right-style: none; border-left-style: none; height: 1px; }
+.formTable a { color: #1F376D; text-decoration: none; }
+.formTable a:hover, .formTable a:hover strong { color: #E35000; text-decoration: underline; }
+.textarea { padding: 3px; border: 1px solid #D3D3D3; line-height: 20px; background: #FFFFFF url(ui/control_input_bg.png) repeat-x 0px 0px; }
+.textarea:focus { border-color:#51BEE5; outline:none; }
+.select { background-color: #FFFFFF; font-family: "Trebuchet MS"; border: 1px solid #D3D3D3; height: 24px; background: #FFF url(ui/control_input_bg.png) repeat-x 0px 0px; color: #000; vertical-align: middle; }
+.select:focus { border-color:#51BEE5; outline:none; }
+.button { cursor: pointer; height: 30px; color: #4d889f; background: url(ui/frame_button.png) no-repeat 0px 0px; border:0; width: 100px; font-weight: bold; font-size: 10.5pt; outline:none; }
+.button:hover { background-position: 0px -30px; color: #255067; }
+.button:focus { background-position: 0px -60px; }
+.button:active { background-position: 1px -59px; }
+.buttonMiddle, .buttonMiddle:hover, .buttonMiddle:focus { background-position-x: -100px; width: 150px; }
+.buttonMiddle:active { background-position-x: -99px; }
+.buttonWide, .buttonWide:hover, .buttonWide:focus { background-position-x: -250px; width: 200px; }
+.buttonWide:active { background-position-x: -249px; }
+.buttonSubmit { background-position-y: -120px; color: #2d5f21; }
+.buttonSubmit:hover { background-position-y: -150px; color: #224b07; }
+.buttonSubmit:focus { background-position-y: -180px; }
+.buttonSubmit:active { background-position-y: -179px; }
+.input { border: 1px solid #D3D3D3; line-height: 16px; height: 16px; padding: 3px; background: #FFFFFF url(ui/control_input_bg.png) repeat-x 0px 0px; vertical-align: middle; }
+.input:focus, .input_focus { border-color:#51BEE5; outline:none; position: relative; }
+.input_disabled { color: #999; background-color: #f5f5f5; }
+.input_readonly { color: #000; background-color: #f5f5f5; }
+.input_show { color: #000; border-color: #FFF; background: none; }
+.input_important { border-color: #F90; font-weight: bold; position: relative;}
+.input_empty { color: #CCC;}
+.input_button { }
+.input_error, .input_error:focus { border-color: #FFB311; }
+.tip_error { color: #F60; line-height: 18px; padding: 3px 5px 0px 22px; border: 1px solid #d26d00; background: #FFC url(ui/icon_error.png) no-repeat 2px 2px; display: inline-block; margin-top: 5px; }
+.tip_normal { display: inline-block; margin-top: 5px; color: #999; line-height: 18px; }
+.file { border: 1px solid #D6D6D6; height: 24px; padding: 0px 2px; }
+/*****************************************      以上为公共样式     ****************************************/
+
+.formName { font-size: 10.5pt; font-weight: bold; color: #036; border-bottom-width: 2px; border-bottom-style: solid; border-bottom-color: #B5C9DD; padding-bottom: 5px; margin-bottom: 10px; width: 840px; margin-right: auto; margin-left: auto; table-layout:fixed; overflow: hidden; zoom: 1;}
+.formName div
+{
+    float: right;
+    font-size: 9pt;
+    font-weight: normal;
+    color: #ccc;
+}
+.formName div label
+{
+    color: #999;
+}
+.formName div strong
+{
+    font-weight: bold;
+    color: #000;
+}
+.formName span { float: right; font-size: 9pt; font-weight: normal; color: #999; }
+.formTable { width: 840px; border: 1px solid #B5C9DD; margin: auto; }
+.formTable td { border-bottom: 1px solid #eee; padding: 5px; }
+.formTable .header { font-weight: bold; color: #000; text-align: right; white-space: nowrap; padding-left: 20px; }
+.formTable .groupName td { font-weight: bold; color: #000; background-color: #dae7f6; border-top-width: 1px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid; border-top-color: #B5C9DD; border-bottom-color: #B5C9DD; }
+.formTable .muti_row { border-left: 1px solid #eee; text-align:center; vertical-align: middle; }
+.formTable .submitRow td { background-color: #c6d4e4; border-top: 1px solid #B5C9DD; border-bottom: 0; padding-top: 15px; padding-bottom: 15px; }
+.formTable .submitRow td select { border-color: #4D889F; }
+.formTable .closeRow td { background-color: #c6d4e4; border-top: 1px solid #B5C9DD; border-bottom: 0; padding-top: 15px; padding-bottom: 15px; text-align: center; }
+.formTable .closeRow td .layout { margin: auto; }
+.grid { width: 828px; border: 1px solid #ddd; }
+.grid td { border-right-width: 1px; border-bottom-width: 1px; border-right-style: solid; border-bottom-style: solid; border-right-color: #ddd; border-bottom-color: #ddd; }
+.grid .header td { background-color: #ececec; font-weight: bold; color: #000; text-align: left; white-space: nowrap; border-bottom-color: #ddd; padding-left: 5px; }
+.layout { border: 0!Important; margin-right: -5px; margin-left: -5px; width: inherit!Important; }
+.layout td { padding-top: 0px!Important; padding-bottom: 0px!Important; border: 0!Important; vertical-align: middle; }
+
+.bind_button { background: url(ui/button_bind.png) no-repeat right 0px; display: inline-block; height: 24px; width: 28px; vertical-align: middle; margin-top: 0px; border: 0; cursor: pointer; margin-left: -5px; outline: none; }
+
+.bind_button:hover, .bind_button:focus { background-position: right -24px; }
+.bind_button:active { background-position: 1px -23px; }
+.bind_button span { background: url(ui/icon_search.png) no-repeat center center; height: 24px; width: 24px; cursor: pointer; display: block; margin-left: -4px; margin-top: -1px; }
+.button_icon_date { background-image: url(ui/icon_date.png)!Important; }
+.button_icon_user { background-image: url(ui/icon_user.png)!Important; }
+.button_icon_home { background-image: url(ui/icon_home.png)!Important; }
+.signBoxContainer { padding: 0!Important; border-bottom: 0!Important; }
+.signBoxContainer > table { width: 100%; table-layout:fixed;}
+.signBoxContainer > table > tbody > tr > .header { line-height: 14px; text-align:left; background: #f5f5f5; border-bottom: 1px solid #eee; padding-top: 8px; padding-bottom: 5px; }
+.signBoxContainer > table > tbody > tr > td { border-bottom: 1px solid #B5C9DD; }
+
+.signBox { padding-bottom: 0px!Important; }
+.signBox > div { padding: 10px 10px 0px; margin-bottom: 5px; background: #FDFCEA; border: 1px solid #e5d8c6; }
+.signBox div table { width: 100%; }
+.signBox div table td { border: 0; }
+.signBox div table td .cancel { background: url(ui/icon_cancel.png) no-repeat 0px 1px; padding-left: 20px; display: inline-block; line-height: 14px; height: 14px; padding-top: 4px; padding-bottom: 3px; color: #E35000; }
+.signBox div table td .cancel:hover { color: #900; text-decoration: none; }
+.signBox div table td .modify { background: url(ui/icon_modify.png) no-repeat 0px 1px; padding-left: 20px; display: inline-block; line-height: 14px; height: 14px; padding-top: 4px; padding-bottom: 3px; color: #E35000; }
+.signBox div table td .modify:hover { color: #900; text-decoration: none; }
+.signBox div table .content { border-bottom: 1px solid #E5D8C6!Important; }
+.signBox div table .content p { font-size: 10.5pt; color: #000; }
+.signBox div table .content p.no { font-size: 9pt; color: #aaa; }
+.signBox div table .name { text-align: right; color: #666; }
+.signBox div table .name em { margin-left: 20px; padding-left: 20px; border-left: 1px solid #d6d6d6; color: #ccc; }
+.signBox .my { border: 2px solid #E0B470; }
+.signBox .my .post { width: 100%; }
+.signBox .my .post .join td { border-bottom: 1px solid #E5D8C6; padding-top: 0px; }
+.signBox .my .post .join .header { vertical-align: top;}
+.signBox .my .post td { white-space: nowrap; border-bottom: 0; }
+.signBox .my .post td .textarea { background: transparent url(ui/textarea_bg.png) repeat scroll 0px -2px; border: 0; line-height: 24px; overflow: hidden; padding: 0px; height: 24px; width: 100%; }
+.signBox .my .post td em { color: #999; }
+.signBox .my .post .input { width: 300px;}
+
+.signBox .my .post .submitRow td .button { font-size: 9pt; color: #F60; background: #FC0; border: 0; padding: 0; height: 20px; }
+
+
+
+.checkGroup { overflow: hidden; zoom: 1; margin-bottom: -5px; display: block; }
+.checkGroup span { display: block; margin-bottom: 5px; float: left; padding-right: 20px; }
+.checkGroup span:hover { color: #87B304; }
+.checkGroup span.checked { color: #093; }
+.checkGroup span input { vertical-align: -2px; outline: none; cursor: pointer; }
+.checkGroup span label { cursor: pointer; }
+.checkGroupRows br { display: none; }
+.checkGroupRows span { padding-right: 0px; float:none; }
+/**** 单列 ****/
+
+.single_col .formName { width: 420px; }
+.single_col .formTable { width: 420px; }
+.single_col .input, .single_col .select, .single_col .textarea { width: 300px; }
+.single_col .submitRow .select { width: auto; }
+.single_col .grid { width: 408px; }
+/**** 由于控件的HTML结构问题, 不得不写的额外的样式****/
+.submitRow .layout td td { padding: 0; padding-right: 10px; }
+/***************** 控件的初始宽度 ****************************/
+.input1 { width: 720px; }
+.input2 { width: 300px; }
+.select1 { width: 720px; }
+.select2 { width: 300px; }
+.textarea1 { width: 720px; height: 60px; }
+.textarea2 { width: 300px; height: 60px; }
+.label1 { width: 720px; display: block;}
+.label2 { width: 300px; display: block;}
+
+.attachmentButton { background: #72a00f url(ui/icon_add.png) no-repeat 5px 5px; border: 1px solid #537a00; color: #FFF; height: 28px; position: relative; z-index: 3; overflow: hidden; line-height: 28px; padding-left: 25px; padding-right: 10px;}
+.attachmentButton * {position: absolute; top:0px; left:0px;}
+.attachmentButton:hover { background-color: #84BB11; }
+
+.attachmentBox { padding-right: 18px; position: relative; }
+.attachmentBox .error { background: #ffe9c7; }
+.attachmentBox .error a, .attachmentBox .error a:hover, .attachmentBox .error b { color: #ca6409; cursor: move; }
+.attachmentBox .error b:before { content:"错误: " }
+.attachmentBox .wait { background: #ffffff; }
+.attachmentBox .wait a, .attachmentBox .wait a:hover, .attachmentBox .wait b { color: #999; cursor: move; }
+.attachmentBox .wait b:after { content:"等待中" }
+.attachmentBox .upload { background: url(ui/attachment_ani.gif) repeat 0px 0px; }
+.attachmentBox .upload i { background: url(ui/attachment_ani_process.png) repeat-y -1px 0px; }
+.attachmentBox .upload a, .attachmentBox .upload a:hover { cursor: move; color: #355305; }
+.attachmentBox .upload b { background: url(ui/attachment_ani_wait.gif) no-repeat right center; padding-right: 28px; }
+.attachmentBox .upload b:after { content:" %" }
+.attachmentBox div { background: #eff9d7; margin-bottom: -1px; border: 1px solid #bccb96; line-height: 28px; height: 28px; position: relative; cursor: move; }
+.attachmentBox div i { display: block; font-style: normal; height: 28px; }
+.attachmentBox div a { color: #355305; cursor: pointer; display: block; padding-left: 30px; padding-right: 5px; position: absolute; left: 0px; top: 0px; background: no-repeat 6px 5px; outline: none; }
+.attachmentBox div a:hover { text-decoration: none; color: #F90; }
+.attachmentBox div a em { padding-left: 5px; color: #999; font-size: 10px; }
+.attachmentBox div a strong { display: block; height: 28px; width: 28px; position: absolute; left: 0px; top: 0px; overflow: hidden; }
+.attachmentBox div b { position: absolute; right: 30px; font-weight: normal; color: #355305; }
+.attachmentBox div span { position: absolute; right: 0px; background: url(ui/icon_cancel.png) no-repeat center center; height: 28px; width: 28px; overflow: hidden; cursor: pointer; }
+.attachmentBox .drag { position: absolute!Important; z-index: 4!Important; filter: Alpha(Opacity=80); -moz-opacity:0.8; -khtml-opacity: 0.8; opacity: 0.8; border-color: #537a00; margin-top: -1px; margin-left: -2px; }
+.attachmentBox .dragPlaceHolder { margin-bottom: -1px; background: #bccb96; z-index: 2; border: 1px dotted #bccb96; }
+
+.attachmentBoxDisabled div span { display: none;}
+.attachmentBoxDisabled div { cursor: auto; }
+.attachmentButtonDisabled { background-color: #eee; border: 1px solid #CCC; color: #999; filter: Gray; }
+.attachmentButtonDisabled * { display: none; }
+.attachmentButtonDisabled:hover { background-color: #eee; }
+
+.attachmentPreview { height: 102px; width: 107px; position: absolute; background: url(ui/attachment_preview.png); z-index:99; display:table; }
+.attachmentPreview div { height: 96px; width: 96px; padding: 2px 4px 4px 7px; display:table-cell; text-align: center; vertical-align: middle; }
+._sysAttribute { margin: 0px; padding: 4px; height: 22px; border: 0; background: #eee; visibility:hidden;}
+._PictureCropContainer { display: inline-block; overflow: hidden; position: relative; }
+._PictureCropContainer img { position: absolute; }
+._sysPictureAttribute { margin: 0px; padding: 4px; border: 0; background: #eee; visibility:hidden; }
+._PictureShowContainer { overflow: hidden; background: #eee url(ui/attachment_no_picture.png) no-repeat center center; }
+._PictureShowContainer div { }
+._PictureShowContainer i { border-left: 1px solid #fff; overflow:hidden; display: block; float: left; text-decoration: none; position: relative; outline: none; font-style: normal; cursor: pointer; }
+._PictureShowContainer i:first-child { border-left: 0; }
+._PictureShowContainer i strong { display: block; background: url(ui/attachment_picture_button.png) no-repeat center center; position: absolute; left: 0px; top: 0px; z-index: 2;}
+._PictureShowContainer i span.process { display: block; background: url(ui/attachment_picture_ani.gif) 0px 0px; filter: Alpha(Opacity=5); -moz-opacity:0.05; -khtml-opacity: 0.05; opacity: 0.05; }
+._PictureShowContainer i em { position: absolute; left: 0px; top: 0px; z-index: 1; display:block; }
+._PictureShowContainer i em b { position: absolute; font-weight: normal; display: block; }
+._PictureShowContainer i em .cancel, ._PictureShowContainer i em .replace, ._PictureShowContainer i em .save { background: no-repeat center center; top: 0px; height: 20px; width: 20px; }
+._PictureShowContainer i em .cancel { right: 0px; background-image: url(ui/icon_cancel.png); }
+._PictureShowContainer i em .save { left: 0px; background-image: url(ui/icon_save.png); }
+._PictureShowContainer i em .text { color: #000; line-height: 14px; padding: 4px; right: 20px; top: 0px; filter: Alpha(Opacity=50); -moz-opacity:0.5; -khtml-opacity: 0.5; opacity: 0.5;}
+._PictureShowContainer .show strong { display: none; }
+._PictureShowContainer .show span.process { display: none; }
+._PictureShowContainer .show em { display:none; }
+._PictureShowContainer .show:hover em { display:block; }
+._PictureShowContainer .show img { }
+._PictureShowContainer .empty strong { }
+._PictureShowContainer .empty span.process { background-image: url(ui/attachment_picture_empty.png); }
+._PictureShowContainer .empty em { display: none; }
+._PictureShowContainer .empty img { display: none; }
+._PictureShowContainer .wait strong { display: none; }
+._PictureShowContainer .wait span { }
+._PictureShowContainer .wait em { }
+._PictureShowContainer .wait img { display: none; }
+._PictureShowContainer .wait .text { content:"等待中" }
+._PictureShowContainer .wait .save { display: none; }
+._PictureShowContainer .upload strong { display: none; }
+._PictureShowContainer .upload span { }
+._PictureShowContainer .upload em { }
+._PictureShowContainer .upload img { display: none; }
+._PictureShowContainer .upload .text:after { content:" %" }
+._PictureShowContainer .upload .save { display: none; }
+._PictureShowContainer .error strong { display: none; }
+._PictureShowContainer .error span { display: none; }
+._PictureShowContainer .error em { }
+._PictureShowContainer .error img { display: none; }
+._PictureShowContainer .error .text:before { content:"错误: " }
+._PictureShowContainer .error .save { display: none; }
+
+._PictureShowContainerDisabled strong { display:none!Important;}
+._PictureShowContainerDisabled .cancel { display:none; }
+._PictureShowContainerDisabled i { background-color: #eee!Important; }
+._PictureShowContainerDisabled i.empty { cursor: auto; }
+._PictureShowContainerDisabled span.process { display:none!Important; }
+
+
+._PictureShowContainerShow strong { display:none!Important;}
+._PictureShowContainerShow .cancel { display:none; }
+._PictureShowContainerShow i { background-color: #eee!Important; }
+._PictureShowContainerShow span.process { display:none!Important; }
+
+
+
+.UserInput {cursor: text; height:auto; overflow: hidden; min-height: 16px; display: inline-block; vertical-align: top; text-align: left; white-space:normal!Important; word-break: break-all!Important;}
+.UserInput span { display: inline-block; padding-left: 3px; padding-right: 5px; vertical-align: middle; position: relative; border-right: 1px solid #FFF; border-left: 1px solid #FFF; }
+.UserInput span em { display: inline-block; cursor: default; color: #bbb; }
+.UserInput span em strong { font-weight: normal; color: #000!Important;}
+.UserInput span em:hover, .UserInput span em:hover strong { background: #C8E3FF!Important; color: #06C!Important; }
+
+.UserInput .selected, .UserInput .selected strong { background: #3399ff!Important; color: #FFF!Important; }
+.UserInput span .selected:hover, .UserInput span .selected:hover strong { background: #3399ff!Important; color: #fff!Important; }
+
+.UserInput .input { margin: 0px; padding: 0px; border: 0; background: none; vertical-align: middle; ime-mode: disabled;}
+
+.UserInputButton { width: 24px; margin-left: -1px; vertical-align: top;}
+.UserInputButton span { margin-left: -8px; }
+
+.UserInputDisabled { padding-right: 23px!Important; cursor: default;}
+.UserInputDisabledNoButton { cursor: default;}
+.UserInputButtonDisabled { display: none;}
+
+.__userInputDragBox { position: absolute; filter: Alpha(Opacity=50); background: #39F; }
+.__userInputSelectBox { min-width: 120px; position: absolute; background: #fff; border-top: 1px solid #CCC; border-right: 2px solid #888; border-bottom: 2px solid #888; border-left: 1px solid #CCC; padding: 2px; }
+.__userInputSelectBox strong { display: block; line-height: 14px; padding: 5px 10px; font-weight: normal; color: #06C; cursor: pointer; border-top: 1px dotted #eee; }
+.__userInputSelectBox strong em { color: #bbb; font-style: normal; font-weight: normal; margin-left: 5px; }
+.__userInputSelectBox .selected, .__userInputSelectBox .selected em { color: #FFF; background: #39F; border-top: 1px dotted #39F;}
+.__userInputSelectBox strong:first-child { border:0; }
+
+
+.tabErrorTextContainer  { position: absolute; empty-cells: show; z-index: 9999; }
+.tabErrorTextContainer  td { padding: 0px; background: url(ui/form_error.png) no-repeat; overflow: hidden; font-size:1px; line-height:1px; }
+.tabErrorTextContainer  .c1 { background-position: left top; width: 5px; height: 5px; }
+.tabErrorTextContainer  .c2 { background-position: center top; height: 5px; }
+.tabErrorTextContainer  .c3 { background-position: right top; height: 5px; width: 5px; }
+.tabErrorTextContainer  .c4 { background-position: left center; width: 5px; }
+.tabErrorTextContainer  .c5 { background-position: center center; }
+.tabErrorTextContainer  .c6 { background-position: right center; width: 5px; }
+.tabErrorTextContainer  .c7 { background-position: left -588px; width: 5px; height: 12px; }
+.tabErrorTextContainer  .c8 { background-position: left bottom;  margin-right: -5px; height: 12px; }
+.tabErrorTextContainer  .c9 { background-position: right -588px; height: 12px; width: 5px; }
+
+.tabErrorTextContainerLeft  .c8 { background-position: right bottom; margin-left: -5px;}
+
+.tabErrorTextContainer .error_content { font-size: 9pt; line-height: 20px; padding: 2px 5px 0px 22px; color: #cf0909; background: #ffebc0 url(ui/icon_error.png) no-repeat 2px 3px; }
+
+.labSumitErr {color:Red;}

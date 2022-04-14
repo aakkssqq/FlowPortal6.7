@@ -1,0 +1,883 @@
+﻿/*yz-view-drop-indicator*/
+.yz-view-drop-indicator
+{
+    position: absolute;
+    width:1px;
+    line-height: 0px;
+    background-color: #77BC71;
+    overflow: visible;
+    pointer-events: none;
+}
+
+.yz-view-drop-indicator .yz-view-drop-indicator-top
+{
+    position: absolute;
+    left: -8px;
+    top: -12px;
+    background-image: url(ui/view/dd-insert-arrow-top.png);
+    height: 16px;
+    width: 16px;
+}
+
+.yz-view-drop-indicator .yz-view-drop-indicator-bottom
+{
+    position: absolute;
+    left: -8px;
+    bottom: -11px;
+    background-image: url(ui/view/dd-insert-arrow-bottom.png);
+    height: 16px;
+    width: 16px;
+}
+
+/*yz-dataview-item*/
+.yz-dataview-item.x-view-item-focused {
+    outline: none !important;
+    outline-offset: -1px;
+}
+
+/*yz-dataview-item-block*/
+.yz-dataview-item-block {
+    display: inline-block;
+}
+
+/*yz-dataview-item-alt*/
+.yz-dataview-item-alt {
+    background-color: #f6f6f6;
+}
+
+/*yz-dataview-item-supervisor*/
+.yz-dataview-item-supervisor {
+    margin: 0 20px 20px 0px;
+}
+
+.yz-dataview-item-supervisor .headshort {
+    width: 124px;
+    height: 124px;
+}
+
+.yz-dataview-item-supervisor .username {
+    text-align: center;
+    padding-top: 10px;
+}
+
+/*yz-dataview-item-processlist*/
+.yz-dataview-item-processlist {
+    padding: 16px 16px;
+    color: #999;
+    line-height: 18px;
+}
+
+.yz-dataview-item-processlist.yz-dataview-item-over {
+    background-color: #eaeff4;
+}
+
+.yz-dataview-item-processlist .leftcol {
+    margin: 0px 20px 0px 0px;
+}
+
+.yz-dataview-item-processlist .processname {
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+}
+
+.yz-dataview-item-processlist .desc {
+    line-height: 22px;
+}
+
+.yz-dataview-item-processlist .verrow {
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+}
+
+.yz-dataview-item-processlist .sp {
+    margin:0px 8px;
+    color: #d8d8d8;
+}
+
+.yz-dataview-item-processlist .favorite {
+    cursor: pointer;
+}
+
+.yz-dataview-item-processlist .favorite:after {
+    font-family: 'yzglyphs';
+    content: "\ead1";
+    margin-left: 6px;
+}
+
+.yz-dataview-item-processlist .favorited:after {
+    content: "\ead0";
+    color: #eb9945;
+}
+
+.yz-dataview-item-processlist .opt {
+    font-size: 12px;
+    margin-left: 8px;
+    border: solid 1px #edd8ac;
+    color: #d1ae66;
+    padding: 1px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/*yz-dataview-item-favoriteprocess*/
+.yz-dataview-item-favoriteprocess {
+    margin: 5px;
+    padding: 15px;
+    border: solid 1px #ececec;
+    background-color: #f8f9fa;
+}
+
+.yz-dataview-item-favoriteprocess {
+    position: relative;
+    background-color: #fff;
+}
+
+.yz-dataview-item-favoriteprocess:after, .yz-dataview-item-favoriteprocess:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    bottom: 1px;
+    left: 16px;
+    right: 16px;
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.3);
+    border-radius: 100px/10px;
+}
+
+.yz-dataview-item-favoriteprocess .leftcol {
+    margin-right:20px;
+}
+
+.yz-dataview-item-favoriteprocess .icon {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 5px;
+    background-color: #ff6757;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing:1px;
+}
+
+.yz-dataview-item-favoriteprocess .processname {
+    font-size:18px;
+    line-height:22px;
+    width:200px;
+}
+
+.yz-dataview-item-favoriteprocess .ver {
+    display:none;
+}
+
+.yz-dataview-item-favoriteprocess .optrow {
+    margin-bottom: 3px;
+}
+
+.yz-dataview-item-favoriteprocess .opt {
+    margin-right: 8px;
+    color: #d0d0d0;
+    cursor: pointer;
+    font-size:14px;
+}
+
+.yz-dataview-item-favoriteprocess .flowchart:before {
+    font-family: 'yzglyphs';
+    content: "\ead2";
+}
+
+.yz-dataview-item-favoriteprocess .delegate:before {
+    font-family: 'yzglyphs';
+    content: "\ead4";
+}
+
+.yz-dataview-item-favoriteprocess .bpa:before {
+    font-family: 'yzglyphs';
+    content: "\e60c";
+}
+
+.yz-dataview-item-favoriteprocess .post {
+    border: solid 1px #edd8ac;
+    color: #d1ae66;
+    padding: 1px 10px 2px 10px;
+}
+
+.yz-dataview-item-favoriteprocess .remove {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    color: #c6c7c8;
+    font-size: 18px;
+    line-height: 18px;
+    cursor: pointer;
+    display:none;
+}
+
+.yz-dataview-item-favoriteprocess .remove:before {
+    font-family: 'yzglyphs';
+    content: "\ead7";
+}
+
+.yz-status-editing .yz-dataview-item-favoriteprocess .remove {
+    display: block;
+}
+
+.yz-status-editing .yz-glyph-edit:before {
+    content: "\ead5";
+}
+
+/*yz-dataview-item-bpakm*/
+.yz-dataview-item-bpakm {
+    width: 265px;
+    padding: 5px 3px;
+    margin-right: 20px;
+    color: #009DCE;
+    background-image: url(ui/bg/dotted_line.png);
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    cursor: pointer;
+    word-break: break-all;
+    position: relative;
+}
+
+.yz-dataview-item-bpakm-over {
+    background-color: #eff7fb;
+    text-decoration: underline;
+}
+
+.yz-dataview-item-bpakm-disabled {
+    color: #ccc;
+    cursor: default;
+}
+
+.yz-dataview-item-bpakm-disabled.yz-dataview-item-bpakm-over {
+    background-color: #fff;
+    text-decoration: none;
+}
+
+.yz-pnl-bpakm-small .yz-dataview-item-bpakm {
+    width: 165px;
+}
+
+/*yz-dataview-item-bpakm-doc*/
+.yz-dataview-item-bpakm-doc img {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.yz-dataview-item-bpakm-doc .wrap {
+    margin-left: 30px;
+}
+
+.yz-dataview-item-bpakm-doc .name {
+    padding: 10px 6px;
+}
+
+/*yz-dataview-item-bpafile*/
+.yz-dataview-item-bpafile {
+    display: inline-block;
+    margin: 0px 30px 40px 0px;
+    padding: 8px;
+    cursor: pointer;
+    vertical-align: top;
+    border: solid 1px transparent;
+    border-radius: 3px;
+}
+
+.yz-dataview-item-bpafile .inner,
+.yz-dataview-item-bpafile .txt {
+    width: 176px;
+}
+
+.yz-dataview-item-bpafile .inner {
+    height: 176px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.yz-dataview-item-bpafile .img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: #fff;
+    border: solid 1px #ddd;
+    border-radius: 1px;
+}
+
+.yz-dataview-item-bpafile .txt {
+    margin-top: 20px;
+    white-space: normal;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.yz-dataview-item-bpafile.yz-dataview-item-over {
+    border-color: #eaeaea;
+    background-color: #f3f3f3;
+}
+
+.yz-dataview-item-bpafile.yz-dataview-item-selected {
+    border-color: #bceaff;
+    background-color: #e9f5f8;
+}
+
+.yz-dataview-item-bpafile-folder .inner {
+    background-image: url(ui/folder_icon.png);
+}
+
+/*yz-dataview-bpatemplate*/
+.yz-dataview-bpatemplate .yz-dataview-item-bpafile .inner,
+.yz-dataview-bpatemplate .yz-dataview-item-bpafile .txt {
+    width: 130px;
+}
+
+.yz-dataview-bpatemplate .yz-dataview-item-bpafile .inner {
+    height: 130px;
+}
+
+.yz-dataview-bpatemplate .yz-dataview-item-bpafile {
+    margin: 10px 15px 10px 15px;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.yz-dataview-bpatemplate .yz-dataview-item-bpafile .txt {
+    margin-top: 6px;
+    padding-bottom: 1px;
+}
+
+/*yz-dataview-item-docboard*/
+.yz-dataview-item-docboard {
+    position: relative;
+    margin: 15px 0px;
+}
+
+.yz-dataview-item-docboard .img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.yz-dataview-item-docboard .body {
+    margin-left: 40px;
+}
+
+.yz-dataview-item-docboard .name,
+.yz-dataview-item-docboard .name a {
+    color: #221815;
+    text-decoration: none;
+}
+
+.yz-dataview-item-docboard .name a:hover {
+    color: #2da9dd;
+    text-decoration: none;
+}
+
+.yz-dataview-item-docboard .date {
+    color: #b5b5b6;
+}
+
+
+/*yz-dataview-item-strlist*/
+.yz-dataview-item-strlist {
+    background-color: #eee;
+    padding: 3px 8px;
+    border-radius: 5px;
+    margin: 0px 2px 2px 0px;
+    color: #666;
+}
+
+.yz-dataview-item-strlist .text {
+    line-height:20px;
+}
+    
+.yz-dataview-item-strlist .del {
+    font-size: 14px;
+    line-height: 16px;
+    height: 16px;
+    width: 16px;
+    text-align: center;
+    color: #aaa;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.yz-dataview-item-strlist .del:before {
+    font-family: 'yzglyphs';
+    content: '\e62b';
+}
+
+.yz-dataview-item-strlist-over {
+    background-color: #ddd;
+}
+
+.yz-dataview-item-strlist .del:hover {
+    color: #333;
+}
+
+/*yz-dataview-item-tasktrace*/
+.yz-dataview-item-tasktrace .level1-col1 {
+    width: 200px;
+}
+
+.yz-dataview-item-tasktrace .level1-col1 .stepname {
+    padding-top: 32px;
+    padding-bottom:3px;
+}
+
+.level1-mainstep-running .level1-col1 .stepname {
+    padding-top: 49px;
+}
+
+.yz-dataview-item-tasktrace .level1-col1 .date {
+    color:#919191;
+}
+
+.yz-dataview-item-tasktrace .level1-col1 .highlight-step {
+    color: red;
+}
+
+.yz-dataview-item-tasktrace .level1-timelinecol {
+    position: relative;
+    width: 21px;
+    margin: 0px 30px 0px 12px;
+}
+
+.yz-dataview-item-tasktrace .level1-col3 {
+    max-width: 620px;
+}
+
+.yz-dataview-item-tasktrace .level1-timelinecol:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    width: 0px;
+    margin: auto;
+    border-left: solid 1px #dedede;
+}
+
+.yz-dataview-item-tasktrace:first-child .level1-timelinecol:before {
+    top: 38px;
+}
+
+.yz-dataview-item-tasktrace:last-child .level1-block:not(.level1-curblock) .level1-timelinecol:before {
+    display:none;
+}
+
+.yz-dataview-item-tasktrace:last-child .level1-timelinecol:before {
+    max-height:100px;
+    margin-top:0px;
+}
+
+.yz-dataview-item-tasktrace.level1-running .indicator:before {
+    content: '';
+    position: absolute;
+    top: 33px;
+    left: 0px;
+    right: 0px;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: #b5ddc6;
+}
+
+.yz-dataview-item-tasktrace.level1-running .indicator:after {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    right: 0px;
+    width: 11px;
+    height: 11px;
+    margin: auto;
+    border-radius: 6px;
+    background-color: #2aa65d;
+}
+
+.yz-dataview-item-tasktrace.level1-finished .indicator:before {
+    content: '';
+    position: absolute;
+    top: 37px;
+    left: 0px;
+    right: 0px;
+    width: 7px;
+    height: 7px;
+    margin: auto;
+    border-radius: 40px;
+    background-color: #ddd;
+}
+
+.yz-dataview-item-tasktrace.level1-mainstep-running .indicator:before {
+    top: 51px;
+}
+
+.yz-dataview-item-tasktrace.level1-mainstep-running .indicator:after {
+    top: 53px;
+}  
+
+.yz-dataview-item-tasktrace .level2-step {
+    padding: 0px 0px 20px 0px;
+    position: relative;
+}
+
+.yz-dataview-item-tasktrace .level2-step .header {
+    padding-right:1px;
+}
+
+.yz-dataview-item-tasktrace .level2-step .body {
+    padding: 20px;
+    margin:6px 0px 0px 0px;
+    background-color:#fff;
+    border-radius:5px;
+}
+
+.yz-dataview-item-tasktrace .level2-step-running .body {
+    border: solid 1px #2aa65d;
+    padding: 13px 20px;
+}
+
+.yz-dataview-item-tasktrace .level2-step .processingimg {
+    width: 46px;
+    height: 46px;
+    margin: 0px 16px 0px 0px;
+}
+
+.yz-dataview-item-tasktrace .level2-step .processuserheadsort {
+    border-radius: 50%;
+}
+
+.yz-dataview-item-tasktrace .level2-step .processuser {
+}
+
+.yz-dataview-item-tasktrace .level2-step .processingtext {
+    margin-left: 5px;
+    color: #2aa65d;
+    font-weight: bold;
+}
+
+.yz-dataview-item-tasktrace .level2-step .cancel {
+    color: #d3d3d3;
+    cursor:pointer;
+}
+
+.yz-dataview-item-tasktrace .level2-step .cancel:hover {
+    color: #2196F3;
+}
+
+.yz-dataview-item-tasktrace .level2-step .line-paper {
+    line-height: 30px;
+    background: linear-gradient(to bottom,transparent 29px,#eee 1px);
+    background-size: 100% 30px;
+    padding: 0px 10px;
+}
+
+.yz-dataview-item-tasktrace .level2-step .receivedate {
+    color: #818181;
+}
+
+.yz-dataview-item-tasktrace .level2-step .from {
+    color: #818181;
+}
+
+.yz-dataview-item-tasktrace .level2-step .elapsed {
+    color: #bbb;
+}
+
+.yz-dataview-item-tasktrace .level2-step .systemstep {
+    line-height: 30px;
+}
+
+
+.yz-dataview-item-tasktrace .level2-step .comments {
+    min-height: 60px;
+    color: #ff9800;
+}
+
+.yz-dataview-item-tasktrace .level2-step .comments-empty {
+    color: #c3c3c3;
+}
+
+.yz-dataview-item-tasktrace .level2-step .sign {
+    padding-right:0px;
+    padding-top:16px;
+}
+
+.yz-dataview-item-tasktrace .level2-step .signdate {
+    color:#bbb;
+    padding-top:2px;
+}
+
+.yz-dataview-item-tasktrace .level2-step .signdate:before {
+    font-family: 'yzglyphs';
+    content: '\e970';
+    font-size: 13px;
+    padding-right: 5px;
+    padding-left: 1px;
+    color: #aaa;
+}
+
+.yz-dataview-item-tasktrace .level2-step .orangerecipient {
+    color: #bbb;
+    padding-top: 2px;
+}
+
+.yz-dataview-item-tasktrace .level2-step .signlabel {
+    color: #919191;
+}
+
+.yz-dataview-item-tasktrace .level2-step .signuser {
+    margin: 0px 0px 0px 6px;
+    padding: 0px 3px 3px 3px;
+    border-bottom: solid 1px #eee;
+    min-width: 100px;
+    text-align: center;
+}
+
+.yz-dataview-item-tasktrace .level2-step .system-sign .signuser {
+    display:none;
+}
+
+.yz-dataview-item-tasktrace .level2-step .system-sign .signlabel {
+    color: #bbb;
+}
+
+.yz-dataview-item-tasktrace .level2-step-taskoperation .signdate {
+    display: none;
+}
+
+
+
+.yz-dataview-item-tasktrace .level2-step .highlight-action {
+    color:red;
+}
+
+.yz-dataview-item-tasktrace .level1-curblock .level2-step .body {
+    position:relative;
+}
+
+.yz-dataview-item-tasktrace .level1-curblock .level2-step .body:before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 24px;
+    left: -30px;
+    border-top: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+    border-left: solid 15px transparent;
+    border-right: solid 15px #fff;
+}
+
+.yz-dataview-item-tasktrace .level1-curblock .level2-step-running .body:before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 25px;
+    left: -30px;
+    border-top: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+    border-left: solid 15px transparent;
+    border-right: solid 15px #2aa65d;
+}
+
+.yz-dataview-item-tasktrace .level1-curblock .level2-step-running .body:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 25px;
+    left: -29px;
+    border-top: solid 10px transparent;
+    border-bottom: solid 10px transparent;
+    border-left: solid 15px transparent;
+    border-right: solid 15px #fff;
+}
+
+.yz-dataview-item-currentstep {
+    padding: 20px;
+}
+
+.yz-dataview-item-currentstep .stepname {
+    color: #228be2;
+}
+
+.yz-dataview-item-currentstep .status {
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    background-color: #228be2;
+}
+
+.yz-dataview-item-currentstep .participent {
+    /*display:none;*/
+}
+
+/*yz-dataview-item-esb*/
+.yz-dataview-item-esb {
+    margin: 8px;
+    padding: 10px;
+    cursor: pointer;
+    vertical-align: top;
+    border: solid 1px transparent;
+    border-radius: 3px;
+}
+
+.yz-dataview-item-esb .inner,
+.yz-dataview-item-esb .txt {
+}
+
+.yz-dataview-item-esb .inner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.yz-dataview-item-esb .img {
+    width: 125px;
+    height: 150px;
+}
+
+.yz-dataview-item-esb .txt {
+    width:135px;
+    margin-top: 8px;
+    white-space: normal;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 0px;
+    word-wrap: break-word;
+}
+
+.yz-dataview-item-esb.yz-dataview-item-over {
+    border-color: #eaeaea;
+    background-color: #f3f3f3;
+}
+
+.yz-dataview-item-esb.yz-dataview-item-selected {
+    border-color: #bceaff;
+    background-color: #e9f5f8;
+}
+
+/*yz-dataview-item-reportseriestemplate*/
+.yz-dataview-item-reportseriestemplate {
+    margin: 8px;
+    padding: 8px;
+    cursor: pointer;
+    vertical-align: top;
+    border: solid 1px transparent;
+    border-radius: 3px;
+}
+
+.yz-dataview-item-reportseriestemplate .inner,
+.yz-dataview-reportseriestemplate-esb .txt {
+}
+
+.yz-dataview-item-reportseriestemplate .inner {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+
+.yz-dataview-item-reportseriestemplate .img {
+    width: 135px;
+    height: 135px;
+}
+
+.yz-dataview-item-reportseriestemplate .txt {
+    width: 135px;
+    margin-top: 16px;
+    white-space: normal;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1px;
+    word-wrap: break-word;
+}
+
+.yz-dataview-item-reportseriestemplate.yz-dataview-item-over {
+    border-color: #eaeaea;
+    background-color: #f3f3f3;
+}
+
+.yz-dataview-item-reportseriestemplate.yz-dataview-item-selected {
+    border-color: #bceaff;
+    background-color: #e9f5f8;
+}
+
+.yz-dataview-icons {
+    background-color: #fff;
+}
+
+/*yz-dataview-item-icon*/
+.yz-dataview-item-icon {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 8px;
+    cursor: pointer;
+    vertical-align: top;
+    border: solid 1px transparent;
+    border-radius: 3px;
+}
+
+.yz-dataview-item-icon .inner,
+.yz-dataview-item-icon .txt {
+    width: 176px;
+}
+
+.yz-dataview-item-icon .inner {
+    height: 176px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.yz-dataview-item-icon .img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background-color: transparent;
+    border: solid 1px transparent;
+    border-radius: 1px;
+}
+
+.yz-dataview-item-icon .txt {
+    margin-top: 20px;
+    white-space: normal;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    word-wrap: break-word;
+}
+
+.yz-dataview-item-icon.yz-dataview-item-over {
+    border-color: #eaeaea;
+    background-color: #f3f3f3;
+}
+
+.yz-dataview-item-icon.yz-dataview-item-selected {
+    border-color: #bceaff;
+    background-color: #e9f5f8;
+}
+
+.yz-dataview-item-icon-folder .inner {
+    background-image: url(ui/folder_icon.png);
+}

@@ -1,0 +1,692 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+	<title>FlowPortal BPA 用户使用手册- Table of Contents</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="generator" content="HelpNDoc Personal Edition 3.9.1.648">
+	<link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/silver-theme/jquery-ui-1.8.12.custom.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/dynatree/chm/ui.dynatree.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/base.css" />
+	<link type="text/css" rel="stylesheet" media="all" href="css/hnd.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="css/toc.css" />
+	<!--[if lte IE 8]>
+		<link type="text/css" rel="stylesheet" media="all" href="css/ielte8.css" />
+	<![endif]-->
+	<style type="text/css">
+		#tabs .ui-widget-header
+		{
+			background-color: #EFEFEF;
+		}
+	</style>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="js/jquery.dynatree.min.js"></script>
+	<script type="text/javascript" src="js/hndjsse.js"></script>
+	<script type="text/javascript">
+	
+		var bSearchDataLoaded = false;
+		var sHelpIdToActivate = '';
+	
+		$(document).ready(function()
+		{
+			var sAnchorName = '';
+			try { sAnchorName = top.location.href.substring(top.location.href.lastIndexOf("#") + 1, top.location.href.length); }
+			catch(err) { sAnchorName = ''; }
+			var nSelectedTab = 0;
+			if (sAnchorName == '_index') nSelectedTab = 1
+			else if (sAnchorName == '_search') nSelectedTab = 2;			
+			$("#tabs").tabs({
+				selected: nSelectedTab,
+				select: function(event, ui) { HideKwPopup(); }
+			});
+			
+			// Toc
+			if ($("#tab-toc").length) {
+				$("#tab-toc").dynatree({
+					clickFolderMode: 1,
+					debugLevel: 0,
+					imagePath: 'css/dynatree/chm/',
+					onActivate: function(node){
+						if ($("#tab-keywords").length && $("#tab-keywords").dynatree && $("#tab-keywords").dynatree("getTree") && $("#tab-keywords").dynatree("getTree").activateKey)
+							$("#tab-keywords").dynatree("getTree").activateKey(null);
+						if(node.data.href && node.data.href != '#'){
+							window.open(node.data.href, node.data.target);
+						}
+					}
+				});
+				// Expand all nodes if required
+				$("#tab-toc").dynatree("getRoot").visit(function(node){
+						node.expand(true);
+					});
+				// Select the active help id
+				if (sHelpIdToActivate != '') $("#tab-toc").dynatree("getTree").activateKey(sHelpIdToActivate);
+			}
+			
+			// Keywords
+			
+			if ($("#tab-keywords").length) {
+				$("#tab-keywords").dynatree({
+					clickFolderMode: 1,
+					debugLevel: 0,
+					imagePath: 'css/dynatree/chm/',
+					onClick: function(node, event){
+						HideKwPopup();
+						if (node.data && node.data.click)
+						{
+							var aRefList = null;
+							eval('aRefList=' + node.data.click);
+							if (ShowKwPopup(node.li, aRefList))
+							{
+								if ($("#tab-toc") && $("#tab-toc").dynatree && $("#tab-toc").dynatree("getTree") && $("#tab-toc").dynatree("getTree").activateKey)
+									$("#tab-toc").dynatree("getTree").activateKey(null);
+								if(node.data.href && node.data.href != '#'){
+									window.open(node.data.href, node.data.target);
+								}
+							}
+						}
+					}
+				});
+				// Expand all nodes if required
+				$("#tab-keywords").dynatree("getRoot").visit(function(node){
+						node.expand(true);
+					});
+				}
+			
+			// Load search data
+			$.getScript("js/searchdata.js",	function() {
+				bSearchDataLoaded = true;
+			});
+		});
+		
+		$('body').click(function() {
+			HideKwPopup();
+		});
+		
+		function SelectTocItem(sHelpId)
+		{
+			if ($("#tab-toc").length && $("#tab-toc").dynatree && $("#tab-toc").dynatree("getTree") && $("#tab-toc").dynatree("getTree").getNodeByKey) {
+				$("#tab-toc").dynatree("getTree").getNodeByKey(sHelpId).activateSilently();
+			}
+			else {
+				sHelpIdToActivate = sHelpId;
+			}
+		}
+		
+		function HideKwPopup()
+		{
+			if($("#popupMenu")) $("#popupMenu").remove();
+		}
+		
+		function ShowKwPopup(oSender, aLinks)
+		{
+			HideKwPopup();
+			if (!aLinks || !aLinks.length || aLinks.length == 0) return false
+			else if (aLinks.length == 1) return true
+			else
+			{
+				var oParentDiv = document.createElement("DIV");
+				oParentDiv.id = "popupMenu";
+				var oLink = null;
+				// Close button
+				oLink = document.createElement("SPAN");
+				oLink.className = "close-button";
+				oLink.innerHTML = "X";
+				oLink.href = "#";
+				oLink.onclick = HideKwPopup;
+				oParentDiv.appendChild(oLink);
+				// Items
+				for (var nCnt=0; nCnt<aLinks.length; nCnt++)
+				{
+					oLink = document.createElement("A");
+					oLink.innerHTML = aLinks[nCnt][0];
+					oLink.href = aLinks[nCnt][1];
+					oLink.target = "FrameMain";
+					oLink.onclick = HideKwPopup;
+					oParentDiv.appendChild(oLink);
+				}
+				document.body.appendChild(oParentDiv);
+				var pos = $(oSender).offset(); 
+				var height = $(oSender).height();
+				$(oParentDiv).css({
+					"left": (pos.left+20) + "px",
+					"top": (pos.top + height + 5) + "px"
+				});
+				$(oParentDiv).show();
+				return false;
+			}
+		}
+		
+		function PerformSearch()
+		{
+			sValue = $("#search_value").val();
+			$("#search_results").html('Searching...');
+			var oSearchEngine = new HndJsSe;
+			oSearchEngine.ParseInput(sValue);			
+			oSearchEngine.PerformSearch();
+			if (!oSearchEngine.aResults || !oSearchEngine.aResults.length)
+			{
+				$("#search_results").html('No results found.');
+			}
+			else
+			{
+				$("#search_results").html('<div id="search_results_content"></div>');
+				var oUl = $("#search_results_content").append("<ul id='lr'></ul>").find("ul");
+				for (var nCnt = 0; nCnt < oSearchEngine.aResults.length; nCnt++)
+				{
+					if (oSearchEngine.aResults[nCnt] < aTl.length)
+					{
+						oUl.append("<li><a href='" + aTl[oSearchEngine.aResults[nCnt]][0] + "?search=" + escape(sValue) + "' target='FrameMain'>" + unescape(aTl[oSearchEngine.aResults[nCnt]][1]) + "</a></li>");
+					}
+				}
+				// Tree
+				$("#search_results_content").dynatree({
+					clickFolderMode: 1,
+					debugLevel: 0,
+					imagePath: 'css/dynatree/chm/',
+					onActivate: function(node){
+						if ($("#search_results_content") && $("#search_results_content").dynatree && $("#search_results_content").dynatree("getTree") && $("#search_results_content").dynatree("getTree").activateKey)
+							$("#search_results_content").dynatree("getTree").activateKey(null);
+						if(node.data.href && node.data.href != '#'){
+							window.open(node.data.href, node.data.target);
+						}
+					}
+				});
+			}
+		}
+	</script>
+</head>
+
+<body>
+
+	<div id="tabs">
+		<ul>
+			<li><a href="#tab-toc">Contents</a></li>
+			<li><a href="#tab-keywords">Index</a></li>
+			<li><a href="#tab-search">Search</a></li>
+			</ul>
+		<div id="tab-toc">
+			<ul id="toc" class="">
+
+				<li class="" id="BPA001" data="icon: '8.png'">
+							<a
+							href="BPA001.html"
+							target="FrameMain">
+								BPA001 总体使用引导</a>
+
+				</li><li class="folder" id="BPA002" data="">
+							<a
+							href="BPA002.html"
+							target="FrameMain">
+								BPA002 新手指导</a>
+
+				<ul><li class="" id="BPA00201" data="">
+							<a
+							href="BPA00201.html"
+							target="FrameMain">
+								BPA00201 新用户注册</a>
+
+				</li><li class="" id="BPA00202" data="">
+							<a
+							href="BPA00202.html"
+							target="FrameMain">
+								BPA00202 系统登录</a>
+
+				</li><li class="" id="BPA00203" data="">
+							<a
+							href="BPA00203.html"
+							target="FrameMain">
+								BPA00203 系统主界面介绍</a>
+
+				</li></ul></li><li class="folder" id="BPA003" data="">
+							<a
+							href="BPA003.html"
+							target="FrameMain">
+								BPA003 流程架构</a>
+
+				<ul><li class="" id="BPA00301" data="">
+							<a
+							href="BPA00301.html"
+							target="FrameMain">
+								BPA00301 流程架构介绍</a>
+
+				</li><li class="" id="BPA00302" data="">
+							<a
+							href="BPA00302.html"
+							target="FrameMain">
+								BPA00302 流程架构示例</a>
+
+				</li><li class="" id="BPA00303" data="">
+							<a
+							href="BPA00303.html"
+							target="FrameMain">
+								BPA00303 通过关联建立流程地图</a>
+
+				</li></ul></li><li class="folder" id="BPA004" data="">
+							<a
+							href="BPA004.html"
+							target="FrameMain">
+								BPA004 流程图</a>
+
+				<ul><li class="" id="BPA00401" data="">
+							<a
+							href="BPA00401.html"
+							target="FrameMain">
+								BPA00401 流程图介绍</a>
+
+				</li><li class="" id="BPA00402EVC" data="">
+							<a
+							href="BPA00402EVC.html"
+							target="FrameMain">
+								BPA00402 EVC战略流程图</a>
+
+				</li><li class="" id="BPA00403BPMN" data="">
+							<a
+							href="BPA00403BPMN.html"
+							target="FrameMain">
+								BPA00403 BPMN流程图</a>
+
+				</li><li class="" id="BPA00404FlowChart" data="">
+							<a
+							href="BPA00404FlowChart.html"
+							target="FrameMain">
+								BPA00404 FlowChart流程图</a>
+
+				</li></ul></li><li class="folder" id="BPA005" data="">
+							<a
+							href="BPA005.html"
+							target="FrameMain">
+								BPA005 流程要素</a>
+
+				<ul><li class="" id="BPA00501" data="">
+							<a
+							href="BPA00501.html"
+							target="FrameMain">
+								BPA00501 流程要素介绍</a>
+
+				</li><li class="" id="BPA00502" data="">
+							<a
+							href="BPA00502.html"
+							target="FrameMain">
+								BPA00502 组织结构</a>
+
+				</li><li class="" id="BPA00503" data="">
+							<a
+							href="BPA00503.html"
+							target="FrameMain">
+								BPA00503 制度</a>
+
+				</li><li class="" id="BPA00504" data="">
+							<a
+							href="BPA00504.html"
+							target="FrameMain">
+								BPA00504 风险控制</a>
+
+				</li><li class="" id="BPA00505KPI" data="">
+							<a
+							href="BPA00505KPI.html"
+							target="FrameMain">
+								BPA00505 KPI</a>
+
+				</li><li class="" id="BPA00506" data="">
+							<a
+							href="BPA00506.html"
+							target="FrameMain">
+								BPA00506 产品</a>
+
+				</li><li class="" id="BPA00507" data="">
+							<a
+							href="BPA00507.html"
+							target="FrameMain">
+								BPA00507 数据</a>
+
+				</li><li class="" id="BPA00508IT" data="">
+							<a
+							href="BPA00508IT.html"
+							target="FrameMain">
+								BPA00508 IT系统</a>
+
+				</li><li class="" id="BPA00509" data="">
+							<a
+							href="BPA00509.html"
+							target="FrameMain">
+								BPA00509 流程与流程要素关联</a>
+
+				</li></ul></li><li class="folder" id="BPA006" data="">
+							<a
+							href="BPA006.html"
+							target="FrameMain">
+								BPA006 流程报告</a>
+
+				<ul><li class="" id="BPA00601" data="">
+							<a
+							href="BPA00601.html"
+							target="FrameMain">
+								BPA00601 流程报告介绍</a>
+
+				</li><li class="" id="BPA00602" data="">
+							<a
+							href="BPA00602.html"
+							target="FrameMain">
+								BPA00602 生成报告</a>
+
+				</li><li class="" id="BPA00603" data="">
+							<a
+							href="BPA00603.html"
+							target="FrameMain">
+								BPA00603 添加现有报告</a>
+
+				</li><li class="" id="BPA00604" data="">
+							<a
+							href="BPA00604.html"
+							target="FrameMain">
+								BPA00604 报告模板管理</a>
+
+				</li></ul></li><li class="folder" id="BPA007" data="">
+							<a
+							href="BPA007.html"
+							target="FrameMain">
+								BPA007 决策支持</a>
+
+				<ul><li class="" id="BPA00701" data="">
+							<a
+							href="BPA00701.html"
+							target="FrameMain">
+								BPA00701 决策支持介绍</a>
+
+				</li><li class="" id="BPA00702BPMBPA" data="">
+							<a
+							href="BPA00702BPMBPA.html"
+							target="FrameMain">
+								BPA00702 BPM系统中关联BPA流程</a>
+
+				</li><li class="" id="BPA00703BPM" data="">
+							<a
+							href="BPA00703BPM.html"
+							target="FrameMain">
+								BPA00703 BPM审批时查看决策辅助信息</a>
+
+				</li><li class="" id="BPA00704" data="">
+							<a
+							href="BPA00704.html"
+							target="FrameMain">
+								BPA00704 查看流程作业指南</a>
+
+				</li></ul></li><li class="folder" id="BPA008" data="">
+							<a
+							href="BPA008.html"
+							target="FrameMain">
+								BPA008 企业流程库</a>
+
+				<ul><li class="" id="BPA00801" data="">
+							<a
+							href="BPA00801.html"
+							target="FrameMain">
+								BPA00801企业流程库介绍</a>
+
+				</li><li class="" id="BPA00802" data="">
+							<a
+							href="BPA00802.html"
+							target="FrameMain">
+								BPA00802 查看流程库</a>
+
+				</li><li class="" id="BPA00803" data="">
+							<a
+							href="BPA00803.html"
+							target="FrameMain">
+								BPA00803 查看某一流程详细信息</a>
+
+				</li></ul></li><li class="folder" id="BPA009" data="">
+							<a
+							href="BPA009.html"
+							target="FrameMain">
+								BPA009 岗位职责</a>
+
+				<ul><li class="" id="BPA00901" data="">
+							<a
+							href="BPA00901.html"
+							target="FrameMain">
+								BPA00901 岗位职责介绍</a>
+
+				</li><li class="" id="BPA00902" data="">
+							<a
+							href="BPA00902.html"
+							target="FrameMain">
+								BPA00902 添加岗位</a>
+
+				</li><li class="" id="BPA00903" data="">
+							<a
+							href="BPA00903.html"
+							target="FrameMain">
+								BPA00903 岗位知识中心</a>
+
+				</li></ul></li><li class="folder" id="BPA010" data="">
+							<a
+							href="BPA010.html"
+							target="FrameMain">
+								BPA010 流程小组</a>
+
+				<ul><li class="" id="BPA01001" data="">
+							<a
+							href="BPA01001.html"
+							target="FrameMain">
+								BPA01001 流程小组介绍</a>
+
+				</li><li class="" id="BPA01002" data="">
+							<a
+							href="BPA01002.html"
+							target="FrameMain">
+								BPA01002 新建小组</a>
+
+				</li><li class="" id="BPA01003" data="">
+							<a
+							href="BPA01003.html"
+							target="FrameMain">
+								BPA01003 小组作业空间</a>
+
+				</li><li class="" id="BPA01004" data="">
+							<a
+							href="BPA01004.html"
+							target="FrameMain">
+								BPA01004 小组交流</a>
+
+				</li><li class="" id="BPA01005" data="">
+							<a
+							href="BPA01005.html"
+							target="FrameMain">
+								BPA01005 成员管理</a>
+
+				</li></ul></li><li class="folder" id="BPA011" data="">
+							<a
+							href="BPA011.html"
+							target="FrameMain">
+								BPA011 社交协作</a>
+
+				<ul><li class="" id="BPA01101" data="">
+							<a
+							href="BPA01101.html"
+							target="FrameMain">
+								BPA01101 社交协作介绍</a>
+
+				</li><li class="" id="BPA01102" data="">
+							<a
+							href="BPA01102.html"
+							target="FrameMain">
+								BPA01102 小组动态</a>
+
+				</li><li class="" id="BPA01103" data="">
+							<a
+							href="BPA01103.html"
+							target="FrameMain">
+								BPA01103 流程开发协作</a>
+
+				</li><li class="" id="BPA01104" data="">
+							<a
+							href="BPA01104.html"
+							target="FrameMain">
+								BPA01104 流程学习交流</a>
+
+				</li></ul></li><li class="folder" id="BPA012" data="">
+							<a
+							href="BPA012.html"
+							target="FrameMain">
+								BPA012 文档库</a>
+
+				<ul><li class="" id="BPA01201" data="">
+							<a
+							href="BPA01201.html"
+							target="FrameMain">
+								BPA01201 文档库介绍</a>
+
+				</li><li class="" id="BPA01202" data="">
+							<a
+							href="BPA01202.html"
+							target="FrameMain">
+								BPA01202 新建文档库</a>
+
+				</li><li class="" id="BPA01203" data="">
+							<a
+							href="BPA01203.html"
+							target="FrameMain">
+								BPA01203 设置集团、公司、部门文档库权限</a>
+
+				</li><li class="" id="BPA01204" data="">
+							<a
+							href="BPA01204.html"
+							target="FrameMain">
+								BPA01204 建立目录添加文档</a>
+
+				</li><li class="" id="BPA01205" data="">
+							<a
+							href="BPA01205.html"
+							target="FrameMain">
+								BPA01205  更新文档</a>
+
+				</li></ul></li><li class="folder" id="BPA013" data="">
+							<a
+							href="BPA013.html"
+							target="FrameMain">
+								BPA013 权限管控</a>
+
+				<ul><li class="" id="BPA01301" data="">
+							<a
+							href="BPA01301.html"
+							target="FrameMain">
+								BPA01301 权限管控介绍</a>
+
+				</li><li class="" id="BPA01302" data="">
+							<a
+							href="BPA01302.html"
+							target="FrameMain">
+								BPA01302 模块权限</a>
+
+				</li><li class="" id="BPA01303" data="">
+							<a
+							href="BPA01303.html"
+							target="FrameMain">
+								BPA01303 库权限</a>
+
+				</li><li class="" id="BPA01304" data="">
+							<a
+							href="BPA01304.html"
+							target="FrameMain">
+								BPA01304 目录权限</a>
+
+				</li><li class="" id="BPA01305" data="">
+							<a
+							href="BPA01305.html"
+							target="FrameMain">
+								BPA01305小组权限</a>
+
+				</li></ul></li><li class="" id="BPA014" data="">
+							<a
+							href="BPA014.html"
+							target="FrameMain">
+								BPA014 流程全景</a>
+
+				</li><li class="" id="BPA015" data="">
+							<a
+							href="BPA015.html"
+							target="FrameMain">
+								BPA015 流程统计</a>
+
+				</li><li class="folder" id="BPA016" data="">
+							<a
+							href="BPA016.html"
+							target="FrameMain">
+								BPA016 系统管理</a>
+
+				<ul><li class="" id="BPA01601" data="">
+							<a
+							href="BPA01601.html"
+							target="FrameMain">
+								BPA01601 报告模板</a>
+
+				</li><li class="" id="BPA01602" data="">
+							<a
+							href="BPA01602.html"
+							target="FrameMain">
+								BPA01602 流程模板</a>
+
+				</li><li class="" id="BPA01603" data="">
+							<a
+							href="BPA01603.html"
+							target="FrameMain">
+								BPA01603 小组</a>
+
+				</li><li class="" id="BPA01604" data="">
+							<a
+							href="BPA01604.html"
+							target="FrameMain">
+								BPA01604 模块权限</a>
+
+				</li></ul></li><li class="folder" id="BPA017" data="">
+							<a
+							href="BPA017.html"
+							target="FrameMain">
+								BPA017 回收站</a>
+
+				<ul><li class="" id="BPA01701" data="">
+							<a
+							href="BPA01701.html"
+							target="FrameMain">
+								BPA01701 普通员工</a>
+
+				</li><li class="" id="BPA01702" data="">
+							<a
+							href="BPA01702.html"
+							target="FrameMain">
+								BPA01702 管理员</a>
+
+				</li></ul></li><li class="" id="BPA018" data="">
+							<a
+							href="BPA018.html"
+							target="FrameMain">
+								BPA018 常见问题</a>
+
+				</li></ul>
+		</div>
+		
+		<div id="tab-keywords">
+			<ul id="keywords">
+
+				</ul>
+		</div>
+		
+		<div id="tab-search">
+			<form onsubmit="PerformSearch(); return false;">
+				<label for="search_value">Search:</label>
+				<input id="search_value" name="search_value"></input>
+				<input type="submit" value="Search"/>
+			</form>
+			<div id="search_results"></div>
+		</div>
+		
+		</div>
+    
+</body>
+
+</html>
+

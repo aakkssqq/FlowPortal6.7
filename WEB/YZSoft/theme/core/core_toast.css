@@ -1,0 +1,16 @@
+﻿
+
+.yz-toast {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.yz-toast .x-window-body {
+    background-color: #68af02;
+    color: #fff;
+    border-radius:3px;
+}

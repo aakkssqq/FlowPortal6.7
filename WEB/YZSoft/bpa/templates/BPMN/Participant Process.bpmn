@@ -1,0 +1,839 @@
+{
+  "categories": [
+    "BPMN",
+    "Lane"
+  ],
+  "Property": {},
+  "Nodes": [
+    {
+      "Name": "泳池(水平)",
+      "xclass": "YZSoft.bpa.sprite.Lane.HorizPool",
+      "surface": "pool",
+      "sprite": {
+        "translationX": 154,
+        "translationY": 245.5,
+        "x": 0,
+        "y": 0,
+        "width": 898,
+        "height": 267,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#e5ccff",
+        "sprites": {
+          "text": {
+            "text": "泳池(水平)",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "HorizPool"
+    },
+    {
+      "Name": "开始",
+      "xclass": "YZSoft.bpa.sprite.BPMN.StartEvent.StartEvent",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 218,
+        "translationY": 361,
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#b3ff66",
+        "sprites": {
+          "text": {
+            "text": "开始",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "StartEvent"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Task.Task",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 313,
+        "translationY": 349,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#99ffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Task"
+    },
+    {
+      "Name": "结束",
+      "xclass": "YZSoft.bpa.sprite.BPMN.EndEvent.EndEvent",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 994,
+        "translationY": 361,
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36,
+        "lineWidth": 4,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#33ff33",
+        "sprites": {
+          "text": {
+            "text": "结束",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "EndEvent"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Gateway.ParallelGateway",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 456,
+        "translationY": 354,
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffff33",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Gateway"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Task.Task",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 574,
+        "translationY": 257,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#99ffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Task1"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Task.Task",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 574,
+        "translationY": 349,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#99ffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Task2"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Task.Task",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 574,
+        "translationY": 440,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#99ffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Task3"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Task.Task",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 847,
+        "translationY": 349,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#99ffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Task4"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Gateway.ParallelGateway",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 738,
+        "translationY": 354,
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffff33",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Gateway1"
+    }
+  ],
+  "Links": [
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "StartEvent",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Task",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": 20,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 234,
+            "y": 359
+          },
+          {
+            "x": 293,
+            "y": 359
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Task",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Gateway",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": 20,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 383,
+            "y": 359
+          },
+          {
+            "x": 436,
+            "y": 359
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Gateway",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Task2",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": 20,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 486,
+            "y": 359
+          },
+          {
+            "x": 554,
+            "y": 359
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Task2",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Gateway1",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": 20,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 644,
+            "y": 359
+          },
+          {
+            "x": 718,
+            "y": 359
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Gateway1",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Task4",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": 20,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 768,
+            "y": 359
+          },
+          {
+            "x": 827,
+            "y": 359
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Task4",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "EndEvent",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": 20,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 917,
+            "y": 359
+          },
+          {
+            "x": 974,
+            "y": 359
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Gateway",
+      "FromPoint": "ActivityMiddleTop",
+      "ToNodeId": "Task1",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": 20,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 461,
+            "y": 334
+          },
+          {
+            "x": 461,
+            "y": 267
+          },
+          {
+            "x": 554,
+            "y": 267
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Gateway",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Task3",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 20,
+        "translationY": 20,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 461,
+            "y": 384
+          },
+          {
+            "x": 461,
+            "y": 450
+          },
+          {
+            "x": 554,
+            "y": 450
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Task1",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Gateway1",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 20,
+        "translationY": 20,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 644,
+            "y": 267
+          },
+          {
+            "x": 743,
+            "y": 267
+          },
+          {
+            "x": 743,
+            "y": 334
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Task3",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Gateway1",
+      "ToPoint": "ActivityMiddleBottom",
+      "sprite": {
+        "translationX": 20,
+        "translationY": 20,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 644,
+            "y": 450
+          },
+          {
+            "x": 743,
+            "y": 450
+          },
+          {
+            "x": 743,
+            "y": 384
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    }
+  ]
+}

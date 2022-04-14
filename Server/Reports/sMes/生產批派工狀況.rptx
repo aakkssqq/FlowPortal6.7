@@ -1,0 +1,223 @@
+﻿{
+  "author": null,
+  "lastModifier": {
+    "uid": "T01081",
+    "name": "T01081",
+    "date": "2022-03-28 14:34:51"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "資料來源1": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "sMes_Prod",
+          "query": "--已開立生產批 未派工B.EquipmentNo = N/A\n Select A.AreaNo,B.EquipmentNo,B.OPNo, ISNULL(D.OPName,'') as OPName, C.MONo, B.LotNo, C.PlanStartDate , C.PlanFinishDate, B.Qty, C.ProductNo, C.ProductVersion, E.ProductName, E.ItemSpec\nFrom tblPRDOPArea A \n\tInner Join tblWIPDispatchState B On A.OPNo = B.OPNo --And B.EquipmentNo = 'N/A' \n\tInner Join tblWIPLotBasis C On B.LotNo = C.BaseLotNo And A.ProductNo = C.ProductNo And A.ProductVersion = C.ProductVersion\n\tInner Join TBLSYSFAVOURITEBASIS F on F.MASTERNO =  A.AREANO and F.MASTERTYPE = 4 and F.EQUIPMENTNO = B.OPNO \n\tInner Join tblOPBasis D On B.OPNo = D.OPNo and D.OSOPTION <> 1\n\tLeft Join tblPRDProductBasis E On C.ProductNo = E.ProductNo And C.ProductVersion = E.ProductVersion \n\tInner join TBLSMDAREABASIS EE on EE.AREANO = A.AREANO\n\tInner Join (select LotNo,FACTORYNO from TBLWIPLOTSTATE where status <11 and curqty > 0 group by lotno,FACTORYNO ) G on B.LotNo = G.LotNo and G.FACTORYNO = EE.FACTORYNO\nWhere   (@area is NULL OR A.AreaNo like @area)   And (@moNo is NULL OR C.MONo like @moNo) And (@eqNo is NULL OR B.EquipmentNo like @eqNo)\norder by <%=String.IsNullOrEmpty(Context.Current.RequestParams[\"sortstring\"])?\"AreaNo  desc\":Context.Current.RequestParams[\"sortstring\"]%>",
+          "queryParams": [
+            {
+              "name": "@area",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@moNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@eqNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 17
+        },
+        "paramNames": [
+          "@area",
+          "@moNo",
+          "@eqNo"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.text1": {
+        "ctype": "report.search.field.text",
+        "binddsid": "資料來源1",
+        "xdatabind": "@area",
+        "fieldLabel": "區域",
+        "emptyText": ""
+      },
+      "report.search.field.text2": {
+        "ctype": "report.search.field.text",
+        "binddsid": "資料來源1",
+        "xdatabind": "@eqNo",
+        "fieldLabel": "設備名稱",
+        "emptyText": ""
+      },
+      "report.search.field.text3": {
+        "ctype": "report.search.field.text",
+        "binddsid": "資料來源1",
+        "xdatabind": "@moNo",
+        "fieldLabel": "生產訂單",
+        "emptyText": ""
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.text1",
+          "report.search.field.text2",
+          "report.search.field.text3"
+        ]
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "資料來源1",
+        "pagingBarDisplay": true,
+        "export2Excel": false,
+        "exportTemplate": null,
+        "title": null,
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "區域",
+            "dataIndex": "AreaNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 85
+          },
+          {
+            "text": "設備名稱",
+            "dataIndex": "EquipmentNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 88
+          },
+          {
+            "text": "作業站",
+            "dataIndex": "OPNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 71
+          },
+          {
+            "text": "作業站名稱",
+            "dataIndex": "OPName",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "生產訂單",
+            "dataIndex": "MONo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 154
+          },
+          {
+            "text": "生產批",
+            "dataIndex": "LotNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 210
+          },
+          {
+            "text": "計畫生產時間",
+            "dataIndex": "PlanStartDate",
+            "align": "start",
+            "dataFormat": {
+              "type": "date",
+              "format": "Y-m-d"
+            },
+            "width": 111
+          },
+          {
+            "text": "計畫完工時間",
+            "dataIndex": "PlanFinishDate",
+            "align": "start",
+            "dataFormat": {
+              "type": "date",
+              "format": "Y-m-d"
+            },
+            "width": 109
+          },
+          {
+            "text": "數量",
+            "dataIndex": "Qty",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 59
+          },
+          {
+            "text": "產品編號",
+            "dataIndex": "ProductNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "產品版本",
+            "dataIndex": "ProductVersion",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 71
+          },
+          {
+            "text": "產品名稱",
+            "dataIndex": "ProductName",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 207
+          },
+          {
+            "text": "產品規格",
+            "dataIndex": "ItemSpec",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 249
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "report.grid1"
+    ]
+  }
+}

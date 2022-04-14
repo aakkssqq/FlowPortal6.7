@@ -1,0 +1,489 @@
+﻿
+/***********************门户banner***********************/
+.yz-titlebar-portal {
+    background-color: #fff;
+    overflow: visible;
+    /*box-shadow: 0 1px 3px 0 rgba(0,0,0,.2), 0 1px 1px 0 rgba(0,0,0,.14), 0 2px 1px -1px rgba(0,0,0,.12);*/
+    /*box-shadow: 0 1px 6px 0 rgba(0,0,0,.2), 0 1px 6px 0 rgba(0,0,0,.14), 0 2px 3px -1px rgba(0,0,0,.12);*/
+    box-shadow: 3px 1px 5px #C7C6CB;
+    z-index: 999;
+}
+
+.yz-titlebar-portal > .x-box-inner {
+    overflow: visible;
+}
+
+.yz-cnt-logowrap {
+    background-color:transparent;
+}
+
+.yz-logo {
+    width: 150px;
+    height: 50px;
+    background-image: url(ui/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+.yz-logo-circle {
+    width: 50px;
+    height: 50px;
+    background-image: url(ui/logo_circle.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.yz-btn-portal-title {
+    width: 32px;
+    height: 32px;
+    border-radius: 0px;
+    background-color: transparent !important;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+}
+
+.yz-titlebar-portal .x-btn .x-btn-icon-el {
+    color: #888;
+}
+
+.yz-btn-navigate-collapse {
+    cursor:pointer;
+}
+
+.yz-btn-appswitch {
+    width: 50px;
+}
+
+.yz-titlebar-portal .yz-btn-messageindicator .x-btn-icon-el {
+    color: #666;
+}
+
+.yz-cmp-apptitle {
+    font-size: 21px;
+    color: #000;
+    line-height: 26px;
+}
+
+.yz-portal-2020-bpm .yz-logo {
+    /*width: 160px;
+    margin-left: 10px;
+    margin-right: 30px;*/
+}
+
+/***********************应用切换***********************/
+/*应用切换菜单*/
+.yz-menu-apps {
+    border-color: #d0d0d0;
+    overflow: visible;
+}
+
+.yz-menu-apps .x-menu-body {
+    background: #fff;
+    padding: 10px;
+    background-image: none;
+}
+
+.yz-menu-apps:before {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: 12px;
+    top: -13px;
+    border-bottom-style: solid;
+    border-bottom-width: 15px;
+    border-bottom-color: #b5b5b5;
+    border-left: solid 12px transparent;
+    border-right: solid 12px transparent;
+}
+
+.yz-menu-apps:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: 12px;
+    top: -11.6px;
+    border-bottom-style: solid;
+    border-bottom-width: 15px;
+    border-bottom-color: #fff;
+    border-left: solid 12px transparent;
+    border-right: solid 12px transparent;
+}
+
+.yz-btn-switchapp-app {
+    width: 103px;
+    height: 106px;
+    border-radius: 0px;
+    margin: 2px;
+    border: none;
+}
+
+.yz-btn-switchapp-app.x-btn-over {
+    opacity: 0.9;
+}
+
+.yz-btn-switchapp-app .x-btn-icon-el {
+    height: 43px;
+    background-size: contain;
+}
+
+.x-btn.yz-btn-switchapp-app .x-btn-inner {
+    font-size: 13px;
+    line-height: 14px;
+    color: #fff;
+    margin-top: 4px;
+}
+
+/***********************导航tab***********************/
+/*yz-tab-bar-navigator-mainleft*/
+.yz-tab-bar-navigator-mainleft > .x-tab-bar-body-default {
+    padding: 18px 0px 0px 0px;
+}
+
+.yz-tab-bar-navigator-mainleft .x-tab-default-left {
+    padding: 8px 12px 8px 12px;
+}
+
+.yz-tab-bar-navigator-mainleft .x-tab-active:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    top: 8px;
+    left: 0px;
+    bottom: 12px;
+}
+
+/*yz-tab-bar-navigator-maintop-column*/
+.yz-tab-bar-navigator-maintop-column > .x-tab-bar-body-default {
+    padding: 6px 6px 6px 6px;
+}
+
+.yz-tab-bar-navigator-maintop-column .x-tab-default-top {
+    margin: 3px 8px 4px 0;
+    padding: 10px 12px;
+}
+
+/*yz-tab-bar-navigator-maintop*/
+.yz-tab-bar-navigator-maintop .x-tab-default {
+    padding: 8px 20px;
+}
+
+.yz-tab-bar-navigator-maintop > .x-tab-bar-body-default {
+    padding: 0px;
+}
+
+.yz-tab-bar-navigator-maintop .x-tab-inner-default {
+    font-size: 15px;
+}
+
+.yz-tab-bar-navigator-maintop .x-tab-icon-el-default {
+    font-size: 18px;
+}
+
+/***********************导航tree***********************/
+/*yz-cnt-navigator*/
+.yz-cnt-navigator .x-panel-body-default {
+    background-color: transparent;
+}
+
+/*yz-tree-navigator*/
+.yz-tree-navigator .x-grid-body {
+    border: none;
+    background-color: transparent;
+}
+
+.yz-tree-navigator .x-tree-view {
+    padding:18px 0px;
+}
+
+.yz-tree-navigator .x-tree-elbow-img {
+    width: 12px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 4px;
+}
+
+.yz-tree-navigator .x-grid-cell-inner > .x-tree-elbow-img:first-child {
+    display: none;
+}
+
+.yz-tree-navigator .x-grid-row:not(.x-grid-tree-node-leaf) .x-tree-icon {
+    display: none;
+}
+
+.yz-tree-navigator .x-tree-expander:before {
+    display: none;
+}
+
+.yz-tree-navigator .x-tree-node-text {
+    padding-left: 0px;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.yz-tree-navigator .x-tree-icon {
+    margin-right: 20px;
+    font-size:16px;
+    margin-top:-6px;
+}
+
+.yz-tree-navigator .x-grid-cell-inner-treecolumn {
+    padding: 12px 15px 12px 15px;
+}
+
+.yz-tree-navigator .x-grid-row:not(.x-grid-tree-node-leaf) .x-grid-cell-inner:after {
+    font-family: yzglyphs;
+    content: '\ea9f';
+    position: absolute;
+    width: 10px;
+    height: 22px;
+    top: 0px;
+    right: 20px;
+    bottom: 0px;
+    margin: auto;
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.yz-tree-navigator .x-grid-tree-node-expanded.x-grid-row:not(.x-grid-tree-node-leaf) .x-grid-cell-inner:after {
+    content: '\ea9e';
+}
+
+.yz-tree-navigator .x-grid-item,
+.yz-tree-navigator .x-tree-icon-leaf {
+}
+
+
+.yz-tree-navigator-leafonly .x-grid-cell-inner-treecolumn {
+    padding: 12px 15px 12px 27px;
+}
+
+.yz-tree-navigator-noicon .x-tree-icon {
+    display:none;
+}
+
+.yz-tree-navigator-noicon .x-tree-node-text {
+    padding-left: 10px;
+}
+
+.yz-tree-navigator-noicon .x-grid-tree-node-leaf .x-tree-node-text {
+    padding-left: 16px;
+}
+/***********************颜色theme***********************/
+/*-----------------tab导航------------------*/
+/*yz-tab-bar-navigator-mainleft*/
+/*常规*背景色*/
+.yz-tab-bar-navigator-mainleft,
+.yz-tab-bar-navigator-mainleft .x-tab.x-tab-active.x-tab-default {
+    background-color: #0c1f2d;
+}
+
+/*常规*文字色*/
+.yz-tab-bar-navigator-mainleft .x-tab-inner-default,
+.yz-tab-bar-navigator-mainleft .x-tab-icon-el-default {
+    color: #888;
+}
+
+/*选中*指示色*/
+.yz-tab-bar-navigator-mainleft .x-tab-active:before {
+    background-color: #228be2;
+}
+
+/*选中*文字色*/
+.yz-tab-bar-navigator-mainleft .x-tab.x-tab-active.x-tab-default .x-tab-inner-default,
+.yz-tab-bar-navigator-mainleft .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+    color: #228be2;
+}
+
+/*yz-tab-bar-navigator-maintop-column*/
+/*常规*背景色*/
+.yz-tab-bar-navigator-maintop-column,
+.yz-tab-bar-navigator-maintop-column .x-tab.x-tab-active.x-tab-default {
+    background-color: transparent;
+}
+
+/*常规*文字色*/
+.yz-tab-bar-navigator-maintop-column .x-tab-inner-default,
+.yz-tab-bar-navigator-maintop-column .x-tab-icon-el-default {
+    color: #333;
+}
+
+/*选中*文字色*/
+.yz-tab-bar-navigator-maintop-column .x-tab.x-tab-active.x-tab-default .x-tab-inner-default,
+.yz-tab-bar-navigator-maintop-column .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+    color: #228be2;
+}
+
+/*展开*文字色*/
+.yz-container-columntabwrap-expanded .yz-tab-bar-navigator-maintop-column .x-tab-inner-default,
+.yz-container-columntabwrap-expanded .yz-tab-bar-navigator-maintop-column .x-tab-icon-el-default {
+    color: #f5f5f5;
+}
+
+/*展开*按钮色*/
+.yz-container-columntabwrap-expanded .x-btn .x-btn-icon-el {
+    color: #f5f5f5;
+}
+
+/*展开*tab mouseover*/
+.yz-container-columntabwrap-expanded .x-tab-over.x-tab-default {
+    background-color: #228be2;
+}
+
+/*yz-tab-bar-navigator-maintop*/
+/*常规*背景色*/
+.yz-tab-bar-navigator-maintop,
+.yz-tab-bar-navigator-maintop .x-tab-over.x-tab-default,
+.yz-tab-bar-navigator-maintop .x-tab.x-tab-active.x-tab-default {
+    background-color: transparent;
+}
+
+/*常规*文字色*/
+.yz-tab-bar-navigator-maintop .x-tab-inner-default,
+.yz-tab-bar-navigator-maintop .x-tab-icon-el-default {
+    color: #404040;
+}
+
+/*mouseover*文字色*/
+.yz-tab-bar-navigator-maintop .x-tab-over.x-tab-default .x-tab-inner-default {
+    color: #2196F3;
+}
+
+/*选中*文字色*/
+.yz-tab-bar-navigator-maintop .x-tab.x-tab-active.x-tab-default .x-tab-inner-default,
+.yz-tab-bar-navigator-maintop .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
+    color: #2196F3;
+}
+
+/*-----------------tree导航------------------*/
+/*常规*背景色*/
+.yz-cnt-navigator,
+.yz-split-navigator,
+.yz-tree-navigator .x-grid-item {
+    background-color: #32404e;
+}
+
+/*常规*文字色*/
+.yz-tree-navigator .x-grid-item,
+.yz-tree-navigator .x-tree-icon {
+    color: #adb3b8;
+}
+
+/*选中*文字色*/
+.yz-tree-navigator .x-grid-item-selected,
+.yz-tree-navigator .x-grid-item-selected .x-tree-icon {
+    color: #adb3b8;
+}
+
+/*mouseover*背景色*/
+.yz-tree-navigator .x-grid-item.x-grid-item-over {
+    background-color: #3c4a57
+}
+
+/*mouseover*文字色*/
+.yz-tree-navigator .x-grid-item-over,
+.yz-tree-navigator .x-grid-item-over .x-tree-icon {
+    color: #fff;
+    transition: color 0.5s;
+}
+
+/*选中*背景色*/
+.yz-tree-navigator .x-grid-item.x-grid-item-selected {
+    background-color: #475360;
+}
+
+.yz-tree-navigator .x-grid-item-selected:before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #35baf6;
+}
+/*-----------------模块tab------------------*/
+.yz-tab-bar-module {
+    background-color: transparent;
+}
+
+.yz-tab-bar-module > .x-tab-bar-body-default {
+    padding: 0px 4px 0px 16px;
+    min-height:20px;
+}
+
+.yz-tab-bar-module .x-tab-icon-el-default {
+    font-size:22px;
+}
+
+.yz-tab-bar-module .x-tab-text.x-tab-icon-left > .x-tab-icon-el-default {
+    margin-right:12px;
+}
+
+.yz-tab-bar-module .x-tab-icon-el-default {
+    color: #4c82b1;
+}
+
+.yz-tab-bar-module .x-tab-default-top {
+    padding: 13px 10px 11px 10px;
+}
+
+.yz-tab-bar-module .x-tab-inner-default
+{
+    color:#999;
+}
+
+.yz-tab-bar-module .x-tab-bar-strip {
+    height: 0px;
+    background-color: #fff;
+}
+
+.yz-tab-bar-module .x-tab-default .x-tab-close-btn {
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    font-size: 16px;
+    color: #919191;
+}
+
+.yz-tab-bar-module .x-tab-default .x-tab-close-btn-over {
+    color: red;
+}
+
+.yz-tab-bar-module .x-tab-default .x-tab-close-btn:before {
+    font-family: 'yzglyphs';
+    content: "\e62b";
+    font-size: 14px;
+}
+
+.yz-tab-bar-module .x-tab-closable.x-tab-default .x-tab-button {
+    padding-right: 10px;
+}
+
+.yz-tab-bar-module .x-tab-over.x-tab-default {
+    background-color: transparent;
+}
+
+.yz-tab-bar-module .x-tab.x-tab-active.x-tab-default {
+    background-color: transparent;
+}
+
+.yz-tab-bar-module .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: #404040;
+}
+
+/*yz-titlebar-module*/
+.yz-titlebar-module {
+    background-color:#f5f5f5;
+}
+
+.yz-s-module-cnt
+{
+    background-color:#fff;
+}

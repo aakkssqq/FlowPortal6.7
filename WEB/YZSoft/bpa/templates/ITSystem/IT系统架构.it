@@ -1,0 +1,672 @@
+﻿{
+  "categories": [
+    "ITSystem",
+    "General"
+  ],
+  "Property": {
+    "LastChange": "2016-09-12T13:37:53.4147859+08:00",
+    "ChangeBy": "99199",
+    "ChangeByShortName": "全茂林"
+  },
+  "Nodes": [
+    {
+      "Id": "Rectangle",
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 88,
+        "translationY": 76,
+        "x": 0,
+        "y": 0,
+        "width": 626,
+        "height": 178,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffe6cc",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#ffcc99",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "#FFE6CC"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "RoundRectangle",
+      "Name": "应\n用\n系\n统",
+      "xclass": "YZSoft.bpa.sprite.General.RoundRectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 117,
+        "translationY": 96,
+        "x": 0,
+        "y": 0,
+        "width": 45,
+        "height": 138,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffb366",
+        "sprites": {
+          "text": {
+            "text": "应\n用\n系\n统",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "AppSystem7",
+      "Name": "财务管理",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.AppSystem",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 190,
+        "translationY": 96,
+        "x": 0,
+        "y": 0,
+        "width": 94,
+        "height": 65,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "财务管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "AppSystem",
+        "reportType": "ITSystem"
+      }
+    },
+    {
+      "Id": "Database",
+      "Name": "数据库服务器",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.Database",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 159,
+        "translationY": 349,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "数据库服务器",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Database",
+        "reportType": "ITSystem"
+      }
+    },
+    {
+      "Id": "Device",
+      "Name": "IT设备",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.Device",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 545,
+        "translationY": 354,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "IT设备",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Device",
+        "reportType": "ITSystem"
+      }
+    },
+    {
+      "Id": "CloudServer",
+      "Name": "网络服务",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.CloudServer",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 351,
+        "translationY": 354,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 60,
+        "lineWidth": 4,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "网络服务",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "CloudServer",
+        "reportType": "ITSystem"
+      }
+    },
+    {
+      "Id": "AppSystem1",
+      "Name": "ERP",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.AppSystem",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 190,
+        "translationY": 169,
+        "x": 0,
+        "y": 0,
+        "width": 94,
+        "height": 65,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "ERP",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "AppSystem",
+        "reportType": "ITSystem"
+      }
+    },
+    {
+      "Id": "AppSystem2",
+      "Name": "采购管理",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.AppSystem",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 325,
+        "translationY": 96,
+        "x": 0,
+        "y": 0,
+        "width": 94,
+        "height": 65,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "采购管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "PS001",
+        "Description": "电子子化企业采购系统，是我公司结合企业采购流程优化再造理念开发的一体化电子招标采购平台，对于集中采购项目从采购项目立项及审批，计划安排、招标文件编制、招标公告发布、标书网上下载、投标文件制作、网上投标到开标、评标、监督实现全流程的电子化、程序化、规范化管理，对于自采项目提供询比价、网上竞价采购模式方便需求单位快速、高效采购。平台整体利用先进的计算机网络和平台技术，为采购需求方、采购执行人、投标人、专家、监管机构提供一个一体化的操作平台，实现企业采购工作的信息化和规范化。\n基于J2EE的B/S模式全浏览器操作;\n适用Oracle、DB2、SQL SERVER、MYSQL等各类关系型数据库；\n适用WebLogic、Websphere、GlassFish、JBoss等主流J2EE应用中间件；\n适用WebLogic、Websphere、GlassFish、JBoss等主流J2EE应用中间件；\n支持在阿里云、腾讯云、百度云等国内主流云平台上部署。",
+        "Remark": "",
+        "spriteType": "AppSystem",
+        "reportType": "ITSystem"
+      }
+    },
+    {
+      "Id": "AppSystem3",
+      "Name": "HR",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.AppSystem",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 325,
+        "translationY": 169,
+        "x": 0,
+        "y": 0,
+        "width": 94,
+        "height": 65,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "HR",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "AppSystem",
+        "reportType": "ITSystem"
+      }
+    },
+    {
+      "Id": "AppSystem4",
+      "Name": "BPM",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.AppSystem",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 460,
+        "translationY": 96,
+        "x": 0,
+        "y": 0,
+        "width": 94,
+        "height": 65,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "BPM",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "AppSystem",
+        "reportType": "ITSystem"
+      }
+    },
+    {
+      "Id": "AppSystem5",
+      "Name": "PLM",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.AppSystem",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 460,
+        "translationY": 169,
+        "x": 0,
+        "y": 0,
+        "width": 94,
+        "height": 65,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "PLM",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "AppSystem",
+        "reportType": "ITSystem"
+      }
+    },
+    {
+      "Id": "AppSystem6",
+      "Name": "MES",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.AppSystem",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 595,
+        "translationY": 96,
+        "x": 0,
+        "y": 0,
+        "width": 94,
+        "height": 65,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "MES",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "AppSystem",
+        "reportType": "ITSystem"
+      }
+    },
+    {
+      "Id": "AppSystem8",
+      "Name": "CRM",
+      "xclass": "YZSoft.bpa.sprite.ITSystem.AppSystem",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 595,
+        "translationY": 169,
+        "x": 0,
+        "y": 0,
+        "width": 94,
+        "height": 65,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "CRM",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "AppSystem",
+        "reportType": "ITSystem"
+      }
+    }
+  ],
+  "Links": [
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Database",
+      "FromPoint": "ActivityMiddleTop",
+      "ToNodeId": "Rectangle",
+      "ToPoint": "ActivityMiddleBottom",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 209,
+            "y": 349
+          },
+          {
+            "x": 209,
+            "y": 309
+          },
+          {
+            "x": 401,
+            "y": 309
+          },
+          {
+            "x": 401,
+            "y": 254
+          }
+        ],
+        "startArrowType": "solidArrow",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "solidArrow"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "CloudServer",
+      "FromPoint": "ActivityMiddleTop",
+      "ToNodeId": "Rectangle",
+      "ToPoint": "ActivityMiddleBottom",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 401,
+            "y": 354
+          },
+          {
+            "x": 401,
+            "y": 254
+          }
+        ],
+        "startArrowType": "solidArrow",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "solidArrow"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Device",
+      "FromPoint": "ActivityMiddleTop",
+      "ToNodeId": "Rectangle",
+      "ToPoint": "ActivityMiddleBottom",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 595,
+            "y": 354
+          },
+          {
+            "x": 595,
+            "y": 309
+          },
+          {
+            "x": 401,
+            "y": 309
+          },
+          {
+            "x": 401,
+            "y": 254
+          }
+        ],
+        "startArrowType": "solidArrow",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "solidArrow"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    }
+  ]
+}

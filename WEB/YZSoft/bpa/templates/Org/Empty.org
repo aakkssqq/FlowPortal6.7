@@ -1,0 +1,9 @@
+﻿{
+  "categories": [
+    "ORG",
+    "General"
+  ],
+  "Property": {},
+  "Nodes": [],
+  "Links": []
+}

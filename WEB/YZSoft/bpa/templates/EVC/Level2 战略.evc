@@ -1,0 +1,1168 @@
+﻿{
+  "categories": [
+    "EVC",
+    "General"
+  ],
+  "Property": {
+    "CreateAt": "2016-07-22T17:13:33",
+    "Creator": "99199",
+    "LastChange": "2016-08-26T17:42:24.0063873+08:00",
+    "ChangeBy": "99199",
+    "CreatorShortName": "全茂林",
+    "ChangeByShortName": "全茂林",
+    "Code": "",
+    "Responsible": [],
+    "Milestone": "Launch",
+    "Since": null,
+    "Color": "White",
+    "ExecuteStatus": "PartialOnlineExecute",
+    "Description": "",
+    "Remark": "",
+    "StrategicProcess": "OperationProcess",
+    "EvcProcessType": "OperationProcess"
+  },
+  "Nodes": [
+    {
+      "Id": "Rectangle",
+      "Name": "业务场景",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 115,
+        "translationY": 74,
+        "x": 0,
+        "y": 0,
+        "width": 733,
+        "height": 316,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#f5f5f5",
+        "sprites": {
+          "text": {
+            "text": "业务场景",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "start",
+            "textBaseline": "top",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle1",
+      "Name": "支持流程",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 114.625,
+        "translationY": 413,
+        "x": 0,
+        "y": 0,
+        "width": 733.75,
+        "height": 111,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#cce5ff",
+        "sprites": {
+          "text": {
+            "text": "支持流程",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "start",
+            "textBaseline": "top",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain5",
+      "Name": "渠道\n订单处理/支付",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 173,
+        "translationY": 193,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "渠道\n订单处理/支付",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain1",
+      "Name": "直营\n订单处理/支付",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 518,
+        "translationY": 193,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "直营\n订单处理/支付",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain2",
+      "Name": "直销\n订单处理/支付",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 345,
+        "translationY": 193,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "直销\n订单处理/支付",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain3",
+      "Name": "其他类销售",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 689,
+        "translationY": 193,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "其他类销售",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain4",
+      "Name": "交付",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 421,
+        "translationY": 107,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "交付",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain6",
+      "Name": "渠道标配\n订单处理/支付",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 258,
+        "translationY": 256,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "渠道标配\n订单处理/支付",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain7",
+      "Name": "渠道特配\n订单处理/支付",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 258,
+        "translationY": 317,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "渠道特配\n订单处理/支付",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain8",
+      "Name": "直销标配\n订单处理/支付",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 434,
+        "translationY": 260,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "直销标配\n订单处理/支付",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain9",
+      "Name": "直销特配\n订单处理/支付",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 434,
+        "translationY": 321,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "直销特配\n订单处理/支付",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain10",
+      "Name": "直营标配\n订单处理/支付",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 597,
+        "translationY": 260,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "直营标配\n订单处理/支付",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain11",
+      "Name": "直营特配\n订单处理/支付",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 597,
+        "translationY": 321,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "直营特配\n订单处理/支付",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain12",
+      "Name": "商务信息\n管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 434,
+        "translationY": 459,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "商务信息\n管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain13",
+      "Name": "信用风险\n管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 266,
+        "translationY": 459,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "信用风险\n管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "ValueChain14",
+      "Name": "商务服务\n质量管理",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain1",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 602,
+        "translationY": 459,
+        "x": 0,
+        "y": 0,
+        "width": 121,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "商务服务\n质量管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    }
+  ],
+  "Links": [
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "ValueChain4",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "ValueChain2",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 40,
+        "translationY": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 441.5,
+            "y": 91
+          },
+          {
+            "x": 441.5,
+            "y": 112
+          },
+          {
+            "x": 365.5,
+            "y": 112
+          },
+          {
+            "x": 365.5,
+            "y": 141
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "ValueChain4",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "ValueChain5",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 40,
+        "translationY": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 441.5,
+            "y": 91
+          },
+          {
+            "x": 441.5,
+            "y": 112
+          },
+          {
+            "x": 193.5,
+            "y": 112
+          },
+          {
+            "x": 193.5,
+            "y": 141
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "ValueChain4",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "ValueChain1",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 40,
+        "translationY": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 441.5,
+            "y": 91
+          },
+          {
+            "x": 441.5,
+            "y": 112
+          },
+          {
+            "x": 538.5,
+            "y": 112
+          },
+          {
+            "x": 538.5,
+            "y": 141
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "ValueChain4",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "ValueChain3",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 40,
+        "translationY": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 441.5,
+            "y": 91
+          },
+          {
+            "x": 441.5,
+            "y": 112
+          },
+          {
+            "x": 709.5,
+            "y": 112
+          },
+          {
+            "x": 709.5,
+            "y": 141
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "ValueChain5",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "ValueChain6",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 40,
+        "translationY": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 193.5,
+            "y": 177
+          },
+          {
+            "x": 193.5,
+            "y": 222
+          },
+          {
+            "x": 236,
+            "y": 222
+          }
+        ],
+        "endArrowType": "none",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "none"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "ValueChain5",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "ValueChain7",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 40,
+        "translationY": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 193.5,
+            "y": 177
+          },
+          {
+            "x": 193.5,
+            "y": 283
+          },
+          {
+            "x": 236,
+            "y": 283
+          }
+        ],
+        "endArrowType": "none",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "none"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "ValueChain2",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "ValueChain8",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 40,
+        "translationY": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 365.5,
+            "y": 177
+          },
+          {
+            "x": 365.5,
+            "y": 226
+          },
+          {
+            "x": 412,
+            "y": 226
+          }
+        ],
+        "endArrowType": "none",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "none"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "ValueChain2",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "ValueChain9",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 40,
+        "translationY": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 365.5,
+            "y": 177
+          },
+          {
+            "x": 365.5,
+            "y": 287
+          },
+          {
+            "x": 412,
+            "y": 287
+          }
+        ],
+        "endArrowType": "none",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "none"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "ValueChain1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "ValueChain10",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 40,
+        "translationY": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 538.5,
+            "y": 177
+          },
+          {
+            "x": 538.5,
+            "y": 226
+          },
+          {
+            "x": 575,
+            "y": 226
+          }
+        ],
+        "endArrowType": "none",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "none"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "ValueChain1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "ValueChain11",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 40,
+        "translationY": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 538.5,
+            "y": 177
+          },
+          {
+            "x": 538.5,
+            "y": 287
+          },
+          {
+            "x": 575,
+            "y": 287
+          }
+        ],
+        "endArrowType": "none",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "none"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    }
+  ]
+}

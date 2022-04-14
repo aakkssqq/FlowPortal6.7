@@ -1,0 +1,49 @@
+﻿
+/*yz-tip-userinfo*/
+.yz-tip-userinfo {
+    background-color: #fff;
+    border-color: #e8e8e8;
+}
+
+.yz-tip-userinfo .x-tip-body-default {
+    color: #404040;
+}
+
+.yz-tip-userinfo .x-tip-anchor-right {
+    border-left-color: #a0a0a0;
+}
+
+.yz-tip-userinfo .x-tip-anchor-top {
+    border-bottom-color: #a0a0a0;
+}
+
+.yz-tip-userinfo .x-tip-anchor-bottom {
+    border-top-color: #a0a0a0;
+}
+
+.yz-tip-userinfo .x-tip-anchor-left {
+    border-right-color: #a0a0a0;
+}
+
+.yz-tip-userinfo .dspname{
+    line-height:30px;
+    font-weight:bold;
+    font-size:16px;
+}
+
+.yz-tip-userinfo .ou,
+.yz-tip-userinfo .leadertitle {
+    line-height: 16px;
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
+
+.yz-tip-userinfo .box:before {
+    color: #35baf6;
+    margin-right: 12px;
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+}
+
+

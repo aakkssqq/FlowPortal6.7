@@ -1,0 +1,850 @@
+﻿{
+  "categories": [
+    "General",
+    "FlowChart",
+    "EVC"
+  ],
+  "Property": {
+    "LastChange": "2016-10-11T15:29:42.2264928+08:00",
+    "ChangeBy": "99199"
+  },
+  "Nodes": [
+    {
+      "Id": "Apqc",
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.General.Apqc",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 151.5,
+        "translationY": 62,
+        "x": 0,
+        "y": 0,
+        "width": 568,
+        "height": 178,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle",
+      "Name": "1.0\nDevelop Vision and Strategy",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 166,
+        "translationY": 144,
+        "x": 0,
+        "y": 0,
+        "width": 95,
+        "height": 78,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "1.0\nDevelop Vision and Strategy",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle1",
+      "Name": "2.0\nDevelop and Manage Products and Services",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 273,
+        "translationY": 144,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 78,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "2.0\nDevelop and Manage Products and Services",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle2",
+      "Name": "3.0\nMarket and Sell Products and Services",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 384,
+        "translationY": 144,
+        "x": 0,
+        "y": 0,
+        "width": 96,
+        "height": 78,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "3.0\nMarket and Sell Products and Services",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle3",
+      "Name": "4.0\nDeliver Products and Services",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 495,
+        "translationY": 144,
+        "x": 0,
+        "y": 0,
+        "width": 94,
+        "height": 78,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "4.0\nDeliver Products and Services",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Rectangle4",
+      "Name": "5.0\nManage Customer Service",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 605,
+        "translationY": 144,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 78,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "5.0\nManage Customer Service",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text",
+      "Name": "OPERATING PROCESSES",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 352,
+        "translationY": 97,
+        "x": 0,
+        "y": 0,
+        "width": 160,
+        "height": 40,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "OPERATING PROCESSES",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Apqc1",
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.General.Apqc",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 151.375,
+        "translationY": 252,
+        "x": 0,
+        "y": 0,
+        "width": 568.25,
+        "height": 401,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "RoundRectangle",
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.General.RoundRectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 163.75,
+        "translationY": 320,
+        "x": 0,
+        "y": 0,
+        "width": 543.5,
+        "height": 42,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "RoundRectangle1",
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.General.RoundRectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 163.75,
+        "translationY": 367,
+        "x": 0,
+        "y": 0,
+        "width": 543.5,
+        "height": 42,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "RoundRectangle2",
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.General.RoundRectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 163.75,
+        "translationY": 414,
+        "x": 0,
+        "y": 0,
+        "width": 543.5,
+        "height": 42,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "RoundRectangle3",
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.General.RoundRectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 163.75,
+        "translationY": 460,
+        "x": 0,
+        "y": 0,
+        "width": 543.5,
+        "height": 42,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "RoundRectangle4",
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.General.RoundRectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 163.75,
+        "translationY": 506,
+        "x": 0,
+        "y": 0,
+        "width": 543.5,
+        "height": 42,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "RoundRectangle5",
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.General.RoundRectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 163.75,
+        "translationY": 553,
+        "x": 0,
+        "y": 0,
+        "width": 543.5,
+        "height": 42,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "RoundRectangle6",
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.General.RoundRectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 163.75,
+        "translationY": 600,
+        "x": 0,
+        "y": 0,
+        "width": 543.5,
+        "height": 42,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text1",
+      "Name": "6.0  Develop and Manage Human Capital",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 287,
+        "translationY": 322.5,
+        "x": 0,
+        "y": 0,
+        "width": 314,
+        "height": 37,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "6.0  Develop and Manage Human Capital",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text2",
+      "Name": "7.0  Manage Information Technology",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 303.5,
+        "translationY": 372.5,
+        "x": 0,
+        "y": 0,
+        "width": 257,
+        "height": 31,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "7.0  Manage Information Technology",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text3",
+      "Name": "8.0  Manage Financial Resources",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 301,
+        "translationY": 421.5,
+        "x": 0,
+        "y": 0,
+        "width": 235,
+        "height": 27,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "8.0  Manage Financial Resources",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text4",
+      "Name": "   9.0  Acquire, Construct, and Manage Property",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 292,
+        "translationY": 458.5,
+        "x": 0,
+        "y": 0,
+        "width": 317,
+        "height": 45,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "   9.0  Acquire, Construct, and Manage Property",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text5",
+      "Name": "       10.0  Manage Environmental Health and Safety (EHS)",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 272,
+        "translationY": 510.5,
+        "x": 0,
+        "y": 0,
+        "width": 367,
+        "height": 33,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "       10.0  Manage Environmental Health and Safety (EHS)",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text6",
+      "Name": "  11.0  Manage External Relationships",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 301,
+        "translationY": 561,
+        "x": 0,
+        "y": 0,
+        "width": 246,
+        "height": 26,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "  11.0  Manage External Relationships",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text7",
+      "Name": "   12.0  Manage Knowledge, Improvement, and Change",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 279,
+        "translationY": 600.5,
+        "x": 0,
+        "y": 0,
+        "width": 385.625,
+        "height": 41,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "   12.0  Manage Knowledge, Improvement, and Change",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    }
+  ],
+  "Links": []
+}

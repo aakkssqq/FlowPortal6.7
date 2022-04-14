@@ -1,0 +1,125 @@
+﻿
+/*indicator*/
+.yz-dd-part-indicator {
+    border: dashed 1px #2196f3;
+    background-color: #fff;
+    position: relative;
+}
+
+.yz-dd-part-indicator-searchfield {
+    border: none;
+    background-color: transparent;
+}
+
+.yz-dd-part-indicator-searchfield:after {
+    content: '';
+    position:absolute;
+    bottom:5px;
+    left:10px;
+    right:10px;
+    height:30px;
+    border: dashed 1px #2196f3;
+    background-color: #fff;
+} 
+
+.yz-dd-part-indicator-trans {
+    background-color: transparent;
+}
+
+/*select*/
+.yz-part.yz-part-select:after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: transparent !important;
+    border: dashed 1px #e91e63;
+    pointer-events: none;
+    z-index: 999;
+}
+
+.x-column-header.yz-part-innercomp-select:after {
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: transparent !important;
+    border: dashed 1px #e91e63;
+    pointer-events: none;
+    z-index: 999;
+}
+
+/*part*/
+.yz-part > .x-panel-bodyWrap > .x-panel-body {
+    background-color:transparent;
+}
+
+.yz-part {
+    background-color: #fff;
+}
+
+/*opt*/
+.yz-part:hover>.yz-part-opt-cnt {
+    display:inline-block;
+}
+
+.yz-part .yz-part-opt-cnt {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    color: #bbb;
+    z-index:999;
+    display:none;
+}
+
+.yz-part-opt-cnt .opt:after {
+    font-family: 'yzglyphs';
+    content: "";
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px;
+    width: 16px;
+}
+
+.yz-part-opt-cnt .opt:hover {
+    cursor: pointer;
+    color: #717171;
+}
+
+.yz-part-opt-cnt .delete:after {
+    content: "\e62b";
+}
+
+.yz-part-layout {
+    overflow:visible;
+}
+
+.yz-part-layout > .yz-part-opt-cnt .opt:after {
+    font-size: 12px;
+    line-height: 16px;
+    padding:0px 2px;
+}
+
+.yz-part-layout > .yz-part-opt-cnt {
+    top: -6px;
+    left: -6px;
+    bottom: auto;
+    right: auto;
+    color: #fff;
+}
+
+.yz-part-layout > .yz-part-opt-cnt .opt {
+    padding:0px;
+    background-color:#ccc;
+    border-radius:8px;
+}
+
+.yz-part-layout > .yz-part-opt-cnt .opt:hover {
+    background-color: #aaa;
+    color: #fff;
+}
+

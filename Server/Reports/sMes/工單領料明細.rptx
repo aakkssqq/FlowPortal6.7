@@ -1,0 +1,213 @@
+﻿{
+  "author": {
+    "uid": "T01081",
+    "name": "T01081",
+    "createat": "2022-03-25 14:05:51"
+  },
+  "lastModifier": {
+    "uid": "T01081",
+    "name": "T01081",
+    "date": "2022-03-25 16:21:34"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "查詢工單領料明細sMES": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "sMes_Prod",
+          "query": "WITH \n\tSMESTable AS (\n\t\tSelect \n\t\t\trow_number() OVER( ORDER BY EventTime) As Seq,\n\t\t\t* \n\t\tfrom tblWIPCont_Material \n\t\twhere LOTSERIAL like '%'+@FormType+'-'+@FormNum+'%'　\n\t\t--order by EventTime\n\t)\n\tSelect\n\t\tSeq as 序號,\n\t\tLOTSERIAL as 生產批序號,\n\t\tMATERIALNO as 物料編號,\n\t\tMATERIALLEVEL as '物料/半成品',-- 0：Material(物料)。 1：Product(半成品)\n\t\tMATERIALTYPE as 物料類別,\n\t\tUSEQTY as 使用數量,\n\t\tUNITNO as 單位,\n\t\tDESCRIPTION as 備註,\n\t\tLOGGROUPSERIAL as Log序号,\n\t\tUNDISTRIBUTEQTY as 未分配數量,\n\t\tMESNO as MES編號,\n\t\t(Select SUM(USEQTY) from SMESTable  ) as 領退料總量 \n\tFrom SMESTable A",
+          "queryParams": [
+            {
+              "name": "@FormType",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@FormNum",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 15
+        },
+        "paramNames": [
+          "@FormType",
+          "@FormNum"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.text1": {
+        "ctype": "report.search.field.text",
+        "binddsid": "查詢工單領料明細sMES",
+        "xdatabind": "@FormType",
+        "fieldLabel": "單別",
+        "emptyText": ""
+      },
+      "report.search.field.text2": {
+        "ctype": "report.search.field.text",
+        "binddsid": "查詢工單領料明細sMES",
+        "xdatabind": "@FormNum",
+        "fieldLabel": "製令編號",
+        "emptyText": ""
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.text1",
+          "report.search.field.text2"
+        ]
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "查詢工單領料明細sMES",
+        "pagingBarDisplay": true,
+        "export2Excel": true,
+        "exportTemplate": null,
+        "title": null,
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "序號",
+            "dataIndex": "序號",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 41
+          },
+          {
+            "text": "生產批序號",
+            "dataIndex": "生產批序號",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 229
+          },
+          {
+            "text": "物料編號",
+            "dataIndex": "物料編號",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 155
+          },
+          {
+            "text": "物料/半成品",
+            "dataIndex": "物料/半成品",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 91
+          },
+          {
+            "text": "物料類別",
+            "dataIndex": "物料類別",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 80
+          },
+          {
+            "text": "使用數量",
+            "dataIndex": "使用數量",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 80
+          },
+          {
+            "text": "領退料總量",
+            "dataIndex": "領退料總量",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 120
+          },
+          {
+            "text": "單位",
+            "dataIndex": "單位",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 60
+          },
+          {
+            "text": "備註",
+            "dataIndex": "備註",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 211
+          },
+          {
+            "text": "Log序号",
+            "dataIndex": "Log序号",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 194
+          },
+          {
+            "text": "未分配數量",
+            "dataIndex": "未分配數量",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 78
+          },
+          {
+            "text": "MES編號",
+            "dataIndex": "MES編號",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "report.grid1"
+    ]
+  }
+}

@@ -1,0 +1,269 @@
+﻿/* ========== Text Styles ========== */
+hr { color: #000000}
+body, table, span.rvts0 /* Normal text */
+{
+ font-size: 10pt;
+ font-family: 'Arial', 'Helvetica', sans-serif;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.rvts1 /* Heading */
+{
+ font-weight: bold;
+ color: #0000ff;
+}
+span.rvts2 /* Subheading */
+{
+ font-weight: bold;
+ color: #000080;
+}
+span.rvts3 /* Keywords */
+{
+ font-style: italic;
+ color: #800000;
+}
+a.rvts4, span.rvts4 /* Jump 1 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+a.rvts5, span.rvts5 /* Jump 2 */
+{
+ color: #008000;
+ text-decoration: underline;
+}
+span.rvts6 /* Font Style */
+{
+ font-size: 12pt;
+ font-family: '微软雅黑';
+}
+span.rvts7
+{
+ font-size: 12pt;
+ font-family: '微软雅黑 light';
+}
+span.rvts8
+{
+ font-size: 12pt;
+ font-family: 'Times New Roman', 'Times', serif;
+}
+span.rvts9 /* Font Style */
+{
+ font-size: 12pt;
+ font-family: '微软雅黑';
+ font-weight: bold;
+ color: dodgerblue;
+}
+span.rvts10 /* Font Style */
+{
+}
+span.rvts11
+{
+}
+span.rvts12 /* Font Style */
+{
+ font-size: 14pt;
+ font-family: '微软雅黑';
+ font-weight: bold;
+}
+span.rvts13 /* Font Style */
+{
+ font-size: 12pt;
+ font-family: '微软雅黑';
+}
+span.rvts14 /* Font Style */
+{
+ font-size: 12pt;
+ font-family: '微软雅黑';
+ font-weight: bold;
+}
+span.rvts15 /* Font Style */
+{
+ font-size: 12pt;
+ font-family: '微软雅黑';
+ font-weight: bold;
+ color: dodgerblue;
+}
+span.rvts16
+{
+ font-size: 12pt;
+ font-family: '微软雅黑';
+}
+span.rvts17 /* Font Style */
+{
+ font-size: 12pt;
+ font-family: '微软雅黑';
+}
+span.rvts18 /* Font Style */
+{
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #c0c0c0;
+}
+a.rvts19, span.rvts19 /* Font Style */
+{
+ font-family: 'Tahoma', 'Geneva', sans-serif;
+ font-style: italic;
+ color: #6666ff;
+ text-decoration: underline;
+}
+span.rvts20
+{
+}
+span.rvts21
+{
+ font-size: 12pt;
+ font-family: '微软雅黑 light';
+ font-weight: bold;
+}
+span.rvts22 /* Font Style */
+{
+ font-size: 13pt;
+ font-family: '微软雅黑';
+ font-weight: bold;
+}
+span.rvts23
+{
+ font-size: 12pt;
+ font-family: '微软雅黑';
+ font-weight: bold;
+}
+span.rvts24 /* Font Style */
+{
+ font-size: 12pt;
+ font-family: '微软雅黑';
+ color: #ff0000;
+}
+span.rvts25
+{
+ font-size: 12pt;
+ font-family: '微软雅黑';
+ font-weight: bold;
+}
+span.rvts26
+{
+ font-family: '微软雅黑 light';
+}
+/* ========== Para Styles ========== */
+p,ul,ol /* Paragraph Style */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 0px 0px 0px 0px;
+}
+.rvps1 /* Centered */
+{
+ text-align: center;
+}
+.rvps2 /* Paragraph Style */
+{
+ line-height: 1.50;
+ margin: 0px 0px 10px 0px;
+}
+.rvps3
+{
+ text-align: justify;
+ line-height: 1.50;
+}
+.rvps4
+{
+ line-height: 1.50;
+}
+.rvps5 /* Paragraph Style */
+{
+ margin: 20px 0px 10px 0px;
+}
+.rvps6 /* Paragraph Style */
+{
+    border-color: #f3f5f9;
+    border-style: solid;
+    border-width: 0px;
+    margin: 0px 0px 32px 0px;
+    display: inline-block;
+}
+.rvps7
+{
+}
+.rvps8 /* Paragraph Style */
+{
+ margin: 20px 0px 20px 0px;
+}
+.rvps9 /* Paragraph Style */
+{
+ line-height: 1.50;
+ margin: 10px 0px 10px 0px;
+}
+.rvps10 /* Paragraph Style */
+{
+ margin: 20px 0px 15px 0px;
+}
+.rvps11 /* Paragraph Style */
+{
+ margin: 15px 0px 15px 0px;
+}
+.rvps12
+{
+ line-height: 1.50;
+ margin: 10px 0px 0px 0px;
+}
+.rvps13 /* Paragraph Style */
+{
+ line-height: 1.50;
+ margin: 0px 0px 10px 0px;
+}
+.rvps14
+{
+ line-height: 1.50;
+ margin: 20px 0px 10px 0px;
+}
+.rvps15 /* Paragraph Style */
+{
+ text-align: center;
+ border-color: #c0c0c0;
+ border-style: solid;
+ border-width: 1px;
+ border-right: none;
+ border-left: none;
+ padding: 2px 0px 2px 0px;
+ margin: 7px 0px 7px 0px;
+ display:none;
+}
+.rvps16
+{
+}
+.rvps17
+{
+ text-align: justify;
+ text-indent: 0px;
+ line-height: 1.73;
+ page-break-inside: avoid;
+ page-break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 17px 0px 17px 0px;
+}
+.rvps18 /* Paragraph Style */
+{
+ margin: 20px 0px 10px 0px;
+}
+.rvps19 /* Paragraph Style */
+{
+ line-height: 1.50;
+ margin: 0px 0px 10px 0px;
+}
+.rvps20
+{
+ text-align: justify;
+}
+.rvps21
+{
+ line-height: 1.50;
+ margin: 20px 0px 10px 0px;
+}
+.rvps22
+{
+ line-height: 1.50;
+ margin: 20px 0px 15px 0px;
+}

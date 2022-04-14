@@ -1,0 +1,463 @@
+{
+  "categories": [
+    "Data",
+    "General"
+  ],
+  "Property": {},
+  "Nodes": [
+    {
+      "Name": "表单",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 399,
+        "translationY": 56,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ff8000",
+        "sprites": {
+          "text": {
+            "text": "表单",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Form"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 388,
+        "translationY": 65,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ff8000",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Form1"
+    },
+    {
+      "Name": "表单",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 196,
+        "translationY": 203,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff8000",
+        "sprites": {
+          "text": {
+            "text": "表单",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Form2"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 188,
+        "translationY": 212,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff8000",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Form3"
+    },
+    {
+      "Name": "表单",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 388,
+        "translationY": 203,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff8000",
+        "sprites": {
+          "text": {
+            "text": "表单",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Form4"
+    },
+    {
+      "Name": "表单",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 381,
+        "translationY": 212,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff8000",
+        "sprites": {
+          "text": {
+            "text": "表单",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Form5"
+    },
+    {
+      "Name": "表单",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 372,
+        "translationY": 222,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff8000",
+        "sprites": {
+          "text": {
+            "text": "表单",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Form6"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 364,
+        "translationY": 231,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff8000",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Form7"
+    },
+    {
+      "Name": "表单",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 579,
+        "translationY": 203,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff8000",
+        "sprites": {
+          "text": {
+            "text": "表单",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Form8"
+    },
+    {
+      "Name": "",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 571,
+        "translationY": 212,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ff8000",
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Form9"
+    }
+  ],
+  "Links": [
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Form2",
+      "FromPoint": "ActivityMiddleTop",
+      "ToNodeId": "Form8",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#ff8000",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 246,
+            "y": 203
+          },
+          {
+            "x": 246,
+            "y": 168
+          },
+          {
+            "x": 629,
+            "y": 168
+          },
+          {
+            "x": 629,
+            "y": 203
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "dashedDiamond"
+          },
+          "endArrow": {
+            "type": "dashedDiamond"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Form1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Form4",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#ff8000",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 438,
+            "y": 126.66666666666666
+          },
+          {
+            "x": 438,
+            "y": 203
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "dashedDiamond"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    }
+  ]
+}

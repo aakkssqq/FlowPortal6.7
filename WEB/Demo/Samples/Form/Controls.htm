@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style type="text/css">
+        body
+        {
+            padding:5px 60px 20px 60px;
+            text-align:center;
+            font-family:Verdana;
+        }
+        
+        .caption
+        {
+            font-size:2em;
+            font-weight:bold;
+            text-align:left;
+            margin:30px 0px 20px 10px;
+        }
+        
+        .copyright
+        {
+            position: fixed;
+            top: 5px;
+            right: 5px;
+            color: blue;
+            padding:3px;
+            font-size:10px;
+        }
+        
+        .navigator
+        {
+            text-align:left;
+        }
+        
+        .link
+        {
+            display:inline-block;
+            background-color:#C0FFC0;
+            border:solid 3px Lime;
+            width:230px;
+            text-align:center;
+            padding:22px 0px;
+            margin:10px;
+            font-weight:bold;
+            font-size:1em;
+        }
+        
+        .disabled
+        {
+            border-color:#dcdcdc;
+            background-color:#f5f5f5;
+            cursor:default;
+        }
+        
+        .enabled:hover
+        {
+            border-color:Fuchsia;
+            background-color:Aqua;
+        }
+    </style>
+
+    <script type="text/javascript">
+        var controls = {
+            XTextBox:true,
+            XDateTimePicker: true,
+            XDropDownList: true,
+            XAttachments:true,
+            XImageAttachment: true,
+            XLabel:true,
+            XListBox:true,
+            XHyperLink:true,
+            XGridLineNo:true,
+            XCheckBox: true,
+            XCheckBoxList: true,
+            XRadioButton: true,
+            XRadioButtonList: true,
+            XHtmlEditor: true,
+            XButton: true,
+            XPrintButton: true,
+            XAddBlockButton: true,
+            XHistoryFormLink: true,
+            XChildFormLink: true,
+            XDataBrowserButton: true,
+            XSelectUserButton: true,
+            XSelectOUButton: true,
+            XCustomBrowserButton: true,
+            XExcelDataImportButton: true,
+            XExcelDataExportButton: true,
+            XExtJSControl:true,
+            OtherControls:true
+        };
+
+        var grids = {
+            DemoGrid1: {
+                text: '常规Grid',
+                enabled: true
+            },
+            DemoGrid2: {
+                text: '嵌套Grid',
+                enabled: false
+            }
+        }
+
+        var esbs = {
+            EsbDlg: {
+                text: 'excel开窗',
+                enabled: false
+            },
+            ExcelGrid: {
+                text: 'excel数据源',
+                enabled: false
+            },
+            SQLGrid: {
+                text: 'SQL数据源',
+                enabled: false
+            },
+            WebGrid: {
+                text: 'Web数据源',
+                enabled: false
+            },
+            OracleGrid: {
+                text: 'Oracle数据源',
+                enabled: false
+            },
+            SapGrid: {
+                text: 'Sap数据源',
+                enabled: false
+            }
+        }
+
+        function initMenu(containerId,data) {
+            var el = document.getElementById(containerId,data),
+                newLink;
+
+            for (var controlName in data) {
+                var item = data[controlName];
+
+                if (item instanceof Object) {
+                    item.demoFileName = controlName + '.aspx'
+                }
+                else {
+                    item = {
+                        text: controlName,
+                        demoFileName: controlName + '.aspx',
+                        enabled: item
+                    }
+                }
+
+                if (item.enabled) {
+                    newLink = document.createElement('a');
+                    newLink.className = 'link enabled';
+                    newLink.target = '_blank';
+                    newLink.href = '../../../YZSoft/Forms/XForm/Demo/XFormControls/' + item.demoFileName + '?pn=Purchase%20Demo&version=1.0';
+                }
+                else {
+                    newLink = document.createElement('span');
+                    newLink.className = 'link disabled';
+                }
+
+                newLink.innerHTML = item.text;
+                el.appendChild(newLink);
+            }
+        }
+
+        window.onload = function () {
+            initMenu('controls', controls);
+            initMenu('esb', esbs);
+            initMenu('grids', grids);
+        }
+    </script>
+</head>
+<body>
+    <div class="copyright"><div></div></div>
+    <div class="caption">Demo of XForm Controls</div>
+    <div class="navigator" id="controls">
+    </div>
+    <div class="caption" style="display:none">ESB</div>
+    <div class="navigator" style="display:none" id="esb">
+    </div>
+    <div class="caption">Grids</div>
+    <div class="navigator" id="grids">
+    </div></body>
+</html>

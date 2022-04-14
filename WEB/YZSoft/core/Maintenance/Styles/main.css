@@ -1,0 +1,6 @@
+﻿html,body {height:100%;width:100%;margin:0px;}
+div.frame{display: table;background-color: #fafad2;width: 100%;height: 100%;overflow: hidden;margin: 0px;}
+div.box { vertical-align:middle; display:table-cell; text-align:center; _position:absolute; _top:50%; }
+div.img-building {width:161px;height:164px; margin-top:0px; margin-left:auto; margin-right:auto; background-image:url('../Images/building.png'); background-repeat:no-repeat; background-position:center center}
+div.content { color:red; display:inline-block; _position:relative; _top:-50%; font-family:微软雅黑; font-size:28px; font-weight:bold }
+div.module{}

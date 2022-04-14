@@ -1,0 +1,204 @@
+﻿{
+  "categories": [
+    "Data",
+    "General"
+  ],
+  "Property": {
+    "LastChange": "2021-12-24T10:34:34.8676992+08:00",
+    "ChangeBy": "sa",
+    "ChangeByShortName": "sa"
+  },
+  "Nodes": [
+    {
+      "Id": "Form1",
+      "Name": "WF_ATTACH_FILES",
+      "xclass": "YZSoft.bpa.sprite.Data.Form",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 87,
+        "translationY": 226,
+        "x": 0,
+        "y": 0,
+        "width": 130,
+        "height": 77,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#e93c2f",
+        "fillStyle": {
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#f18d56"
+            },
+            {
+              "offset": 0.8,
+              "color": "#ea5413"
+            },
+            {
+              "offset": 1,
+              "color": "#ea5413"
+            }
+          ],
+          "type": "linear",
+          "degrees": 270
+        },
+        "sprites": {
+          "text": {
+            "text": "WF_ATTACH_FILES",
+            "fillStyle": "#000000",
+            "fontFamily": "微軟雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Form",
+        "reportType": "Form"
+      }
+    },
+    {
+      "Id": "Forms",
+      "Name": "EF+FormId",
+      "xclass": "YZSoft.bpa.sprite.Data.Forms",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 87,
+        "translationY": 84,
+        "x": 0,
+        "y": 0,
+        "width": 165,
+        "height": 92,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#f5b027",
+        "fillStyle": {
+          "stops": [
+            {
+              "offset": 0,
+              "color": "#f7ee13"
+            },
+            {
+              "offset": 0.8,
+              "color": "#f8b82b"
+            },
+            {
+              "offset": 1,
+              "color": "#f8b82b"
+            }
+          ],
+          "type": "linear",
+          "degrees": 270
+        },
+        "sprites": {
+          "text": {
+            "text": "EF+FormId",
+            "fillStyle": "#000000",
+            "fontFamily": "微軟雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Forms",
+        "reportType": "Form"
+      }
+    },
+    {
+      "Id": "Text",
+      "Name": "附件資料表",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 87,
+        "translationY": 194,
+        "x": 0,
+        "y": 0,
+        "width": 81,
+        "height": 28,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "附件資料表",
+            "fillStyle": "#000000",
+            "fontFamily": "微軟雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    },
+    {
+      "Id": "Text1",
+      "Name": "表單資料表",
+      "xclass": "YZSoft.bpa.sprite.General.Text",
+      "surface": "shape",
+      "Assisit": false,
+      "sprite": {
+        "translationX": 87,
+        "translationY": 54,
+        "x": 0,
+        "y": 0,
+        "width": 81,
+        "height": 28,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "表單資料表",
+            "fillStyle": "#000000",
+            "fontFamily": "微軟雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Activity",
+        "reportType": "Activity"
+      }
+    }
+  ],
+  "Links": []
+}

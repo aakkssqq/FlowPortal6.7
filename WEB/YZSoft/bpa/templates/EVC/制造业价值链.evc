@@ -1,0 +1,432 @@
+{
+  "categories": [
+    "General",
+    "FlowChart",
+    "EVC",
+    "EPC"
+  ],
+  "Property": {},
+  "Nodes": [
+    {
+      "Name": "基础结构 - 财务、文化",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 285,
+        "translationY": 190,
+        "x": 0,
+        "y": 0,
+        "width": 349,
+        "height": 46,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "基础结构 - 财务、文化",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle2"
+    },
+    {
+      "Name": "采购管理 - 原材料、设备、服务",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 285,
+        "translationY": 236,
+        "x": 0,
+        "y": 0,
+        "width": 349,
+        "height": 46,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "采购管理 - 原材料、设备、服务",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle3"
+    },
+    {
+      "Name": "技术支持 - 研发、质量",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 285,
+        "translationY": 280,
+        "x": 0,
+        "y": 0,
+        "width": 349,
+        "height": 42,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "技术支持 - 研发、质量",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle4"
+    },
+    {
+      "Name": "人力资源管理 - 培训、绩效",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 285,
+        "translationY": 322,
+        "x": 0,
+        "y": 0,
+        "width": 349,
+        "height": 42,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "人力资源管理 - 培训、绩效",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle5"
+    },
+    {
+      "Name": "原料\n输入",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 285,
+        "translationY": 365,
+        "x": 0,
+        "y": 0,
+        "width": 67,
+        "height": 175,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "原料\n输入",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle6"
+    },
+    {
+      "Name": "生产\n加工",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 350,
+        "translationY": 364.4375,
+        "x": 0,
+        "y": 0,
+        "width": 72.5,
+        "height": 175.125,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "生产\n加工",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle1"
+    },
+    {
+      "Name": "成品\n输出",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 419.5,
+        "translationY": 364.5,
+        "x": 0,
+        "y": 0,
+        "width": 72,
+        "height": 175,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "成品\n输出",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle7"
+    },
+    {
+      "Name": "销售及市场营销",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 490,
+        "translationY": 365,
+        "x": 0,
+        "y": 0,
+        "width": 69,
+        "height": 175,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "销售及市场营销",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle8"
+    },
+    {
+      "Name": "客户服务和售后市场",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 559,
+        "translationY": 365,
+        "x": 0,
+        "y": 0,
+        "width": 75,
+        "height": 175,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "客户服务和售后市场",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle9"
+    },
+    {
+      "Name": "支\n援\n活\n动",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 211,
+        "translationY": 191,
+        "x": 0,
+        "y": 0,
+        "width": 69,
+        "height": 174,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#33ff33",
+        "sprites": {
+          "text": {
+            "text": "支\n援\n活\n动",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle11"
+    },
+    {
+      "Name": "主\n要\n活\n动",
+      "xclass": "YZSoft.bpa.sprite.General.Rectangle",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 211,
+        "translationY": 365.5,
+        "x": 0,
+        "y": 0,
+        "width": 69,
+        "height": 174,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#33ff33",
+        "sprites": {
+          "text": {
+            "text": "主\n要\n活\n动",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Rectangle12"
+    },
+    {
+      "Name": "\n利\n\n润",
+      "xclass": "YZSoft.bpa.sprite.EVC.ValueChain3",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 634,
+        "translationY": 190,
+        "x": 0,
+        "y": 0,
+        "width": 67,
+        "height": 349.5,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffff33",
+        "sprites": {
+          "text": {
+            "text": "\n利\n\n润",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "ValueChain31"
+    }
+  ],
+  "Links": []
+}

@@ -1,0 +1,56 @@
+﻿
+.yz-tree-bpalib .x-tree-view {
+    padding: 30px 0px;
+}
+
+.yz-tree-spritecategory .x-tree-elbow-img,
+.yz-tree-spritecategory .x-tree-icon {
+    display: none;
+}
+
+.yz-tree-spritecategory .x-grid-cell{
+    padding-left:10px;
+}
+
+.yz-tree-spritecategory .x-grid-item {
+    background-color: #f5f5f5;
+    border-top: solid 1px #fff;
+    border-bottom: solid 1px #ddd;
+}
+
+.yz-tree-spritecategory .x-tree-checkbox{
+    color:#333;
+}
+
+.yz-tree-transparent .x-grid-body {
+    background-color:transparent;
+}
+
+.yz-tree-transparent .x-grid-item {
+    background-color: transparent;
+}
+
+.yz-treeitem-column-datatype {
+    color: #aaa;
+    font-style: italic;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+/*yz-tree-ddindicator*/
+.yz-tree-ddindicator {
+    margin-top: 0px;
+    line-height: 0px;
+    pointer-events: none;
+    border-width: 2px 0 0;
+    border-style: dotted;
+    border-color: green;
+}
+
+.x-tree-view.yz-tree-dragover-maptarget .x-grid-item-over .x-tree-node-text {
+    color: #00a2df;
+}
+
+.x-tree-view.yz-tree-dragover-maptarget .x-grid-item-over .yz-jsonschema-type {
+    color: #00a2fd;
+}

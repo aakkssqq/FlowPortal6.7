@@ -1,0 +1,95 @@
+﻿
+body {
+    margin:0px;
+    padding: 12px;
+}
+
+.x-body
+{
+    background-color:#fff;
+    font-size:12px;
+    padding:12px;
+}
+
+@media print {
+    .yz-xform-field-notprint {
+        display: none !important;
+    }
+}
+
+.yz-xform-grid-opt-cnt
+{
+    position:absolute;
+    cursor:pointer;
+}
+
+.x-tree-node-leaf .folder{background-image:url(../../ExtJS/images/default/tree/folder.gif);}
+
+.yz-grid-menu .x-menu-item-icon{height:13px;width:15px}
+.yz-grid-menu a.x-menu-item{line-height:13px;padding: 2px 12px 2px 26px;}
+.yz-grid-menu .x-menu-list{padding: 2px;}
+.yz-grid-menu  .x-menu-sep{margin: 0px 0px;}
+
+.appendblock {background-image: url(../images/appendblock.gif) !important;}
+.delete {background-image: url(../images/delete.gif) !important;}
+.insertabove {background-image: url(../images/insertabove.gif) !important;}
+.insertbelow {background-image: url(../images/insertbelow.gif) !important;}
+.appendcopy {background-image: url(../images/appendcopy.gif) !important;}
+.copy {background-image: url(../images/copy.gif) !important;}
+.paste {background-image: url(../images/paste.gif) !important;}
+
+.TaskRowGray .x-grid3-cell
+{
+	color:#999999;
+}
+
+.x-grid3-body .TaskRowGray .x-grid3-cell a
+{
+	color:#999999;
+}
+
+.yz-xform-field-ele-spoor
+{
+    visibility:hidden;
+    padding:0px;
+    margin:0px;
+    position:absolute;
+    right:0px;
+    top:0px;
+    background-image:url(ui/spoor.png);
+    background-position:1px -1px;
+    background-repeat:no-repeat;
+    width:8px;
+    height:8px;
+    cursor:help;
+}
+
+.yz-xform-field-ele-spoor-modified
+{
+    visibility:visible;
+    background-image:url(ui/modify.png);
+}
+
+.yz-spoor-table
+{
+    color:#d8d8d8;
+}
+
+.yz-spoor-value {
+    color: #fff;
+}
+
+.yz-spoor-tr-data-modify .yz-spoor-value {
+    color: #00bcd4;
+}
+
+.yz-spoor-seprator {
+    margin: 0px 3px;
+}
+
+.yz-xform-field-repeater-cnt.yz-xform-field-validation-error,
+.yz-xform-field-validation-error .yz-xform-field-wrap
+{
+    background-color:#ffc0c0!important;
+    border-color:#ff8080!important;
+}

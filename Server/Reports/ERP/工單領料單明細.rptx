@@ -1,0 +1,231 @@
+﻿{
+  "author": {
+    "uid": "T01081",
+    "name": "T01081",
+    "createat": "2022-03-25 16:41:20"
+  },
+  "lastModifier": {
+    "uid": "T01081",
+    "name": "T01081",
+    "date": "2022-03-25 16:50:20"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "資料來源1": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "ERP_Tw",
+          "query": "WITH \n\tMonthTable AS (\n\t\tSELECT \n\t\t\trow_number() OVER(PARTITION BY  TE004 ORDER BY TE004) As Seq,\n\t\t\tTE004 AS 材料用品,\n\t\t\tTE017 AS 品名,\n\t\t\tTE018 AS 規格,\n\t\t\tA.TC003 AS 日期,\n\t\t\tTE001+'-'+TE002+'-'+TE003 AS 領退料單號,\n\t\t\tA.TC008 AS 單據性質,\n\t\t\tTE008 AS 庫別,\n\t\t\tB.MC002 AS 庫別名稱,\n\t\t\tTE005 AS 領退料數量,\n\t\t\tTE006 AS 領退料單位,\n\t\t\tTE009 AS 製程代號,\n\t\t\tD.LA012 AS 原料單價_,\n\t\t\tD.LA013 AS 成本_,\n\t\t\tD.LA005 ,\n\t\t\tTE019 AS 確認碼 , \n\t\t\tTE021 AS 領退料包裝數量,\n\t\t\tTE022 AS 包裝單位,\n\t\t\tTE010 AS 批號,\n\t\t\tTE020 AS 專案代號\n\t\tFROM TW..MOCTE AS MOCTE\n\t\tLEFT JOIN TW..MOCTC AS A ON TE001=A.TC001 AND TE002=A.TC002\n\t\tLEFT JOIN TW..CMSMC AS B ON TE008=B.MC001\n\t\tLEFT JOIN TW..INVMB AS C ON TE004=C.MB001\n\t\tLEFT JOIN TW..INVLA AS D ON  TE001=D.LA006 AND TE002=D.LA007 AND TE003=D.LA008\n\t\tWHERE TE011=@FormType AND TE012=@FormNum\n\t\t--order by TE004,A.TC003　20220325124431\n\t)\n\t\n\tSelect\n\t\tSeq,\n\t\t材料用品,\n\t\t品名,\n\t\t規格,\n\t\t日期,\n\t\t領退料單號,\n\t\t單據性質,\n\t\t庫別,\n\t\t庫別名稱,\n\t\t領退料數量,\n\t\t(Select SUM(領退料數量) from MonthTable B where B.Seq<=A.Seq ) as 累積領退料數量 ,\n\t\t領退料單位,\n\t\t製程代號,\n\t\t原料單價_,\n\t\t成本_,\n\t\t--(Select SUM(成本_) from MonthTable B where B.Seq<=A.Seq ) as 累積成本 ,\n\t\tLA005 ,\n\t\t確認碼 , \n\t\t領退料包裝數量,\n\t\t包裝單位,\n\t\t批號,\n\t\t專案代號\n\t\tFrom MonthTable A",
+          "queryParams": [
+            {
+              "name": "@FormType",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@FormNum",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 17
+        },
+        "paramNames": [
+          "@FormType",
+          "@FormNum"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.text1": {
+        "ctype": "report.search.field.text",
+        "binddsid": "資料來源1",
+        "xdatabind": "@FormType",
+        "fieldLabel": "工單單別",
+        "emptyText": ""
+      },
+      "report.search.field.text2": {
+        "ctype": "report.search.field.text",
+        "binddsid": "資料來源1",
+        "xdatabind": "@FormNum",
+        "fieldLabel": "工單編號",
+        "emptyText": ""
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.text1",
+          "report.search.field.text2"
+        ]
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "資料來源1",
+        "pagingBarDisplay": true,
+        "export2Excel": true,
+        "exportTemplate": null,
+        "title": "",
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "No.",
+            "dataIndex": "Seq",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 54
+          },
+          {
+            "text": "材料用品",
+            "dataIndex": "材料用品",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 193
+          },
+          {
+            "text": "品名",
+            "dataIndex": "品名",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 239
+          },
+          {
+            "text": "規格",
+            "dataIndex": "規格",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "日期",
+            "dataIndex": "日期",
+            "align": "start",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 122
+          },
+          {
+            "text": "領退料單號",
+            "dataIndex": "領退料單號",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 214
+          },
+          {
+            "text": "性質",
+            "dataIndex": "單據性質",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 68
+          },
+          {
+            "text": "庫別名稱",
+            "dataIndex": "庫別名稱",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 103
+          },
+          {
+            "text": "數量",
+            "dataIndex": "領退料數量",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 68
+          },
+          {
+            "text": "累積數量",
+            "dataIndex": "累積領退料數量",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 76
+          },
+          {
+            "text": "單位",
+            "dataIndex": "領退料單位",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 58
+          },
+          {
+            "text": "製程代號",
+            "dataIndex": "製程代號",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 81
+          },
+          {
+            "text": "原料單價_",
+            "dataIndex": "原料單價_",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 86
+          },
+          {
+            "text": "成本_",
+            "dataIndex": "成本_",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 64
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "report.grid1"
+    ]
+  }
+}

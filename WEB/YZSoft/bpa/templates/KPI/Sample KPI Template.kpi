@@ -1,0 +1,437 @@
+﻿{
+  "categories": [
+    "KPI",
+    "General"
+  ],
+  "Property": {
+    "LastChange": "2016-09-12T13:38:38.5953701+08:00",
+    "ChangeBy": "99199",
+    "ChangeByShortName": "全茂林"
+  },
+  "Nodes": [
+    {
+      "Id": "KPI",
+      "Name": "采购经理KPI",
+      "xclass": "YZSoft.bpa.sprite.KPI.KPI",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 123,
+        "translationY": 191,
+        "x": 0,
+        "y": 0,
+        "width": 120,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#99ccff",
+        "sprites": {
+          "text": {
+            "text": "采购经理KPI",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "KPI",
+        "reportType": "KPI"
+      }
+    },
+    {
+      "Id": "KPI1",
+      "Name": "采购成本降低达成率",
+      "xclass": "YZSoft.bpa.sprite.KPI.KPI",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 392,
+        "translationY": 39,
+        "x": 0,
+        "y": 0,
+        "width": 120,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#99ccff",
+        "sprites": {
+          "text": {
+            "text": "采购成本降低达成率",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "PP001",
+        "Description": "指标定义：本岗位实际达成降低的采购成本与计划降低的采购成本的比值\n考核权重：50%\n计算方法：实际降低成本/计划降低成本；可增加分值，最高150分\nKPI值：必达：100； 挑战1：120；挑战2: 150 \n\n",
+        "Remark": "",
+        "spriteType": "KPI",
+        "reportType": "KPI"
+      }
+    },
+    {
+      "Id": "KPI2",
+      "Name": "进料批次不合格率",
+      "xclass": "YZSoft.bpa.sprite.KPI.KPI",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 392,
+        "translationY": 141,
+        "x": 0,
+        "y": 0,
+        "width": 120,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#99ccff",
+        "sprites": {
+          "text": {
+            "text": "进料批次不合格率",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "PP002",
+        "Description": "指标定义：经品质部确认不合格批次/收货批次\n考核权重：20%\n计算方法：每增加1%扣10分；\nKPI值：必达：100； 挑战1：120；挑战2: 150 ",
+        "Remark": "",
+        "spriteType": "KPI",
+        "reportType": "KPI"
+      }
+    },
+    {
+      "Id": "KPI3",
+      "Name": "采购不及时次数",
+      "xclass": "YZSoft.bpa.sprite.KPI.KPI",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 392,
+        "translationY": 245,
+        "x": 0,
+        "y": 0,
+        "width": 120,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#99ccff",
+        "sprites": {
+          "text": {
+            "text": "采购不及时次数",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "PP003",
+        "Description": "指标定义：未在规定时间内完成采购次数\n考核权重：20%\n计算方法：每发生一次不按时交货或规格数量不符的采购批次扣10分\nKPI值：必达：100； 挑战1：120；挑战2: 150 ",
+        "Remark": "",
+        "spriteType": "KPI",
+        "reportType": "KPI"
+      }
+    },
+    {
+      "Id": "KPI4",
+      "Name": "供应商评估管理",
+      "xclass": "YZSoft.bpa.sprite.KPI.KPI",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 392,
+        "translationY": 348,
+        "x": 0,
+        "y": 0,
+        "width": 120,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#99ccff",
+        "sprites": {
+          "text": {
+            "text": "供应商评估管理",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "PP004",
+        "Description": "指标定义：及时了解供应商状况，评估供应商达成能力\n考核权重：10%\n计算方法：负责供应商评估报告质量，经理评分，最高可达120分\nKPI值：必达：100； 挑战1：120；挑战2: 150 ",
+        "Remark": "",
+        "spriteType": "KPI",
+        "reportType": "KPI"
+      }
+    }
+  ],
+  "Links": [
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "KPI",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "KPI1",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": -69,
+        "translationY": -3,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 312,
+            "y": 224
+          },
+          {
+            "x": 373,
+            "y": 224
+          },
+          {
+            "x": 373,
+            "y": 72
+          },
+          {
+            "x": 461,
+            "y": 72
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "KPI",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "KPI2",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": -69,
+        "translationY": -3,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 5,
+        "points": [
+          {
+            "x": 312,
+            "y": 224
+          },
+          {
+            "x": 373,
+            "y": 224
+          },
+          {
+            "x": 373,
+            "y": 174
+          },
+          {
+            "x": 461,
+            "y": 174
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "KPI",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "KPI3",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": -69,
+        "translationY": -3,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 5,
+        "points": [
+          {
+            "x": 312,
+            "y": 224
+          },
+          {
+            "x": 373,
+            "y": 224
+          },
+          {
+            "x": 373,
+            "y": 278
+          },
+          {
+            "x": 461,
+            "y": 278
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "KPI",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "KPI4",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": -69,
+        "translationY": -3,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 312,
+            "y": 224
+          },
+          {
+            "x": 373,
+            "y": 224
+          },
+          {
+            "x": 373,
+            "y": 381
+          },
+          {
+            "x": 461,
+            "y": 381
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    }
+  ]
+}

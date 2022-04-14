@@ -1,0 +1,225 @@
+﻿
+@font-face {
+    font-family: 'yzglyphs';
+	src:url('fonts/yzglyphs.eot?673kt2');
+	src:url('fonts/yzglyphs.eot?#iefix673kt2') format('embedded-opentype'),
+		url('fonts/yzglyphs.ttf?673kt2') format('truetype'),
+		url('fonts/yzglyphs.woff?673kt2') format('woff'),
+		url('fonts/yzglyphs.svg?673kt2#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*:focus
+{
+    outline:none;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+input:-internal-autofill-selected {
+    background-color:red !important;
+}
+
+html, body {
+    background-color: #fff;
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: 'Microsoft Yahei', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.r {
+    background-color: red !important;
+}
+
+.g {
+    background-color: green !important;
+}
+
+.b {
+    background-color: blue !important;
+}
+
+.yzglyph {
+    position: relative;
+}
+
+.yzglyph:after {
+    position: absolute;
+    left: 14px;
+    top: 0px;
+    bottom: 0px;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    font-family: 'yzglyphs';
+    font-size: 18px;
+    line-height: 20px;
+    color: #6e6e6e;
+    text-align: center;
+}
+
+.yz-outter-wrap {
+}
+
+.yz-banner {
+    margin: 0px -15px;
+    padding: 10px 30px 15px 30px;
+}
+
+.yz-logo {
+    width: 200px;
+    height: 50px;
+    background-image: url(ui/logo.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.lang-sp {
+    font-size: 12px;
+    color: #9d9d9d;
+    padding: 0px 6px;
+}
+
+.lang-item {
+    font-size: 12px;
+    color: #9d9d9d;
+    cursor: pointer;
+}
+
+.lang-item.selected {
+    color: #000;
+}
+
+.yz-body {
+    background: url(ui/bg.png);
+    color: #fff;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.yz-right-warp {
+}
+
+.yz-right-top-wrap {
+}
+
+.yz-copyright {
+    padding-bottom: 30px;
+    padding-top: 10px;
+    font-size: 13px;
+    line-height: 20px;
+    color: #f0f0f0;
+}
+
+.yz-login-body {
+    padding:40px;
+    width:320px;
+    background-color:#fff;
+}
+
+
+.head {
+    width: 96px;
+    height: 96px;
+    margin: auto;
+    background-color: transparent;
+    background-position: center center;
+    background-size: contain;
+    border-radius: 50px;
+}
+
+.tip
+{
+    min-height:18px;
+    min-width:30px;
+    margin:32px 0px 16px 0px;
+    color:red;
+    line-height:18px;
+}
+
+.yz-input
+{
+}
+
+.yz-input > input {
+    font-size: 13px;
+    line-height: 17px;
+    padding: 10px 8px;
+    border: solid 1px #e5ecF4;
+    border-radius: 3px;
+    width: 100%;
+    /*transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;*/
+}
+
+.yz-input > input:focus {
+    border-color:#aad6fc;
+}
+    
+.pwd {
+    margin-top: 20px;
+}
+
+.yz-btn {
+    font-size: 16px;
+    line-height: 17px;
+    padding: 12px 8px;
+    background-color: #faba2c;
+    background: linear-gradient(to right, #faba2c 0%,#f8a529 100%);
+    border-radius: 3px;
+    cursor: pointer;
+    position:relative;
+}
+
+.yz-btn:hover{
+    opacity:0.9;
+}
+
+.yz-btn.loading:after {
+    content: '';
+    position: absolute;
+    right: 14px;
+    top: 0px;
+    bottom: 0px;
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    background-color: transparent;
+    background-image: url(ui/loading.gif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.web-login-denied .yz-btn.login,
+.nt-login-denied .yz-btn.loginnt {
+    opacity: 0.3 !important;
+}
+
+.login {
+    margin-top: 20px;
+}
+
+.loginnt{
+    margin-top:10px;
+}
+
+.alt-message {
+    max-width: 400px;
+    padding: 30px !important;
+    line-height: 20px;
+    color: #666;
+}
+
+.alt-message strong {
+    color: #F90;
+}

@@ -1,0 +1,96 @@
+﻿
+/*yz-window-dock*/
+.yz-window-dock {
+    overflow: visible;
+    border-width: 0px;
+    box-shadow: 0px 0px 15px #747474;
+    border-radius: 0px;
+}
+
+.yz-window-dock > .x-window-header {
+    overflow: visible;
+    border-width: 0px !important;
+    background-color: transparent;
+}
+
+.yz-window-dock .x-window-header-title {
+    color: #000;
+}
+
+.yz-window-dock .x-tool-tool-el {
+    color: #000;
+}
+
+.yz-window-dock-hideclose .x-tool-close {
+    display: none;
+}
+
+.yz-window-dock .x-window-body{
+    padding:0px;
+}
+
+/*yz-window-dock-close*/
+.yz-window-dock-close {
+    display: block;
+    position: absolute;
+    height: 32px;
+    width: 35px;
+    top: 0px;
+    left: -35px;
+    background-color: #39a773 !important;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    cursor: pointer;
+}
+
+.yz-window-dock-close:before {
+    font-family: 'yzglyphs';
+    content: "\eab0";
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    font-size: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+
+/*yz-window-frame*/
+.yz-window-frame {
+    background-color:#f5f5f5;
+}
+
+.yz-window-frame .x-toolbar-footer .x-btn-over.x-btn {
+    background-color: #ececec;
+}
+
+/*yz-window-prompt*/
+.yz-window-prompt .x-window-header {
+    background-color: #28a745;
+    padding: 20px 16px 16px 26px;
+}
+
+.yz-window-prompt .x-title-text-default {
+    color: #fff;
+}
+
+.yz-window-prompt .x-tool-tool-el {
+    color: #c3f6cf;
+}
+
+.yz-window-prompt .x-toolbar-footer {
+    padding: 15px 18px 15px 26px;
+}
+
+.yz-window-info {
+    background-color: #28a745;
+}
+
+.yz-window-info .text{
+    color:#fff;
+    opacity: 0.7;
+}

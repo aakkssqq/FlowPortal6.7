@@ -1,0 +1,184 @@
+﻿{
+  "author": {
+    "uid": "sa",
+    "name": "sa",
+    "createat": "2022-03-16 16:29:28"
+  },
+  "lastModifier": {
+    "uid": "sa",
+    "name": "sa",
+    "date": "2022-03-17 14:02:45"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "未分批工單": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "sMes_Prod",
+          "query": "--未處理工單\nSELECT RONO ,MONO ,CUSTOMERNO,CUSTOMERNAME,ITEMNO, [PRIORITY], PRODUCTNAME, ITEMSPEC, GRAPHNO , ISNULL(PRODUCTVERSION,PRODUCTVERSION) PRODUCTVERSION, unitname2, LOTSTDQTY, UNRELEASELOTQTY, MOQTY,  MOTYPENAME\nFROM (\n\tSelect (select count(*) \n\t\t\tfrom tbloemobasis a \n\t\t\t\tleft Join tblsysmotypebasis b on a.MOTYPENO = b.MOTYPENO \n\t\t\t\tleft Join TBLPRDPRODUCTBASIS c  on a.PRODUCTNO =c.PRODUCTNO AND c.CURVERSION = 1 AND c.IssueState = 2 \n\t\t\t\tleft Join TBLENTCUSTOMERBASIS  d  on a.CUSTOMERNO =d.CUSTOMERNO \n\t\t\t\tleft Join TBLSYSUNITBASIS e  on a.MOUNITNO =e.UNITNO  \n\t\t\twhere a.MOSTATE = 3 AND UnReleaseLotQty > 0) as 'RowCount' , \n\t\ta.MONO, a.CUSTOMERNO, d.CUSTOMERNAME, ISNULL(c.PRODUCTVERSION,a.PRODUCTVERSION) PRODUCTVERSION, e.unitname2,  a.UNRELEASELOTQTY, a.MOQTY, a.MOTYPENO, b.MOTYPENAME, a.RONO, a.ITEMNO, a.PRIORITY, a.MOUNITNO, c.LOTSTDQTY, c.PRODUCTNAME, c.ITEMSPEC, c.GRAPHNO  \n\tFrom tbloemobasis a \n\t\tleft Join tblsysmotypebasis b on a.MOTYPENO = b.MOTYPENO \n\t\tleft Join TBLPRDPRODUCTBASIS c  on a.PRODUCTNO =c.PRODUCTNO AND c.CURVERSION = 1 AND c.IssueState = 2 \n\t\tleft Join TBLENTCUSTOMERBASIS  d  on a.CUSTOMERNO =d.CUSTOMERNO \n\t\tleft Join TBLSYSUNITBASIS e  on a.MOUNITNO =e.UNITNO  \n\tWhere a.MOSTATE = 3 AND \n\tUnReleaseLotQty > 0\n) Temp\nwhere  1=1 and (@RONO is NULL OR RONO like @RONO)  \norder by <%=String.IsNullOrEmpty(Context.Current.RequestParams[\"sortstring\"])?\"RONO  desc\":Context.Current.RequestParams[\"sortstring\"]%>",
+          "queryParams": [
+            {
+              "name": "@RONO",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 17
+        },
+        "paramNames": [
+          "@RONO"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.text1": {
+        "ctype": "report.search.field.text",
+        "binddsid": "未分批工單",
+        "xdatabind": "@RONO",
+        "fieldLabel": "訂單編號",
+        "emptyText": ""
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.text1"
+        ]
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "未分批工單",
+        "pagingBarDisplay": true,
+        "export2Excel": false,
+        "exportTemplate": null,
+        "title": "未處理 訂單/工單",
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "訂單編號",
+            "dataIndex": "RONO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "group": true,
+            "flex": 1
+          },
+          {
+            "text": "工單編號",
+            "dataIndex": "MONO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "flex": 1
+          },
+          {
+            "text": "客戶編號",
+            "dataIndex": "CUSTOMERNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "flex": 1
+          },
+          {
+            "text": "客戶名稱",
+            "dataIndex": "CUSTOMERNAME",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "flex": 1
+          },
+          {
+            "text": "項次",
+            "dataIndex": "ITEMNO",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 1
+          },
+          {
+            "text": "優先權",
+            "dataIndex": "PRIORITY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 1
+          },
+          {
+            "text": "產品名稱",
+            "dataIndex": "PRODUCTNAME",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "flex": 1
+          },
+          {
+            "text": "產品規格",
+            "dataIndex": "ITEMSPEC",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "flex": 1
+          },
+          {
+            "text": "單位",
+            "dataIndex": "unitname2",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "flex": 1
+          },
+          {
+            "text": "未下線數",
+            "dataIndex": "UNRELEASELOTQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "flex": 1
+          },
+          {
+            "text": "工單數量",
+            "dataIndex": "MOQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "flex": 1
+          },
+          {
+            "text": "工單類別名稱",
+            "dataIndex": "MOTYPENAME",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "flex": 1
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "report.grid1"
+    ]
+  }
+}

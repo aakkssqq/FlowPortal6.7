@@ -1,0 +1,22 @@
+﻿
+.yz-designer-container-top > div > div.x-autocontainer-innerCt > * {
+    margin: 10px;
+}
+
+.yz-designer-container-inner:not(:last-child) {
+    margin-right: 0px;
+    padding-right:10px;
+}
+
+.yz-designer-container-inner
+{
+    background-color:#f5f5f5;
+}
+
+.yz-designer-container-inner>div {
+    background-color: #eee;
+}
+
+.yz-autolayout-inline > div > div.x-autocontainer-innerCt > * {
+    display: inline-block;
+}

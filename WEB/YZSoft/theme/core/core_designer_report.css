@@ -1,0 +1,223 @@
+﻿
+.yz-tree-reportdesigner-datasource .yz-tree-node-column .x-tree-node-text,
+.yz-tree-reportdesigner-datasource .yz-tree-node-param .x-tree-node-text {
+    cursor: pointer;
+}
+
+/*indicator*/
+.yz-dd-part-indicator-report-series {
+    margin: 0px 3px;
+}
+
+/*select*/
+.yz-part-report-series.yz-part-select:after {
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+}
+
+/*container*/
+.yz-designer-container-report-series {
+    background-color: transparent;
+    border: dashed 1px #d0d0d0;
+    text-align: center;
+}
+
+.yz-designer-container-report-series.yz-part-innercomp-select {
+    border-color: #e91e63;
+}
+
+/*part*/
+.yz-part-report-series {
+    border: solid 1px #d0d0d0;
+    background: #f5f5f5;
+    margin: 0px 3px;
+    cursor: move;
+    overflow: visible;
+}
+
+.yz-part-report-series .x-panel-body {
+    background-color: transparent;
+}
+
+.yz-part-report-series .delete {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 10px;
+    height: 16px;
+    margin: auto;
+    color: #bbb;
+}
+
+.yz-part-report-series .delete:hover {
+    cursor: pointer;
+    color: #919191;
+}
+
+.yz-part-report-series .delete:after {
+    font-family: 'yzglyphs';
+    content: "\e62b";
+    font-size: 16px;
+    line-height: 16px;
+    height: 16px;
+    width: 16px;
+}
+
+/*part*/
+.yz-designer-container-report .yz-part-report-searchpnl {
+    background-color: #eee;
+}
+
+.yz-designer-container-report .yz-part-report-searchfield {
+    background-color: transparent;
+}
+
+.yz-part-report-series.yz-part-over {
+    background-color: #eee;
+}
+
+/*component*/
+.yz-cmp-report-series {
+    padding: 6px 36px 6px 20px;
+}
+
+/*opt*/
+.yz-series-opt-cnt {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    bottom:0px;
+    height:20px;
+    margin:auto;
+    color: #bbb;
+    z-index: 999;
+}
+
+.yz-series-opt-cnt .opt {
+    line-height: 20px;
+    padding-left:20px;
+    position:relative;
+    margin:0px 5px;
+}
+
+.yz-series-opt-cnt .opt:last-child{
+    margin-right:0px;
+}
+
+.yz-series-opt-cnt .opt:before {
+    font-family: 'yzglyphs';
+    content: "";
+    font-size: 16px;
+    line-height: 20px;
+    height: 20px;
+    width: 16px;
+    position: absolute;
+    left: 0px;
+}
+
+.yz-series-opt-cnt .opt:hover {
+    cursor: pointer;
+    color: #717171;
+}
+
+
+.yz-series-opt-cnt .setting:before {
+    content: "\e96b";
+}
+
+.yz-series-opt-cnt .add:before {
+    content: "\e61d";
+}
+
+.yz-series-opt-cnt .remove:before {
+    content: "\e95c";
+}
+
+/*opt*/
+.yz-searchfield-opt-cnt {
+    position: absolute;
+    top: 7px;
+    right: 0px;
+    bottom:0px;
+    height:20px;
+    color: #bbb;
+    z-index: 999;
+}
+
+.yz-searchfield-opt-cnt .opt {
+    line-height: 20px;
+    padding-left: 20px;
+    position: relative;
+    margin: 0px 3px;
+}
+
+.yz-searchfield-opt-cnt .opt:last-child{
+    margin-right:0px;
+}
+
+.yz-searchfield-opt-cnt .opt:before {
+    font-family: 'yzglyphs';
+    content: "";
+    font-size: 16px;
+    line-height: 20px;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 0px;
+    text-align:center;
+}
+
+.yz-searchfield-opt-cnt .opt:hover {
+    cursor: pointer;
+    color: #717171;
+}
+
+.yz-searchfield-opt-cnt .changetype:before {
+    content: "\e604";
+}
+
+.yz-searchfield-opt-cnt .remove:before {
+    content: "\e62b";
+}
+
+.yz-icon-chart-series-type {
+    width: 70px !important;
+    height: 70px !important;
+    background-size: cover;
+    background-color:#fff;
+}
+
+.yz-emptytext-report-img {
+    margin-bottom:12px;
+}
+
+.yz-emptytext-report-img:after {
+    font-family: 'yzglyphs';
+    content: "\eafb";
+    font-size: 60px;
+    line-height: 60px;
+    height: 60px;
+    width: 60px;
+    color: #e3e3e3;
+}
+
+.yz-emptytext-report-text {
+    margin-bottom: 60px;
+    font-size: 16px;
+    color: #d0d0d0;
+}
+
+.yz-sp-reportdesigner-tbar {
+    width: 1px;
+    background-color: #e3e3e3;
+    height: 30px;
+    margin: 0px 5px;
+    top: 5px !important;
+}
+
+.yz-tree-reportdesigner-datasource .x-grid-item-over .x-tree-icon,
+.yz-tree-reportdesigner-datasource .x-grid-item-over .x-tree-node-text {
+    color: #228be2;
+}

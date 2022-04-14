@@ -1,0 +1,614 @@
+﻿{
+  "categories": [
+    "Regulation",
+    "General"
+  ],
+  "Property": {
+    "LastChange": "2016-09-12T13:38:23.2924948+08:00",
+    "ChangeBy": "99199",
+    "ChangeByShortName": "全茂林"
+  },
+  "Nodes": [
+    {
+      "Id": "Risk1",
+      "Name": "申购制度",
+      "xclass": "YZSoft.bpa.sprite.Regulation.Regulation",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 425,
+        "translationY": 90,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 70,
+        "lineWidth": 1,
+        "lineDash": [],
+        "strokeStyle": "#330000",
+        "fillStyle": "#ff9933",
+        "sprites": {
+          "text": {
+            "text": "申购制度",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "Regulation",
+        "reportType": "Regulation"
+      }
+    },
+    {
+      "Id": "Item6",
+      "Name": "原材料申购",
+      "xclass": "YZSoft.bpa.sprite.Regulation.Item",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 46,
+        "translationY": 240,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffcc99",
+        "sprites": {
+          "text": {
+            "text": "原材料申购",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "Code": "",
+        "Description": "1. 物料申购部门根据生产、销售计划，库存情况及实际需要编制原材料、辅料需求清单（物料申购单），报请部门经理（负责人）审核，呈请厂长或经理签字审批，采购部门根据审批的申购单进行采购。 申购单一式四份：采购部门、仓库、财务、申购单位各执一份 \n2. 不按规定程序、未经厂长或经理签字审批的采购项目，由经办部门或经办当事人自行负责处理，仓库有权拒绝入库，财务有义务拒绝报销相关款项。  \n3. 生产用品由生产部负责申购，办公用品及办公耗材由行政部负责申购。 ",
+        "Remark": "",
+        "spriteType": "RegulationItem",
+        "reportType": "Regulation"
+      }
+    },
+    {
+      "Id": "Item7",
+      "Name": "辅料\n申购",
+      "xclass": "YZSoft.bpa.sprite.Regulation.Item",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 197,
+        "translationY": 240,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffcc99",
+        "sprites": {
+          "text": {
+            "text": "辅料\n申购",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "RegulationItem",
+        "reportType": "Regulation"
+      }
+    },
+    {
+      "Id": "Item8",
+      "Name": "办公用品\n申购",
+      "xclass": "YZSoft.bpa.sprite.Regulation.Item",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 348,
+        "translationY": 240,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffcc99",
+        "sprites": {
+          "text": {
+            "text": "办公用品\n申购",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "RegulationItem",
+        "reportType": "Regulation"
+      }
+    },
+    {
+      "Id": "Item9",
+      "Name": "备品备件\n申购",
+      "xclass": "YZSoft.bpa.sprite.Regulation.Item",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 499,
+        "translationY": 240,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffcc99",
+        "sprites": {
+          "text": {
+            "text": "备品备件\n申购",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "RegulationItem",
+        "reportType": "Regulation"
+      }
+    },
+    {
+      "Id": "Item10",
+      "Name": "固定资产\n申购",
+      "xclass": "YZSoft.bpa.sprite.Regulation.Item",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 801,
+        "translationY": 240,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffcc99",
+        "sprites": {
+          "text": {
+            "text": "固定资产\n申购",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "RegulationItem",
+        "reportType": "Regulation"
+      }
+    },
+    {
+      "Id": "Item11",
+      "Name": "临时急需\n用品申购",
+      "xclass": "YZSoft.bpa.sprite.Regulation.Item",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 650,
+        "translationY": 240,
+        "x": 0,
+        "y": 0,
+        "width": 100,
+        "height": 52,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#333333",
+        "fillStyle": "#ffcc99",
+        "sprites": {
+          "text": {
+            "text": "临时急需\n用品申购",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {
+        "spriteType": "RegulationItem",
+        "reportType": "Regulation"
+      }
+    }
+  ],
+  "Links": [
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Item6",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 6,
+        "translationY": 59,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 469,
+            "y": 92.666666666666657
+          },
+          {
+            "x": 469,
+            "y": 130
+          },
+          {
+            "x": 90,
+            "y": 130
+          },
+          {
+            "x": 90,
+            "y": 181
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Item7",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 6,
+        "translationY": 59,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 469,
+            "y": 92.666666666666657
+          },
+          {
+            "x": 469,
+            "y": 130
+          },
+          {
+            "x": 241,
+            "y": 130
+          },
+          {
+            "x": 241,
+            "y": 181
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Item8",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 6,
+        "translationY": 59,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 469,
+            "y": 92.666666666666657
+          },
+          {
+            "x": 469,
+            "y": 130
+          },
+          {
+            "x": 392,
+            "y": 130
+          },
+          {
+            "x": 392,
+            "y": 181
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Item9",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 6,
+        "translationY": 59,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 469,
+            "y": 92.666666666666657
+          },
+          {
+            "x": 469,
+            "y": 130
+          },
+          {
+            "x": 543,
+            "y": 130
+          },
+          {
+            "x": 543,
+            "y": 181
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Item11",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 6,
+        "translationY": 59,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 469,
+            "y": 92.666666666666657
+          },
+          {
+            "x": 469,
+            "y": 130
+          },
+          {
+            "x": 694,
+            "y": 130
+          },
+          {
+            "x": 694,
+            "y": 181
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "shape",
+      "FromNodeId": "Risk1",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Item10",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 6,
+        "translationY": 59,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 469,
+            "y": 92.666666666666657
+          },
+          {
+            "x": 469,
+            "y": 130
+          },
+          {
+            "x": 845,
+            "y": 130
+          },
+          {
+            "x": 845,
+            "y": 181
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    }
+  ]
+}

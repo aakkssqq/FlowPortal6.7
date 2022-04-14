@@ -1,0 +1,626 @@
+﻿{
+  "author": {
+    "uid": "sa",
+    "name": "sa",
+    "createat": "2022-03-17 15:15:52"
+  },
+  "lastModifier": {
+    "uid": "T01081",
+    "name": "T01081",
+    "date": "2022-03-18 09:36:53"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "設備生產狀況": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "sMes_Prod",
+          "query": "WITH EQSum\nAS\n(\n\tSELECT\n\t\tb.LOTNO\n\t   ,b.OPNO\n\t   ,a.EQUIPMENTNO\n\t   ,SUM(a.InputQty) InputQty\n\t   ,SUM(a.OutputQty) OutputQty\n\tFROM TBLWIPCONT_EQUIPMENT a\n\tJOIN TBLWIPLOTLOG_REPORT b ON a.LOGGROUPSERIAL = b.LOGGROUPSERIAL\n\tGROUP BY b.LOTNO\n\t\t\t,b.OPNO\n\t\t\t,a.EQUIPMENTNO\n),\nresult \nas\n(\nSELECT\n\tCASE\n\t\tWHEN SumQty - OutputQty <= 0 THEN N'3:已完工'\n\t\tWHEN (InputQty - OutputQty) > 0 THEN N'2:加工中'\n\t\tWHEN EXISTS (SELECT\n\t\t\t\t\t0\n\t\t\t\tFROM TBLWIPLOTSTATE b\n\t\t\t\tWHERE b.LOTNO = A.LOTNO\n\t\t\t\tAND b.OPNO = A.OPNO\n\t\t\t\tAND b.STATUS = '0') THEN N'1:可加工'\n\t\tELSE '0:未到站'\n\tEND Status\n   ,a.EQUIPMENTNO --派工設備編號\n   ,CASE EQS.EQUIPMENTSTATE\n\t\tWHEN\n\t\t\t0 THEN N'0:待料'\n\t\tWHEN 1 THEN N'1:生產'\n\t\tWHEN 2 THEN N'2:故障'\n\t\tWHEN 3 THEN N'3:維修'\n\t\tWHEN 4 THEN N'4:保養'\n\tEND EQUIPMENTSTATE   --設備狀態(20181030 add)\n   ,EquipmentName --設備名稱\n   ,OPNO --作業編號\n   ,OPNAME --作業名稱\n   ,LOTNO --生產批號\n   ,MONO --工單編號 \n   ,WORKDATE DispatchDate --派工日期\n   ,QTY DispatchQty--派工數量\n   ,SumQty --累積派工量\n   ,case when SumQty < isnull(OutputQty,0) then 0 else SumQty - isnull(OutputQty,0) END UNDoneQty --未完成 --mantis 55507 modi/*mantis 65308 bruce modi*/\n   ,case when isnull(InputQty,0)<isnull(OutputQty,0) then 0 else isnull(InputQty,0)-isnull(OutputQty,0) end WIPQty --加工中數量 --mantis 55507 modi/*mantis 65308 bruce modi*/\n   ,isnull(OutputQty,0) completeqty--已完成數量\t--mantis 55507 modi\n   ,PRODUCTNO --產品編號\n   ,PRODUCTNAME --產品名稱\n   ,ItemSpec --規格\n   ,CONVERT(CHAR(10), PLANFINISHDATE, 20) PLANFINISHDATE --預計完工日\n   ,CUSTOMERNO --客戶編號\n   ,CUSTOMERNAME --客戶名稱\n   ,RONO --訂單編號\n   ,AR.AREANO\t--區域編號(20181030 add)\n   ,AR.AREANAME\t--區域名稱(20181030 add)\nFROM (\n\tSELECT\n\t   a.EQUIPMENTNO --派工設備編號\n\t   ,b.EquipmentName --設備名稱\n\t   ,a.OPNO --作業編號\n\t   ,c.OPNAME --作業名稱\n\t   ,a.LOTNO --生產批號\n\t   ,d.MONO --工單編號 \n\t   ,a.WORKDATE --派工日期\n\t   ,a.QTY --派工數量\n\t   ,a.QTY + ISNULL((SELECT\n\t\t\t\tSUM(f.QTY) SumQty\n\t\t\tFROM TBLWIPDISPATCHSTATE f\n\t\t\tWHERE a.EQUIPMENTNO = f.EQUIPMENTNO\n\t\t\tAND a.OPNO = f.OPNO\n\t\t\tAND a.WORKDATE > f.WORKDATE\n\t\t\tAND a.LOTNO = f.LOTNO --20190108 add bruce\n\t\t)\n\t\t, 0) SumQty --累積派工量\n\t   ,d.PRODUCTNO --產品編號\n\t   ,e.PRODUCTNAME --產品名稱\n\t   ,e.ItemSpec --規格\n\t   ,d.PLANFINISHDATE --預計完工日\n\t   ,d.CUSTOMERNO --客戶編號\n\t   ,g.CUSTOMERNAME --客戶名稱\n\t   ,d.RONO --訂單編號\n\t\t--,d.ITEMNO --訂單序號\n\t   ,h.InputQty --已進站數\n\t   ,h.OutputQty --已出站數\n\tFROM TBLWIPDISPATCHSTATE a\n\tJOIN TBLEQPEQUIPMENTBASIS b ON a.EQUIPMENTNO = b.EQUIPMENTNO\n\tLEFT JOIN TBLOPBASIS c ON a.OPNO = c.OPNO\n\tJOIN TBLWIPLOTBASIS d ON a.LOTNO = d.BASELOTNO\n\tLEFT JOIN TBLPRDPRODUCTBASIS e ON d.PRODUCTNO = e.PRODUCTNO AND d.PRODUCTVERSION = e.PRODUCTVERSION\n\tLEFT JOIN TBLENTCUSTOMERBASIS g\tON d.CUSTOMERNO = g.CUSTOMERNO\n\tLEFT JOIN EQSum h ON a.EQUIPMENTNO = h.EQUIPMENTNO AND a.OPNO = h.OPNO AND a.LOTNO = h.LOTNO\n\t) A\nLEFT JOIN TBLSMDSMTAREAEQPMAP ARM ON a.EQUIPMENTNO = ARM.EQUIPMENTNO\nLEFT JOIN TBLSMDAREABASIS AR ON ARM.AREANO = AR.AREANO\nLEFT JOIN TBLEMSEQUIPMENTSTATE EQS ON a.EQUIPMENTNO = EQS.EQUIPMENTNO\n)\nselect  * from result \nwhere (@eNo is NULL OR EQUIPMENTNO like @eNo) \nand (@status is NULL OR Status like @status) \nand (@eStatus is NULL OR EQUIPMENTSTATE = @eStatus) \nand (@roNo is NULL OR RONO like @roNo) \nand (@areaNo is NULL OR AREANO like @areaNo) \nand (@opNo is NULL OR OPNO like @opNo) \nand (@eName is NULL OR EquipmentName like @eName) \nand (@lotNo is NULL OR LOTNO like @lotNo) \nand (@dispatchDate is NULL OR (DispatchDate > @dispatchDate or DispatchDate = @dispatchDate))\norder by <%=String.IsNullOrEmpty(Context.Current.RequestParams[\"sortstring\"])?\"EQUIPMENTNO  desc\":Context.Current.RequestParams[\"sortstring\"]%>",
+          "queryParams": [
+            {
+              "name": "@eNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@eName",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@lotNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@dispatchDate",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@status",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@eStatus",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@roNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@areaNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@opNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 15
+        },
+        "paramNames": [
+          "@eNo",
+          "@eName",
+          "@lotNo",
+          "@dispatchDate",
+          "@status",
+          "@eStatus",
+          "@roNo",
+          "@areaNo",
+          "@opNo"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.text2": {
+        "ctype": "report.search.field.text",
+        "binddsid": "設備生產狀況",
+        "xdatabind": "@eNo",
+        "fieldLabel": "設備編號",
+        "emptyText": ""
+      },
+      "report.search.field.combobox1": {
+        "ctype": "report.search.field.combobox",
+        "binddsid": "設備生產狀況",
+        "xdatabind": "@eStatus",
+        "fieldLabel": "設備狀態",
+        "emptyText": "",
+        "use": "options",
+        "ds": null,
+        "dsDisplayField": null,
+        "dsValueField": null,
+        "options": [
+          {
+            "text": "待料",
+            "value": "0:待料"
+          },
+          {
+            "text": "生產",
+            "value": "1:生產"
+          },
+          {
+            "text": "故障",
+            "value": "2:故障"
+          },
+          {
+            "text": "維修",
+            "value": "3:維修"
+          },
+          {
+            "text": "保養",
+            "value": "4:保養"
+          }
+        ]
+      },
+      "report.search.field.text1": {
+        "ctype": "report.search.field.text",
+        "binddsid": "設備生產狀況",
+        "xdatabind": "@eName",
+        "fieldLabel": "設備名稱",
+        "emptyText": ""
+      },
+      "report.search.field.combobox4": {
+        "ctype": "report.search.field.combobox",
+        "binddsid": "設備生產狀況",
+        "xdatabind": "@opNo",
+        "fieldLabel": "作業名稱",
+        "emptyText": "",
+        "use": "options",
+        "ds": null,
+        "dsDisplayField": null,
+        "dsValueField": null,
+        "options": [
+          {
+            "text": "MES加工重工站",
+            "value": "R001"
+          },
+          {
+            "text": "MES印刷重工站",
+            "value": "R002"
+          },
+          {
+            "text": "MES組裝重工站",
+            "value": "R003"
+          },
+          {
+            "text": "導光板射出",
+            "value": "1110"
+          },
+          {
+            "text": "導光板射出拋光",
+            "value": "1111"
+          },
+          {
+            "text": "導光板拋光驗光包裝",
+            "value": "1112"
+          },
+          {
+            "text": "導光板全檢除毛驗光包裝",
+            "value": "1121"
+          },
+          {
+            "text": "導光板驗光覆膜包裝",
+            "value": "1131"
+          },
+          {
+            "text": "導光板驗光包裝",
+            "value": "1132"
+          },
+          {
+            "text": "導光板重工",
+            "value": "1190"
+          },
+          {
+            "text": "射出成形",
+            "value": "2110"
+          },
+          {
+            "text": "修毛邊",
+            "value": "2120"
+          },
+          {
+            "text": "外觀檢查包裝",
+            "value": "2123"
+          },
+          {
+            "text": "外觀檢查組立包裝",
+            "value": "2124"
+          },
+          {
+            "text": "印刷包裝",
+            "value": "2133"
+          },
+          {
+            "text": "點漆",
+            "value": "2139"
+          },
+          {
+            "text": "噴漆",
+            "value": "2140"
+          },
+          {
+            "text": "攻牙",
+            "value": "2143"
+          },
+          {
+            "text": "埋入",
+            "value": "2144"
+          },
+          {
+            "text": "研磨",
+            "value": "2145"
+          },
+          {
+            "text": "CNC加工",
+            "value": "2146"
+          },
+          {
+            "text": "組裝",
+            "value": "2160"
+          },
+          {
+            "text": "組裝(機台旁)",
+            "value": "2161"
+          },
+          {
+            "text": "包裝",
+            "value": "2170"
+          },
+          {
+            "text": "重工",
+            "value": "2182"
+          },
+          {
+            "text": "入庫抽檢",
+            "value": "2190"
+          },
+          {
+            "text": "射出成形",
+            "value": "3110"
+          },
+          {
+            "text": "修毛邊包裝",
+            "value": "3123"
+          },
+          {
+            "text": "包裝",
+            "value": "3170"
+          },
+          {
+            "text": "組裝",
+            "value": "3160"
+          },
+          {
+            "text": "印刷包裝",
+            "value": "3133"
+          },
+          {
+            "text": "重工",
+            "value": "3182"
+          },
+          {
+            "text": "入庫抽檢",
+            "value": "3190"
+          }
+        ]
+      },
+      "report.search.field.combobox2": {
+        "ctype": "report.search.field.combobox",
+        "binddsid": "設備生產狀況",
+        "xdatabind": "@status",
+        "fieldLabel": "生產批狀態",
+        "emptyText": "",
+        "use": "options",
+        "ds": null,
+        "dsDisplayField": null,
+        "dsValueField": null,
+        "options": [
+          {
+            "text": "未到站",
+            "value": "0:未到站"
+          },
+          {
+            "text": "可加工",
+            "value": "1:可加工"
+          },
+          {
+            "text": "加工中",
+            "value": "2:加工中"
+          },
+          {
+            "text": "已完工",
+            "value": "3:已完工"
+          }
+        ]
+      },
+      "report.search.field.text5": {
+        "ctype": "report.search.field.text",
+        "binddsid": "設備生產狀況",
+        "xdatabind": "@lotNo",
+        "fieldLabel": "生產批號",
+        "emptyText": ""
+      },
+      "report.search.field.date1": {
+        "ctype": "report.search.field.date",
+        "binddsid": "設備生產狀況",
+        "xdatabind": "@dispatchDate",
+        "fieldLabel": "派工日期",
+        "emptyText": ""
+      },
+      "report.search.field.text7": {
+        "ctype": "report.search.field.text",
+        "binddsid": "設備生產狀況",
+        "xdatabind": "@roNo",
+        "fieldLabel": "訂單編號",
+        "emptyText": ""
+      },
+      "report.search.field.combobox3": {
+        "ctype": "report.search.field.combobox",
+        "binddsid": "設備生產狀況",
+        "xdatabind": "@areaNo",
+        "fieldLabel": "區域",
+        "emptyText": "",
+        "use": "options",
+        "ds": null,
+        "dsDisplayField": null,
+        "dsValueField": null,
+        "options": [
+          {
+            "text": "一廠射出成形",
+            "value": "TW1011"
+          },
+          {
+            "text": "一廠後加工",
+            "value": "TW1012"
+          },
+          {
+            "text": "二廠射出成形",
+            "value": "TW2011"
+          },
+          {
+            "text": "二廠後加工",
+            "value": "TW2012"
+          },
+          {
+            "text": "二廠組裝",
+            "value": "TW2013"
+          },
+          {
+            "text": "二廠品保",
+            "value": "TW2014"
+          },
+          {
+            "text": "二廠印刷",
+            "value": "TW2015"
+          }
+        ]
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.text2",
+          "report.search.field.combobox1",
+          "report.search.field.text1",
+          "report.search.field.combobox4",
+          "report.search.field.combobox2",
+          "report.search.field.text5",
+          "report.search.field.date1",
+          "report.search.field.text7",
+          "report.search.field.combobox3"
+        ]
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "設備生產狀況",
+        "pagingBarDisplay": true,
+        "export2Excel": false,
+        "exportTemplate": null,
+        "title": null,
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "作業名稱",
+            "dataIndex": "OPNAME",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 76
+          },
+          {
+            "text": "設備編號",
+            "dataIndex": "EQUIPMENTNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 82
+          },
+          {
+            "text": "設備名稱",
+            "dataIndex": "EquipmentName",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 135
+          },
+          {
+            "text": "設備狀態",
+            "dataIndex": "EQUIPMENTSTATE",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 78
+          },
+          {
+            "text": "生產批狀態",
+            "dataIndex": "Status",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "生產批號",
+            "dataIndex": "LOTNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 184
+          },
+          {
+            "text": "派工日期",
+            "dataIndex": "DispatchDate",
+            "align": "start",
+            "dataFormat": {
+              "type": "date",
+              "format": "Y-m-d"
+            },
+            "width": 96
+          },
+          {
+            "text": "派工數量",
+            "dataIndex": "DispatchQty",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 82
+          },
+          {
+            "text": "累積派工量",
+            "dataIndex": "SumQty",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 69
+          },
+          {
+            "text": "未完成數量",
+            "dataIndex": "UNDoneQty",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 74
+          },
+          {
+            "text": "加工中數量",
+            "dataIndex": "WIPQty",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 60
+          },
+          {
+            "text": "已完成數量",
+            "dataIndex": "completeqty",
+            "align": "end",
+            "dataFormat": {
+              "type": "default"
+            },
+            "width": 81
+          },
+          {
+            "text": "產品編號",
+            "dataIndex": "PRODUCTNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 168
+          },
+          {
+            "text": "產品名稱",
+            "dataIndex": "PRODUCTNAME",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 209
+          },
+          {
+            "text": "產品規格",
+            "dataIndex": "ItemSpec",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 202
+          },
+          {
+            "text": "預計完成日",
+            "dataIndex": "PLANFINISHDATE",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 94
+          },
+          {
+            "text": "客戶編號",
+            "dataIndex": "CUSTOMERNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 74
+          },
+          {
+            "text": "客戶名稱",
+            "dataIndex": "CUSTOMERNAME",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 222
+          },
+          {
+            "text": "訂單編號",
+            "dataIndex": "RONO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 139
+          },
+          {
+            "text": "區域編號",
+            "dataIndex": "AREANO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "區域名稱",
+            "dataIndex": "AREANAME",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "report.grid1"
+    ]
+  }
+}

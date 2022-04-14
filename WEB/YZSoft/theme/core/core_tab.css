@@ -1,0 +1,217 @@
+﻿
+/*yz-tab-bar-arrow*/
+.yz-tab-bar-arrow {
+    background-color: transparent;
+}
+
+.yz-tab-bar-arrow > .x-tab-bar-body-default {
+    padding: 0px;
+    min-height: 20px;
+}
+
+.yz-tab-bar-arrow .x-tab-default-top {
+    padding: 6px 10px 12px 10px;
+}
+
+.yz-tab-bar-arrow .x-tab-inner-default {
+    color: #999;
+}
+
+.yz-tab-bar-arrow .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: #44c28d;
+    font-weight: bold;
+}
+
+.yz-tab-bar-arrow .x-tab-bar-strip {
+    height:0px;
+}
+
+.yz-tab-bar-arrow .x-tab.x-tab-active.x-tab-default {
+    background-color:transparent;
+}
+
+.yz-tab-bar-arrow .x-tab-active:after {
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    border-bottom: solid 9px #fff;
+    border-left: solid 12px transparent;
+    border-right: solid 12px transparent;
+}
+
+.yz-tab-bar-arrow .x-tab-over.x-tab-default
+{
+    background-color:transparent;
+}
+
+.yz-tab-bar-arrow .x-tab-over .x-tab-inner-default {
+    color: #44c28d;
+}
+
+.yz-tab-bar-arrow .x-tab-default .x-tab-close-btn {
+    top: 8px;
+    color: #ccc;
+}
+
+.yz-tab-bar-arrow .x-tab-closable.x-tab-default .x-tab-button {
+    padding-right: 8px;
+}
+
+/*yz-tab-bar-undline*/
+.yz-tab-bar-undline,
+.yz-tab-bar-undline .x-tab-over.x-tab-default,
+.yz-tab-bar-undline .x-tab-active.x-tab-default {
+    background-color: transparent;
+}
+
+.yz-tab-bar-undline .x-tab-inner-default {
+    color: #000;
+}
+
+.yz-tab-bar-undline .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: #000;
+}
+
+.yz-tab-bar-undline > .x-tab-bar-body-default {
+    padding: 0px;
+    min-height: 0px;
+}
+
+.yz-tab-bar-undline .x-tab-default-top {
+    padding:8px 6px 9px 6px;
+    margin-right:10px;
+}
+
+.yz-tab-bar-undline .x-tab-active:after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #59B697;
+}
+
+/*yz-tab-bar-undline-bpakm*/
+.yz-tab-bar-undline-bpakm {
+    background-color: transparent;
+}
+
+.yz-tab-bar-undline-bpakm > .x-tab-bar-body-default {
+    padding: 0px;
+    min-height: 20px;
+}
+
+.yz-tab-bar-undline-bpakm .x-tab-default {
+    padding: 10px 6px;
+    margin: 0px 10px;
+}
+
+.yz-tab-bar-undline-bpakm .x-tab-inner-default {
+    color: #999;
+}
+
+.yz-tab-bar-undline-bpakm .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: #000;
+}
+
+.yz-tab-bar-undline-bpakm .x-tab.x-tab-active.x-tab-default {
+    background-color: transparent;
+}
+
+.yz-tab-bar-undline-bpakm .x-tab-active:after {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 3px;
+    margin: auto;
+    background-color: #2daadd;
+}
+
+.yz-tab-bar-undline-bpakm .x-tab-over.x-tab-default {
+    background-color: transparent;
+}
+
+.yz-tab-bar-undline-bpakm .x-tab-over .x-tab-inner-default {
+    color: #44c28d;
+}
+
+/*yz-tab-bar-window-main*/
+.yz-tab-bar-window-main {
+    background-color: #eaeaea;
+}
+
+.yz-tab-bar-window-main > .x-tab-bar-body-default {
+    padding: 8px 4px 0 12px;
+}
+
+/*yz-tab-bar-window-sub*/
+.yz-tab-bar-window-sub {
+    background-color: #f5f5f5;
+}
+
+.yz-tab-bar-window-sub > .x-tab-bar-body-default {
+    padding: 4px 4px 0 12px;
+}
+
+.yz-tab-bar-window-sub .x-tab-default-top{
+    padding:3px 10px;
+}
+
+/*yz-tab-bar-window-select*/
+.yz-tab-bar-window-select {
+    background-color: #e8f5f8;
+}
+
+.yz-tab-bar-window-select .x-tab {
+    padding:6px 10px;
+    margin-top:4px;
+}
+
+.yz-tab-bar-window-select > .x-tab-bar-body {
+    min-height: 0px;
+    padding: 0px 4px 0px 6px
+}
+
+.yz-tab-bar-window-select .x-tab-inner-default {
+    color: #33404d
+}
+
+.yz-tab-bar-window-select .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: #5fa2dd;
+}
+
+/*yz-tab-bar-size-l*/
+.yz-tab-bar-size-l .x-tab-inner-default {
+    font-size: 18px;
+    line-height:22px;
+}
+
+
+.yz-tab-bar-textonly{
+    background-color:transparent;
+}
+
+.yz-tab-bar-textonly > .x-tab-bar-body {
+    min-height: 0px;
+    padding: 0px 6px 0px 6px
+}
+
+.yz-tab-bar-textonly .x-tab-over.x-tab-default {
+    background-color: transparent;
+}
+
+.yz-tab-bar-textonly .x-tab-over .x-tab-inner-default {
+    color: #2196F3;
+}
+
+.yz-tab-bar-textonly .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
+    color: #2196F3;
+}

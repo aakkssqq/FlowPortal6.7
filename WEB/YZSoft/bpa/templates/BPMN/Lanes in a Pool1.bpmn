@@ -1,0 +1,731 @@
+{
+  "categories": [
+    "BPMN",
+    "Lane"
+  ],
+  "Property": {},
+  "Nodes": [
+    {
+      "Name": "泳池(水平)",
+      "xclass": "YZSoft.bpa.sprite.Lane.HorizPool",
+      "surface": "pool",
+      "sprite": {
+        "translationX": 142,
+        "translationY": 96.5,
+        "x": 0,
+        "y": 0,
+        "width": 814,
+        "height": 482.5,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "泳池(水平)",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "HorizPool"
+    },
+    {
+      "Name": "泳道(水平)",
+      "xclass": "YZSoft.bpa.sprite.Lane.HorizLane",
+      "surface": "lane",
+      "sprite": {
+        "translationX": 182.5,
+        "translationY": 417.5,
+        "x": 0,
+        "y": 0,
+        "width": 773.5,
+        "height": 161.5,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "泳道(水平)",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "HorizLane"
+    },
+    {
+      "Name": "泳道(水平)",
+      "xclass": "YZSoft.bpa.sprite.Lane.HorizLane",
+      "surface": "lane",
+      "sprite": {
+        "translationX": 182.5,
+        "translationY": 256.5,
+        "x": 0,
+        "y": 0,
+        "width": 773.5,
+        "height": 161,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "泳道(水平)",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "HorizLane1"
+    },
+    {
+      "Name": "泳道(水平)",
+      "xclass": "YZSoft.bpa.sprite.Lane.HorizLane",
+      "surface": "lane",
+      "sprite": {
+        "translationX": 182.5,
+        "translationY": 96.5,
+        "x": 0,
+        "y": 0,
+        "width": 773.5,
+        "height": 160,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "泳道(水平)",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "HorizLane2"
+    },
+    {
+      "Name": "开始事件",
+      "xclass": "YZSoft.bpa.sprite.BPMN.StartEvent.StartEvent",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 267,
+        "translationY": 158.5,
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "开始事件",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "StartEvent"
+    },
+    {
+      "Name": "任务",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Task.Task",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 359,
+        "translationY": 146.5,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "任务",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Task"
+    },
+    {
+      "Name": "网关",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Gateway.Gateway",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 555.25,
+        "translationY": 312,
+        "x": 0,
+        "y": 0,
+        "width": 50,
+        "height": 50,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "网关",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Gateway"
+    },
+    {
+      "Name": "任务",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Task.Task",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 670,
+        "translationY": 307,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "任务",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Task2"
+    },
+    {
+      "Name": "任务",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Task.Task",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 535.25,
+        "translationY": 468.25,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "任务",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Task3"
+    },
+    {
+      "Name": "结束事件",
+      "xclass": "YZSoft.bpa.sprite.BPMN.EndEvent.EndEvent",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 852,
+        "translationY": 319,
+        "x": 0,
+        "y": 0,
+        "width": 36,
+        "height": 36,
+        "lineWidth": 4,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "结束事件",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "EndEvent"
+    },
+    {
+      "Name": "任务",
+      "xclass": "YZSoft.bpa.sprite.BPMN.Task.Task",
+      "surface": "shape",
+      "sprite": {
+        "translationX": 375,
+        "translationY": 307,
+        "x": 0,
+        "y": 0,
+        "width": 90,
+        "height": 60,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#000000",
+        "fillStyle": "#ffffff",
+        "sprites": {
+          "text": {
+            "text": "任务",
+            "fillStyle": "#000000",
+            "fontFamily": "微软雅黑",
+            "fontSize": "13px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false,
+            "textAlign": "center",
+            "textBaseline": "middle",
+            "background": {
+              "fillStyle": "none"
+            }
+          }
+        }
+      },
+      "property": {},
+      "Id": "Task1"
+    }
+  ],
+  "Links": [
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "StartEvent",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Task",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 303,
+            "y": 176.5
+          },
+          {
+            "x": 359,
+            "y": 176.5
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Gateway",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Task2",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 605.25,
+            "y": 337
+          },
+          {
+            "x": 670,
+            "y": 337
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Task2",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "EndEvent",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 760,
+            "y": 337
+          },
+          {
+            "x": 852,
+            "y": 337
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Gateway",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Task3",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 580.25,
+            "y": 362
+          },
+          {
+            "x": 580.25,
+            "y": 468.25
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Task3",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Task2",
+      "ToPoint": "ActivityMiddleBottom",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 3,
+        "points": [
+          {
+            "x": 625.25,
+            "y": 498.25
+          },
+          {
+            "x": 715,
+            "y": 498.25
+          },
+          {
+            "x": 715,
+            "y": 367
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Task1",
+      "FromPoint": "ActivityRightMiddle",
+      "ToNodeId": "Gateway",
+      "ToPoint": "ActivityLeftMiddle",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 1,
+        "points": [
+          {
+            "x": 465,
+            "y": 337
+          },
+          {
+            "x": 555.25,
+            "y": 337
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    },
+    {
+      "xclass": "YZSoft.src.flowchart.link.ZigZag",
+      "surface": "link",
+      "FromNodeId": "Task",
+      "FromPoint": "ActivityMiddleBottom",
+      "ToNodeId": "Task1",
+      "ToPoint": "ActivityMiddleTop",
+      "sprite": {
+        "translationX": 0,
+        "translationY": 0,
+        "lineWidth": 2,
+        "lineDash": [],
+        "strokeStyle": "#323232",
+        "dockIndex": 5,
+        "points": [
+          {
+            "x": 404,
+            "y": 206.5
+          },
+          {
+            "x": 404,
+            "y": 255
+          },
+          {
+            "x": 420,
+            "y": 255
+          },
+          {
+            "x": 420,
+            "y": 307
+          }
+        ],
+        "sprites": {
+          "text": {
+            "text": "",
+            "fillStyle": "#000000",
+            "fontFamily": "sans-serif",
+            "fontSize": "12px",
+            "fontWeight": "",
+            "fontStyle": "",
+            "underline": false
+          },
+          "startArrow": {
+            "type": "none"
+          },
+          "endArrow": {
+            "type": "solidArrow"
+          }
+        }
+      },
+      "property": {
+        "ProcessConfirmType": "None",
+        "ConditionType": "True"
+      }
+    }
+  ]
+}

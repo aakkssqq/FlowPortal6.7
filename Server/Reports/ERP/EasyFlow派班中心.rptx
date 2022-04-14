@@ -1,0 +1,252 @@
+﻿{
+  "author": {
+    "uid": "T01081",
+    "name": "T01081",
+    "createat": "2022-04-12 09:06:19"
+  },
+  "lastModifier": {
+    "uid": "T01081",
+    "name": "T01081",
+    "date": "2022-04-12 09:23:15"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "資料來源1": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "DSCSYS",
+          "query": "select Top 20  EF001,EF002,EF003,EF004,EF006,EF007,EF008,EF009,EF010,EF011,\n\tD.MB002 as EF001C,A.MB002 as EF002C,MF002 as EF004C\n\tfrom EFJOBQUE EFJOBQUE\n\tLeft Join   DSCMB D on EF001=D.MB001\n\tLeft Join   ADMMB A on EF002=A.MB001\n\tLeft Join TW_TEST..ADMMF AS ADMMF on EF004=MF001\n\twhere  @EF003 is null or EF003 like '%'+@EF003+'%'  and @EF002 is null or EF002 like '%'+@EF002 +'%'  and @EF006 is null or EF006 like '%'+@EF006 +'%' \n\torder by EFJOBQUE.EF008 desc",
+          "queryParams": [
+            {
+              "name": "@EF003",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@EF002",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            },
+            {
+              "name": "@EF006",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 100
+        },
+        "paramNames": [
+          "@EF003",
+          "@EF002",
+          "@EF006"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.text1": {
+        "ctype": "report.search.field.text",
+        "binddsid": "資料來源1",
+        "xdatabind": "@EF003",
+        "fieldLabel": "單別/單號",
+        "emptyText": ""
+      },
+      "report.search.field.text2": {
+        "ctype": "report.search.field.text",
+        "binddsid": "資料來源1",
+        "xdatabind": "@EF002",
+        "fieldLabel": "ERP系統別",
+        "emptyText": ""
+      },
+      "report.search.field.combobox1": {
+        "ctype": "report.search.field.combobox",
+        "binddsid": "資料來源1",
+        "xdatabind": "@EF006",
+        "fieldLabel": "狀態",
+        "emptyText": "",
+        "use": "ds",
+        "ds": null,
+        "dsDisplayField": null,
+        "dsValueField": null,
+        "options": [
+          {
+            "text": "Y",
+            "value": "成功"
+          },
+          {
+            "text": "N",
+            "value": "未處理"
+          },
+          {
+            "text": "P",
+            "value": "中止"
+          },
+          {
+            "text": "X",
+            "value": "處理中"
+          }
+        ]
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.text1",
+          "report.search.field.text2",
+          "report.search.field.combobox1"
+        ]
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "資料來源1",
+        "pagingBarDisplay": false,
+        "export2Excel": false,
+        "exportTemplate": null,
+        "title": "EasyFlow派班中心",
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "廠別",
+            "dataIndex": "EF001",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 85
+          },
+          {
+            "text": "ERP系統別",
+            "dataIndex": "EF002",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 87
+          },
+          {
+            "text": "單別/單號",
+            "dataIndex": "EF003",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 195
+          },
+          {
+            "text": "建立人",
+            "dataIndex": "EF004",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "狀態 Y:完成 N:未處理 P:中止",
+            "dataIndex": "EF006",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 61
+          },
+          {
+            "text": "結果",
+            "dataIndex": "EF007",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "EF008",
+            "dataIndex": "EF008",
+            "align": "start",
+            "dataFormat": {
+              "type": "date",
+              "format": "Y-m-d"
+            },
+            "width": 117
+          },
+          {
+            "text": "EF009",
+            "dataIndex": "EF009",
+            "align": "start",
+            "dataFormat": {
+              "type": "date",
+              "format": "Y-m-d"
+            },
+            "width": 114
+          },
+          {
+            "text": "EF010",
+            "dataIndex": "EF010",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "EF011",
+            "dataIndex": "EF011",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 71
+          },
+          {
+            "text": "EF001C",
+            "dataIndex": "EF001C",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "EF002C",
+            "dataIndex": "EF002C",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "EF004C",
+            "dataIndex": "EF004C",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "report.grid1"
+    ]
+  }
+}

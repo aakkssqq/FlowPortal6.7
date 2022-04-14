@@ -1,0 +1,36 @@
+﻿{
+  "isRoot": true,
+  "isObejct": true,
+  "children": {
+    "Form": {
+      "isObejct": true,
+      "children": {
+        "bbb": {
+          "isProperty": true,
+          "params": [ "QueryParams.aaa" ]
+        }
+      }
+    },
+    "Payload": {
+      "isObejct": true,
+      "children": {
+        "checked": {
+          "isProperty": true,
+          "params": [ "Payload.checked" ]
+        },
+        "CCC": {
+          "isMap": true,
+          "src": "Payload.BBB",
+          "objectVar": "bBB",
+          "children": {
+            "eee": {
+              "isProperty": true,
+              "params": []
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

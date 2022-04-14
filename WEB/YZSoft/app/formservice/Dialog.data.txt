@@ -1,0 +1,146 @@
+﻿{
+  "Name": "AAA",
+  "Description": null,
+  "Form": "A01.aspx",
+  "SNDefine": {
+    "SNTableName": null,
+    "SNColumnName": null,
+    "SNPrefix": {
+      "AspxText": "REQ<%=DateTime.Today.ToString(\"yyyyMM\")%>"
+    },
+    "SNColumns": 4,
+    "SNFrom": 1,
+    "SNIncrement": 1,
+    "SNDesc": "REQ年年年年月月{0001}111"
+  },
+  "TableIdentitys": [
+    {
+      "DataSourceName": "Default",
+      "TableName": "A",
+      "IsRepeatableTable": true
+    }
+  ],
+  "DataRelationship": {
+    "FKs": []
+  },
+  "DotNetEnv": {
+    "ReferencedAssemblies": [
+      "System.dll",
+      "System.Transactions.dll",
+	  "System.Data.dll",
+      "BPM.dll",
+      "BPM.Server.dll"
+    ],
+    "Using": [
+      "using System;",
+      "using System.IO;",
+      "using System.Text;",
+      "using System.Transactions;",
+      "using BPM;",
+      "using BPM.Server;",
+      "using BPM.Server.OAL;",
+      "using BPM.Server.Security;"
+    ]
+  },
+  "Events": [
+    {
+      "EventType": "FormDataPrepared",
+      "CodeBlock": {
+        "CodeText": "int a = 1;"
+      }
+    }
+  ],
+  "FormStates": [
+    {
+      "Name": "状态1",
+      "ShowSaveButton": true,
+      "ValidationGroup": "1111",
+      "ControlDataSet": {
+        "Tables": [
+          {
+            "DataSourceName": "Default",
+            "TableName": "A",
+            "IsRepeatableTable": true,
+            "AllowAddRecord": false,
+            "Columns": [
+              {
+                "ColumnName": "TaskID",
+                "DefaultValue": 11,
+                "SaveValue": 22,
+                "AllowRead": true,
+                "AllowWrite": false,
+                "ShowSpoor": false
+              },
+              {
+                "ColumnName": "A1",
+                "DefaultValue": {
+                  "CodeText": "DateTime.Today"
+                },
+                "SaveValue": null,
+                "AllowRead": false,
+                "AllowWrite": false,
+                "ShowSpoor": false
+              },
+              {
+                "ColumnName": "S1",
+                "DefaultValue": "222",
+                "SaveValue": null,
+                "AllowRead": true,
+                "AllowWrite": true,
+                "ShowSpoor": false
+              }
+            ],
+            "Filter": {
+              "Params": [
+                {
+                  "ParamName": "TaskID",
+                  "Value": 11
+                },
+                {
+                  "ParamName": "A1",
+                  "Value": "22"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "Events": [
+        {
+          "EventType": "FormDataPrepared",
+          "CodeBlock": {
+            "CodeText": "int a = 11;"
+          }
+        },
+        {
+          "EventType": "FormSaved",
+          "CodeBlock": {
+            "CodeText": "int a=12;"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "状态2",
+      "ShowSaveButton": true,
+      "ValidationGroup": null,
+      "ControlDataSet": {
+        "Tables": []
+      },
+      "Events": [
+        {
+          "EventType": "FormDataPrepared",
+          "CodeBlock": {
+            "CodeText": ""
+          }
+        },
+        {
+          "EventType": "FormSaved",
+          "CodeBlock": {
+            "CodeText": ""
+          }
+        }
+      ]
+    }
+  ]
+}

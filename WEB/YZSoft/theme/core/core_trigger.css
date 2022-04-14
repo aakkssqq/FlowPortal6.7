@@ -1,0 +1,276 @@
+﻿.yz-trigger-clear {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-clear:before {
+    content: "\e62B";
+}
+
+.yz-trigger-clear:before {
+    content: "\e62B";
+}
+
+.yz-trigger-search {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-search:before {
+    content: "\eada";
+}
+
+.yz-trigger-advsearch {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-advsearch:before {
+    content: "\e604";
+}
+
+.yz-field-searchpanel-expanded .yz-trigger-advsearch:before {
+    content: "\e60a";
+}
+
+.yz-trigger-prev {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-prev:before {
+    content: "\e60a";
+}
+
+.yz-trigger-next {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-next:before {
+    content: "\e604";
+}
+
+.yz-trigger-add {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-add:before {
+    content: "\e61d";
+}
+
+.yz-trigger-msg {
+    width: 1px;
+    font-size: 13px;
+    padding: 5px 6px 4px;
+    margin: 0px;
+    line-height: 21px;
+}
+
+.yz-trigger-msg:before {
+    display: none;
+}
+
+.yz-trigger-org {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-org:before {
+    content: "\eaee";
+}
+
+.yz-trigger-ou {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-ou:before {
+    content: "\ead2";
+}
+
+.yz-trigger-user {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-user:before {
+    content: "\eae1";
+}
+
+.yz-trigger-member {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-member:before {
+    content: "\eae1";
+}
+
+.yz-trigger-browser {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-browser:before {
+    content: "\e956";
+}
+
+.yz-trigger-form {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-form:before {
+    content: "\eae7";
+}
+
+.yz-trigger-formfield {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-formfield:before {
+    content: "\eae7";
+}
+
+.yz-trigger-attachment-field {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-attachment-field:before {
+    content: "\eae7";
+}
+
+.yz-trigger-bpafile {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-bpafile:before {
+    content: "\e916";
+}
+
+.yz-trigger-assembly {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-assembly:before {
+    content: "\e628";
+}
+
+.yz-trigger-folder {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-folder:before {
+    content: "\e652";
+}
+
+.yz-trigger-process {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-process:before {
+    content: "\eae5";
+}
+
+.yz-trigger-setting {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-setting:before {
+    content: "\eae8";
+}
+
+.yz-trigger-step {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-step:before {
+    content: "\eae9";
+}
+
+.yz-trigger-bparelatiedsprite {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-bparelatiedsprite:before {
+    content: "\e916";
+}
+
+.yz-trigger-reportlinkto {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-reportlinkto:before {
+    content: "\e916";
+}
+
+.yz-trigger-reportlinkparamsfill {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-reportlinkparamsfill:before {
+    content: "\e94f";
+}
+
+.yz-trigger-fieldfillcode {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-fieldfillcode:before {
+    content: "\e956";
+}
+
+.yz-trigger-codesuggest {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-codesuggest:before {
+    content: "\eae7";
+}
+
+.yz-trigger-position {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-position:before {
+    content: "\eae4";
+}
+
+.yz-trigger-upload {
+    font-size: 16px;
+    font-family: yzglyphs;
+    position:relative; /*重要,upload设置的是宽高100%，不然upload会超出此元素*/
+}
+
+.yz-trigger-upload:before {
+    content: "\e948";
+}
+
+.yz-trigger-datasource {
+    font-size: 16px;
+    font-family: yzglyphs;
+}
+
+.yz-trigger-datasource:before {
+    content: "\eaf1";
+}
+
+.yz-trigger-size-s {
+    width: 16px;
+}

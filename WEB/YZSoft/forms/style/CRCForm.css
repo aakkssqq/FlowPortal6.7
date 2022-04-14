@@ -1,0 +1,53 @@
+﻿body 
+{
+	width:850px;
+}
+p
+{
+	font-size:14px;
+}
+.title
+{
+	margin-top:30px;
+	margin-left:10px;
+	font-weight:bold;
+	font-size:16px;
+	width:850px;
+}
+.context
+{
+	margin-top:10px;
+	margin-left:10px;
+	text-indent:2em;
+	font-size:14px;
+	width:850px;
+	height:auto;
+}
+.explain
+{
+	margin-top:15px;
+	margin-left:10px;
+	text-indent:2em;
+	font-size:14px;
+	width: 850px;
+}
+.contexttable
+{
+	margin-top:10px;
+	margin-left:50px;
+	width:850px;
+}
+.foot
+{
+	margin-top:20px;
+	margin-left:10px;
+	font-size:14px;
+	width:850px;
+	text-indent:2em;
+}
+.footother
+{
+	margin-top:20px;
+	margin-left:40px;
+	font-size:14px;
+}

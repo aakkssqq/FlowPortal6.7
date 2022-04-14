@@ -1,0 +1,8 @@
+﻿Ext.define('YZSoft.src.flowchart.point.link.MiddlePoint', {
+    extend: 'YZSoft.src.flowchart.point.HotPoint',
+    isMiddlePoint: true,
+    src: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNC8xNS8xNYld3z8AAAAYdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3Jrc0+zH04AAAApSURBVAiZY2T4z/CfAQ0wMTAwMDA0QnkwmuE/FDbAWf8ZUASgNCM2MwE8JhdyJjKT6AAAAABJRU5ErkJggg==',
+    srchot: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAwNC8yNC8xNXZBwooAAAAYdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3Jrc0+zH04AAAAsSURBVAiZbcwxCgAgDAPAqy/vz+MgBRGzHMmQCvFkQfUpo5AQfQxxD2P9PjdFHxdytrdPVQAAAABJRU5ErkJggg==',
+    width: 5,
+    height:5
+});

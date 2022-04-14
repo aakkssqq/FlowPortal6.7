@@ -1,0 +1,191 @@
+﻿{
+  "author": {
+    "uid": "T01081",
+    "name": "T01081",
+    "createat": "2022-03-28 09:25:24"
+  },
+  "lastModifier": {
+    "uid": "T01081",
+    "name": "T01081",
+    "date": "2022-04-06 08:50:38"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "進出站紀錄": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "sMes_Prod",
+          "query": "With\nDataTable as (\nselect '進站' as DataType, LotNo,LogGroupSerial,OPNo,EventTime,UserNo,AreaNo,InputQty,0 as GOODQTY,0 as SCRAPQTY,EQUIPMENTNO,C_CombineLotSerial\nfrom TBLWIPCONT_PARTIALin \nwhere @EqNo is null or EQUIPMENTNO like '%'+@EqNo+'%'\nunion \nselect '出站' as DataType, LotNo,LogGroupSerial,OPNo,EventTime,UserNo,AreaNo,InputQty,GOODQTY,SCRAPQTY,EQUIPMENTNO,C_CombineLotSerial\nfrom TBLWIPCONT_PARTIALOUT \nwhere @EqNo is null or EQUIPMENTNO like '%'+@EqNo+'%'\n)\nSelect * from DataTable\norder by EventTime desc",
+          "queryParams": [
+            {
+              "name": "@EqNo",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "paging": "Enable",
+          "pageSize": 17
+        },
+        "paramNames": [
+          "@EqNo"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.text3": {
+        "ctype": "report.search.field.text",
+        "binddsid": "進出站紀錄",
+        "xdatabind": "@EqNo",
+        "fieldLabel": "設備編號",
+        "emptyText": "",
+        "defaultValue": null
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.text3"
+        ]
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "進出站紀錄",
+        "pagingBarDisplay": true,
+        "export2Excel": false,
+        "exportTemplate": null,
+        "title": null,
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "操作",
+            "dataIndex": "DataType",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 65
+          },
+          {
+            "text": "生產批號",
+            "dataIndex": "LotNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 179
+          },
+          {
+            "text": "Log編號",
+            "dataIndex": "LogGroupSerial",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 224
+          },
+          {
+            "text": "作業站",
+            "dataIndex": "OPNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 66
+          },
+          {
+            "text": "時間",
+            "dataIndex": "EventTime",
+            "align": "start",
+            "dataFormat": {
+              "type": "date",
+              "format": "Y-m-d H:i"
+            },
+            "width": 131
+          },
+          {
+            "text": "使用者",
+            "dataIndex": "UserNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 98
+          },
+          {
+            "text": "區域",
+            "dataIndex": "AreaNo",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 80
+          },
+          {
+            "text": "數量",
+            "dataIndex": "InputQty",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 58
+          },
+          {
+            "text": "良品",
+            "dataIndex": "GOODQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 67
+          },
+          {
+            "text": "報廢",
+            "dataIndex": "SCRAPQTY",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": false,
+              "thousands": true,
+              "decimal": 2
+            },
+            "width": 52
+          },
+          {
+            "text": "設備編號",
+            "dataIndex": "EQUIPMENTNO",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 108
+          },
+          {
+            "text": "共模綁定",
+            "dataIndex": "C_CombineLotSerial",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "report.grid1"
+    ]
+  }
+}

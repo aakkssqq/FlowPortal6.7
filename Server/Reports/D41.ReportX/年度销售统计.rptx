@@ -1,0 +1,447 @@
+﻿{
+  "author": null,
+  "lastModifier": {
+    "uid": "99199",
+    "name": "史蒂夫9",
+    "date": "2019-06-26 17:33:20"
+  },
+  "property": {
+    "hidden": false
+  },
+  "define": {
+    "datasources": {
+      "年度销售趋势": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "Default",
+          "query": "select Month(Date) as Month,sum(Sales) as Sales from iDemoRPTSales WHERE YEAR(date)=@Year OR @Year IS NULL Group By Month(date) Order By Month",
+          "queryParams": [
+            {
+              "name": "@Year",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "pageSize": 100
+        },
+        "paramNames": [
+          "@Year"
+        ]
+      },
+      "门店销售排行榜": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "Default",
+          "query": "select City,Shop,sum(Sales) as Sales from iDemoRPTSales WHERE YEAR(date)=@Year OR @Year IS NULL Group By City,Shop Order By Sales desc",
+          "queryParams": [
+            {
+              "name": "@Year",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "pageSize": 100
+        },
+        "paramNames": [
+          "@Year"
+        ]
+      },
+      "销售明细（按人）": {
+        "ds": {
+          "type": "query",
+          "datasourceName": "Default",
+          "query": "select City,Shop,Employee,\nsum(case MONTH(date) when 1 then Sales else 0 end) as Month1,\nsum(case MONTH(date) when 2 then Sales else 0 end) as Month2,\nsum(case MONTH(date) when 3 then Sales else 0 end) as Month3,\nsum(case MONTH(date) when 4 then Sales else 0 end) as Month4,\nsum(case MONTH(date) when 5 then Sales else 0 end) as Month5,\nsum(case MONTH(date) when 6 then Sales else 0 end) as Month6,\nsum(case MONTH(date) when 7 then Sales else 0 end) as Month7,\nsum(case MONTH(date) when 8 then Sales else 0 end) as Month8,\nsum(case MONTH(date) when 9 then Sales else 0 end) as Month9,\nsum(case MONTH(date) when 10 then Sales else 0 end) as Month10,\nsum(case MONTH(date) when 11 then Sales else 0 end) as Month11,\nsum(case MONTH(date) when 12 then Sales else 0 end) as Month12\nfrom iDemoRPTSales WHERE YEAR(date)=@Year OR @Year IS NULL GROUP BY City,Shop,Employee Order By City,Shop",
+          "queryParams": [
+            {
+              "name": "@Year",
+              "displayName": null,
+              "dataType": null,
+              "defaultValue": null,
+              "desc": null,
+              "supportOp": false,
+              "internalParam": false
+            }
+          ],
+          "pageSize": 100
+        },
+        "paramNames": [
+          "@Year"
+        ]
+      }
+    },
+    "components": {
+      "report.search.field.text1": {
+        "ctype": "report.search.field.text",
+        "binddsid": "销售明细（按人）",
+        "xdatabind": "@Year",
+        "fieldLabel": "年度",
+        "emptyText": "--请输入年度--",
+        "defaultValue": {
+          "tinyCode": "bpm",
+          "code": "DateTime.Today.Year"
+        }
+      },
+      "report.search.panel1": {
+        "ctype": "report.search.panel",
+        "items": [
+          "report.search.field.text1"
+        ]
+      },
+      "chart.line1": {
+        "ctype": "chart.line",
+        "dsid": "年度销售趋势",
+        "height": 500,
+        "captions": {
+          "title": {
+            "text": "年度销售额趋势",
+            "align": "center"
+          }
+        },
+        "legend": {
+          "docked": "bottom"
+        },
+        "innerPadding": {
+          "top": 40,
+          "right": 40,
+          "bottom": 6,
+          "left": 40
+        },
+        "axes": [
+          {
+            "id": "yAxis",
+            "type": "numeric",
+            "rendererFormat": {
+              "thousands": true,
+              "scale": 1,
+              "unit": ""
+            }
+          },
+          {
+            "id": "xAxis",
+            "type": "category",
+            "fields": [
+              "Month"
+            ],
+            "label": {
+              "rotate": {
+                "degrees": 0
+              }
+            }
+          }
+        ],
+        "series": [
+          {
+            "type": "line",
+            "id": "series_2",
+            "xField": "Month",
+            "yField": "Sales",
+            "title": [
+              "Sales"
+            ],
+            "xAxis": "xAxis",
+            "yAxis": "yAxis",
+            "label": {
+              "field": [
+                "Sales"
+              ]
+            },
+            "colors": null,
+            "curve": {
+              "type": "linear"
+            },
+            "style": {
+              "lineWidth": 2
+            }
+          }
+        ],
+        "designInfo": {
+          "groups": [
+            {
+              "seriesType": "line",
+              "seriesIds": [
+                "series_2"
+              ]
+            }
+          ]
+        }
+      },
+      "chart.column3d1": {
+        "ctype": "chart.column3d",
+        "dsid": "门店销售排行榜",
+        "height": 500,
+        "captions": {
+          "title": {
+            "text": "门店销售排行榜",
+            "align": "center"
+          }
+        },
+        "legend": {
+          "docked": "bottom"
+        },
+        "innerPadding": {
+          "top": 30
+        },
+        "axes": [
+          {
+            "id": "yAxis",
+            "type": "numeric3d",
+            "rendererFormat": {
+              "thousands": true,
+              "scale": 1,
+              "unit": ""
+            }
+          },
+          {
+            "id": "xAxis",
+            "type": "category3d",
+            "fields": [
+              "Shop"
+            ],
+            "label": {
+              "rotate": {
+                "degrees": 0
+              }
+            }
+          }
+        ],
+        "series": [
+          {
+            "type": "bar3d",
+            "id": "series_1",
+            "xField": "Shop",
+            "yField": [
+              "Sales"
+            ],
+            "title": [
+              "Sales",
+              "演示数据"
+            ],
+            "xAxis": "xAxis",
+            "yAxis": "yAxis",
+            "label": {
+              "field": [
+                "Sales"
+              ]
+            },
+            "yFieldsColors": [
+              "#33FF99"
+            ],
+            "stacked": false,
+            "fullStack": false,
+            "style": {
+              "minBarWidth": 40,
+              "maxBarWidth": 40,
+              "inGroupGapWidth": 3
+            }
+          }
+        ],
+        "designInfo": {
+          "groups": [
+            {
+              "seriesType": "column3d",
+              "seriesIds": [
+                "series_1"
+              ]
+            }
+          ]
+        }
+      },
+      "report.grid1": {
+        "ctype": "report.grid",
+        "dsid": "销售明细（按人）",
+        "pagingBarDisplay": false,
+        "title": "销售明细表",
+        "titleAlign": "left",
+        "columns": [
+          {
+            "text": "城市",
+            "dataIndex": "City",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "group": true,
+            "width": 120
+          },
+          {
+            "text": "门店",
+            "dataIndex": "Shop",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "group": true,
+            "width": 120
+          },
+          {
+            "text": "销售员",
+            "dataIndex": "Employee",
+            "align": "start",
+            "dataFormat": {
+              "type": "text"
+            },
+            "width": 120
+          },
+          {
+            "text": "1月",
+            "dataIndex": "Month1",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "2月",
+            "dataIndex": "Month2",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "3月",
+            "dataIndex": "Month3",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "4月",
+            "dataIndex": "Month4",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "5月",
+            "dataIndex": "Month5",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "6月",
+            "dataIndex": "Month6",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "7月",
+            "dataIndex": "Month7",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "8月",
+            "dataIndex": "Month8",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "9月",
+            "dataIndex": "Month9",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "10月",
+            "dataIndex": "Month10",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "11月",
+            "dataIndex": "Month11",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          },
+          {
+            "text": "12月",
+            "dataIndex": "Month12",
+            "align": "end",
+            "dataFormat": {
+              "type": "number",
+              "prefix": "￥",
+              "thousands": true,
+              "decimal": false
+            },
+            "width": 120
+          }
+        ]
+      }
+    },
+    "items": [
+      "report.search.panel1",
+      "chart.line1",
+      "chart.column3d1",
+      "report.grid1"
+    ]
+  }
+}

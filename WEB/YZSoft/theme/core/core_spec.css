@@ -1,0 +1,118 @@
+﻿
+/*yz-s-delegate-draft*/
+.yz-s-delegate-draft {
+    font-size: 12px;
+    color: #f10e0e;
+    margin-left: 5px;
+}
+
+/*yz-s-share*/
+.yz-s-share {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-color: #ff9000;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-width: 4px;
+    cursor: pointer;
+}
+
+/*yzprogresswidget*/
+.x-yzprogresswidget-default-cell>.x-grid-cell-inner {
+    padding: 6px 2px;
+}
+
+.yz-widget-progress {
+    background-color: #e9e9e9;
+    border-width: 0px;
+    height: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.yz-widget-progress-default .text {
+    margin: 1px 3px 0px 6px;
+    color: #666;
+    font-weight: 300;
+    font-size: 13px;
+    font-family: helvetica,arial,verdana,sans-serif;
+    text-align: center;
+    line-height: 20px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.yz-widget-progress-overtime .text {
+    color: white;
+}
+
+.yz-widget-progress-default .bar {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-image: none;
+    background-color: #6cc570;
+}
+
+.yz-widget-progress-overtime .bar {
+    background-color: #fe836f;
+}
+
+.yz-widget-progress-default .schedule {
+    overflow: hidden;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-image: none;
+    background-color: transparent;
+}
+
+.yz-widget-progress-overtime .schedule {
+    background-color: #6cc570;
+}
+
+/*yz-image-viewer*/
+.yz-imageviewer-shadow {
+    filter: alpha(opacity=40);
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    border: solid 1px #666;
+}
+
+.yz-image-viewer,
+.yz-image-viewer .x-img {
+    cursor: url('ui/cursor/touchmove.cur'),auto;
+}
+
+.yz-imageviewer-action-cnt {
+    position: absolute;
+    top: 0px;
+    right: 3px;
+    font-size: 28px;
+    line-height: 28px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.yz-imageviewer-action {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.yz-imageviewer-action-dsp {
+    cursor: url('ui/cursor/touchmove.cur'),auto;
+}
+
+.yz-imageviewer-action-del {
+    margin-left: 10px;
+}
+
+.yz-imageviewer-action-del:hover {
+    color: Aqua;
+}
