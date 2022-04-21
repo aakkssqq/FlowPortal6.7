@@ -1,5 +1,5 @@
 ﻿{
-  "generateAt": "2022-04-14T15:54:09.9869203+08:00",
+  "generateAt": "2022-04-18T08:11:22.8364328+08:00",
   "docVersion": 1,
   "src": {
     "funcs": {},
@@ -9,16 +9,16 @@
         "attrs": {
           "id": "XTextBox4",
           "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
-          "width": "52px",
-          "max": "0",
-          "min": "0",
-          "xdatabind": "PMS:InstProjects.FillUser",
-          "valuetodisplaytext": "",
-          "hiddeninput": "False",
+          "disableexpress": "1",
           "placeholder": "",
-          "disableexpress": "1"
+          "hiddeninput": "False",
+          "valuetodisplaytext": "",
+          "xdatabind": "PMS:InstProjects.FillUser",
+          "min": "0",
+          "max": "0",
+          "width": "52px",
+          "borderwidth": "1px",
+          "bordercolor": "Gainsboro"
         }
       },
       "XTextBox5": {
@@ -26,16 +26,16 @@
         "attrs": {
           "id": "XTextBox5",
           "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
-          "width": "116px",
-          "max": "0",
-          "min": "0",
-          "xdatabind": "PMS:InstProjects.FillName",
-          "valuetodisplaytext": "",
-          "hiddeninput": "False",
+          "disableexpress": "1",
           "placeholder": "",
-          "disableexpress": "1"
+          "hiddeninput": "False",
+          "valuetodisplaytext": "",
+          "xdatabind": "PMS:InstProjects.FillName",
+          "min": "0",
+          "max": "0",
+          "width": "116px",
+          "borderwidth": "1px",
+          "bordercolor": "Gainsboro"
         }
       },
       "XTextBox6": {
@@ -43,16 +43,16 @@
         "attrs": {
           "id": "XTextBox6",
           "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
-          "width": "58px",
-          "max": "0",
-          "min": "0",
-          "xdatabind": "PMS:InstProjects.ApplyUser",
-          "valuetodisplaytext": "",
-          "hiddeninput": "False",
+          "disableexpress": "1",
           "placeholder": "",
-          "disableexpress": "1"
+          "hiddeninput": "False",
+          "valuetodisplaytext": "",
+          "xdatabind": "PMS:InstProjects.ApplyUser",
+          "min": "0",
+          "max": "0",
+          "width": "58px",
+          "borderwidth": "1px",
+          "bordercolor": "Gainsboro"
         }
       },
       "XTextBox7": {
@@ -60,16 +60,16 @@
         "attrs": {
           "id": "XTextBox7",
           "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
-          "width": "96px",
-          "max": "0",
-          "min": "0",
-          "xdatabind": "PMS:InstProjects.ApplyName",
-          "valuetodisplaytext": "",
-          "hiddeninput": "False",
+          "disableexpress": "1",
           "placeholder": "",
-          "disableexpress": "1"
+          "hiddeninput": "False",
+          "valuetodisplaytext": "",
+          "xdatabind": "PMS:InstProjects.ApplyName",
+          "min": "0",
+          "max": "0",
+          "width": "96px",
+          "borderwidth": "1px",
+          "bordercolor": "Gainsboro"
         }
       },
       "XSelectUserButton1": {
@@ -77,8 +77,8 @@
         "attrs": {
           "id": "XSelectUserButton1",
           "runat": "server",
-          "width": "21px",
-          "datamap": "Account->PMS:InstProjects.ApplyUser;DisplayName->PMS:InstProjects.ApplyName"
+          "datamap": "Account->PMS:InstProjects.ApplyUser;DisplayName->PMS:InstProjects.ApplyName",
+          "width": "21px"
         }
       },
       "XDateTimePicker1": {
@@ -86,11 +86,11 @@
         "attrs": {
           "id": "XDateTimePicker1",
           "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
+          "disableexpress": "1",
           "xdatabind": "PMS:InstProjects.FillAt",
-          "width": "163px",
-          "disableexpress": "1"
+          "borderwidth": "1px",
+          "bordercolor": "Gainsboro",
+          "width": "163px"
         }
       },
       "XTextBox1": {
@@ -98,10 +98,12 @@
         "attrs": {
           "id": "XTextBox1",
           "runat": "server",
-          "bordercolor": "#DCDCDC",
-          "borderwidth": "1",
+          "disableexpress": "1",
+          "placeholder": "系統自動產生",
+          "xdatabind": "PMS:InstProjects.PID",
           "width": "100%",
-          "xdatabind": "PMS:InstProjects.PID"
+          "borderwidth": "1",
+          "bordercolor": "#DCDCDC"
         }
       },
       "XTextBox2": {
@@ -109,10 +111,10 @@
         "attrs": {
           "id": "XTextBox2",
           "runat": "server",
-          "bordercolor": "#DCDCDC",
-          "borderwidth": "1",
+          "xdatabind": "PMS:InstProjects.Name",
           "width": "100%",
-          "xdatabind": "PMS:InstProjects.Name"
+          "borderwidth": "1",
+          "bordercolor": "#DCDCDC"
         }
       },
       "XTextBox3": {
@@ -120,13 +122,13 @@
         "attrs": {
           "id": "XTextBox3",
           "runat": "server",
-          "bordercolor": "#DCDCDC",
-          "borderwidth": "1",
-          "width": "100%",
-          "maxlength": "5",
           "xdatabind": "PMS:InstProjects.Desc",
-          "textmode": "MultiLine",
-          "rows": "5"
+          "width": "100%",
+          "borderwidth": "1",
+          "bordercolor": "#DCDCDC",
+          "maxlength": "5",
+          "rows": "5",
+          "textmode": "MultiLine"
         }
       },
       "XDropDownList1": {
@@ -134,7 +136,10 @@
         "attrs": {
           "id": "XDropDownList1",
           "runat": "server",
-          "xdatabind": "PMS:InstProjects.ProjectType"
+          "xdatabind": "PMS:InstProjects.ProjectType",
+          "xdatasource": "DataSource:PMS;TableName:SysParameter;Filter:Type->\"ProjectType\"",
+          "valuecolumn": "Value",
+          "displaycolumn": "DisplayName"
         }
       },
       "XTextBox8": {
@@ -142,16 +147,16 @@
         "attrs": {
           "id": "XTextBox8",
           "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
-          "width": "50px",
-          "max": "0",
-          "min": "0",
-          "xdatabind": "PMS:InstProjects.ManagerID",
-          "valuetodisplaytext": "",
-          "hiddeninput": "False",
+          "disableexpress": "1",
           "placeholder": "",
-          "disableexpress": "1"
+          "hiddeninput": "False",
+          "valuetodisplaytext": "",
+          "xdatabind": "PMS:InstProjects.ManagerID",
+          "min": "0",
+          "max": "0",
+          "width": "50px",
+          "borderwidth": "1px",
+          "bordercolor": "Gainsboro"
         }
       },
       "XTextBox9": {
@@ -159,16 +164,16 @@
         "attrs": {
           "id": "XTextBox9",
           "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
-          "width": "110px",
-          "max": "0",
-          "min": "0",
-          "xdatabind": "PMS:InstProjects.ManagerName",
-          "valuetodisplaytext": "",
-          "hiddeninput": "False",
+          "disableexpress": "1",
           "placeholder": "",
-          "disableexpress": "1"
+          "hiddeninput": "False",
+          "valuetodisplaytext": "",
+          "xdatabind": "PMS:InstProjects.ManagerName",
+          "min": "0",
+          "max": "0",
+          "width": "110px",
+          "borderwidth": "1px",
+          "bordercolor": "Gainsboro"
         }
       },
       "XSelectUserButton2": {
@@ -176,8 +181,8 @@
         "attrs": {
           "id": "XSelectUserButton2",
           "runat": "server",
-          "width": "21px",
-          "datamap": "Account->PMS:InstProjects.ManagerID;DisplayName->PMS:InstProjects.ManagerName"
+          "datamap": "Account->PMS:InstProjects.ManagerID;DisplayName->PMS:InstProjects.ManagerName",
+          "width": "21px"
         }
       },
       "XDropDownList2": {
@@ -193,10 +198,10 @@
         "attrs": {
           "id": "XTextBox10",
           "runat": "server",
-          "bordercolor": "#DCDCDC",
-          "borderwidth": "1",
+          "xdatabind": "PMS:InstGoals.Name",
           "width": "100%",
-          "xdatabind": "PMS:InstGoals.Name"
+          "borderwidth": "1",
+          "bordercolor": "#DCDCDC"
         }
       },
       "XTextBox11": {
@@ -204,12 +209,12 @@
         "attrs": {
           "id": "XTextBox11",
           "runat": "server",
-          "bordercolor": "#DCDCDC",
-          "borderwidth": "1",
-          "width": "100%",
           "xdatabind": "PMS:InstGoals.Desc",
-          "textmode": "MultiLine",
-          "rows": "5"
+          "width": "100%",
+          "borderwidth": "1",
+          "bordercolor": "#DCDCDC",
+          "rows": "5",
+          "textmode": "MultiLine"
         }
       },
       "XDropDownList3": {
@@ -225,16 +230,16 @@
         "attrs": {
           "id": "XTextBox12",
           "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
-          "width": "58px",
-          "max": "0",
-          "min": "0",
-          "xdatabind": "PMS:InstGoals.ManagerID",
-          "valuetodisplaytext": "",
-          "hiddeninput": "False",
+          "disableexpress": "1",
           "placeholder": "",
-          "disableexpress": "1"
+          "hiddeninput": "False",
+          "valuetodisplaytext": "",
+          "xdatabind": "PMS:InstGoals.ManagerID",
+          "min": "0",
+          "max": "0",
+          "width": "58px",
+          "borderwidth": "1px",
+          "bordercolor": "Gainsboro"
         }
       },
       "XTextBox13": {
@@ -242,16 +247,16 @@
         "attrs": {
           "id": "XTextBox13",
           "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
-          "width": "109px",
-          "max": "0",
-          "min": "0",
-          "xdatabind": "PMS:InstGoals.ManagerName",
-          "valuetodisplaytext": "",
-          "hiddeninput": "False",
+          "disableexpress": "1",
           "placeholder": "",
-          "disableexpress": "1"
+          "hiddeninput": "False",
+          "valuetodisplaytext": "",
+          "xdatabind": "PMS:InstGoals.ManagerName",
+          "min": "0",
+          "max": "0",
+          "width": "109px",
+          "borderwidth": "1px",
+          "bordercolor": "Gainsboro"
         }
       },
       "XSelectUserButton3": {
@@ -259,8 +264,8 @@
         "attrs": {
           "id": "XSelectUserButton3",
           "runat": "server",
-          "width": "21px",
-          "datamap": "Account->PMS:InstGoals.ManagerID;DisplayName->PMS:InstProjects.ManagerName"
+          "datamap": "Account->PMS:InstGoals.ManagerID;DisplayName->PMS:InstProjects.ManagerName",
+          "width": "21px"
         }
       },
       "XDropDownList4": {
@@ -276,9 +281,9 @@
         "attrs": {
           "id": "XDateTimePicker4",
           "runat": "server",
-          "bordercolor": "#DCDCDC",
+          "xdatabind": "PMS:InstGoals.StartDate",
           "borderwidth": "1",
-          "xdatabind": "PMS:InstGoals.StartDate"
+          "bordercolor": "#DCDCDC"
         }
       },
       "XDateTimePicker5": {
@@ -286,141 +291,9 @@
         "attrs": {
           "id": "XDateTimePicker5",
           "runat": "server",
-          "bordercolor": "#DCDCDC",
+          "xdatabind": "PMS:InstGoals.EndDate",
           "borderwidth": "1",
-          "xdatabind": "PMS:InstGoals.EndDate"
-        }
-      },
-      "XTextBox14": {
-        "ctype": "aspxform:xtextbox",
-        "attrs": {
-          "id": "XTextBox14",
-          "runat": "server",
-          "bordercolor": "#DCDCDC",
-          "borderwidth": "1",
-          "width": "100%",
-          "xdatabind": "PMS:InstWorks.Name"
-        }
-      },
-      "XTextBox15": {
-        "ctype": "aspxform:xtextbox",
-        "attrs": {
-          "id": "XTextBox15",
-          "runat": "server",
-          "bordercolor": "#DCDCDC",
-          "borderwidth": "1",
-          "width": "100%",
-          "xdatabind": "PMS:InstWorks.Desc",
-          "textmode": "MultiLine",
-          "rows": "5"
-        }
-      },
-      "XDropDownList5": {
-        "ctype": "aspxform:xdropdownlist",
-        "attrs": {
-          "id": "XDropDownList5",
-          "runat": "server",
-          "xdatabind": "PMS:InstWorks.WorkType"
-        }
-      },
-      "XTextBox16": {
-        "ctype": "aspxform:xtextbox",
-        "attrs": {
-          "id": "XTextBox16",
-          "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
-          "width": "61px",
-          "max": "0",
-          "min": "0",
-          "xdatabind": "PMS:InstWorks.ManagerID",
-          "valuetodisplaytext": "",
-          "hiddeninput": "False",
-          "placeholder": "",
-          "disableexpress": "1"
-        }
-      },
-      "XTextBox17": {
-        "ctype": "aspxform:xtextbox",
-        "attrs": {
-          "id": "XTextBox17",
-          "runat": "server",
-          "bordercolor": "Gainsboro",
-          "borderwidth": "1px",
-          "width": "125px",
-          "max": "0",
-          "min": "0",
-          "xdatabind": "PMS:InstWorks.ManagerName",
-          "valuetodisplaytext": "",
-          "hiddeninput": "False",
-          "placeholder": "",
-          "disableexpress": "1"
-        }
-      },
-      "XSelectUserButton4": {
-        "ctype": "aspxform:xselectuserbutton",
-        "attrs": {
-          "id": "XSelectUserButton4",
-          "runat": "server",
-          "width": "21px",
-          "datamap": "Account->PMS:InstWorks.ManagerID;DisplayName->PMS:InstProjects.ManagerName"
-        }
-      },
-      "XDropDownList6": {
-        "ctype": "aspxform:xdropdownlist",
-        "attrs": {
-          "id": "XDropDownList6",
-          "runat": "server",
-          "xdatabind": "PMS:InstWorks.WorkStatus"
-        }
-      },
-      "XDateTimePicker6": {
-        "ctype": "aspxform:xdatetimepicker",
-        "attrs": {
-          "id": "XDateTimePicker6",
-          "runat": "server",
-          "bordercolor": "#DCDCDC",
-          "borderwidth": "1",
-          "xdatabind": "PMS:InstWorks.StartDate"
-        }
-      },
-      "XDateTimePicker7": {
-        "ctype": "aspxform:xdatetimepicker",
-        "attrs": {
-          "id": "XDateTimePicker7",
-          "runat": "server",
-          "bordercolor": "#DCDCDC",
-          "borderwidth": "1",
-          "xdatabind": "PMS:InstWorks.EndDate"
-        }
-      },
-      "table2": {
-        "ctype": "grid",
-        "attrs": {
-          "width": "100%",
-          "style": "BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none",
-          "border": "0",
-          "cellspacing": "0",
-          "cellpadding": "0",
-          "dynamicarea": "0,5",
-          "xdatasource": "DataSource:PMS;TableName:InstWorks",
-          "id": "table2"
-        },
-        "ctypeorg": "table",
-        "items": [
-          "XTextBox14",
-          "XTextBox15",
-          "XDropDownList5",
-          "XTextBox16",
-          "XTextBox17",
-          "XSelectUserButton4",
-          "XDropDownList6",
-          "XDateTimePicker6",
-          "XDateTimePicker7"
-        ],
-        "dynamicArea": {
-          "startRowIndex": 0,
-          "rows": 5
+          "bordercolor": "#DCDCDC"
         }
       },
       "table1": {
@@ -431,8 +304,8 @@
           "border": "0",
           "cellspacing": "0",
           "cellpadding": "0",
-          "dynamicarea": "0,8",
           "xdatasource": "DataSource:PMS;TableName:InstGoals",
+          "dynamicarea": "0,8",
           "id": "table1"
         },
         "ctypeorg": "table",
@@ -445,8 +318,7 @@
           "XSelectUserButton3",
           "XDropDownList4",
           "XDateTimePicker4",
-          "XDateTimePicker5",
-          "table2"
+          "XDateTimePicker5"
         ],
         "dynamicArea": {
           "startRowIndex": 0,

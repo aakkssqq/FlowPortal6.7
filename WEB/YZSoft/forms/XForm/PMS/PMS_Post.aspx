@@ -39,55 +39,55 @@
                                     <td width="66" height="18" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid">
                                         填表人</td>
                                     <td width="191" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XTextBox id="XTextBox4" runat="server" BorderColor="Gainsboro" BorderWidth="1px" width="52px" Max="0" Min="0" XDataBind="PMS:InstProjects.FillUser" ValueToDisplayText HiddenInput="False" PlaceHolder DisableExpress="1"></aspxform:XTextBox>
-                                        -<aspxform:XTextBox id="XTextBox5" runat="server" BorderColor="Gainsboro" BorderWidth="1px" width="116px" Max="0" Min="0" XDataBind="PMS:InstProjects.FillName" ValueToDisplayText HiddenInput="False" PlaceHolder DisableExpress="1"></aspxform:XTextBox>
+                                        <aspxform:XTextBox id="XTextBox4" runat="server" DisableExpress="1" PlaceHolder HiddenInput="False" ValueToDisplayText XDataBind="PMS:InstProjects.FillUser" Min="0" Max="0" width="52px" BorderWidth="1px" BorderColor="Gainsboro"></aspxform:XTextBox>
+                                        -<aspxform:XTextBox id="XTextBox5" runat="server" DisableExpress="1" PlaceHolder HiddenInput="False" ValueToDisplayText XDataBind="PMS:InstProjects.FillName" Min="0" Max="0" width="116px" BorderWidth="1px" BorderColor="Gainsboro"></aspxform:XTextBox>
                                     </td>
                                     <td width="70" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         申請人</td>
                                     <td width="201" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XTextBox id="XTextBox6" runat="server" BorderColor="Gainsboro" BorderWidth="1px" width="58px" Max="0" Min="0" XDataBind="PMS:InstProjects.ApplyUser" ValueToDisplayText HiddenInput="False" PlaceHolder DisableExpress="1"></aspxform:XTextBox>
-                                        -<aspxform:XTextBox id="XTextBox7" runat="server" BorderColor="Gainsboro" BorderWidth="1px" width="96px" Max="0" Min="0" XDataBind="PMS:InstProjects.ApplyName" ValueToDisplayText HiddenInput="False" PlaceHolder DisableExpress="1"></aspxform:XTextBox>
-                                        <aspxform:XSelectUserButton id="XSelectUserButton1" runat="server" Width="21px" DataMap="Account->PMS:InstProjects.ApplyUser;DisplayName->PMS:InstProjects.ApplyName"></aspxform:XSelectUserButton>
+                                        <aspxform:XTextBox id="XTextBox6" runat="server" DisableExpress="1" PlaceHolder HiddenInput="False" ValueToDisplayText XDataBind="PMS:InstProjects.ApplyUser" Min="0" Max="0" width="58px" BorderWidth="1px" BorderColor="Gainsboro"></aspxform:XTextBox>
+                                        -<aspxform:XTextBox id="XTextBox7" runat="server" DisableExpress="1" PlaceHolder HiddenInput="False" ValueToDisplayText XDataBind="PMS:InstProjects.ApplyName" Min="0" Max="0" width="96px" BorderWidth="1px" BorderColor="Gainsboro"></aspxform:XTextBox>
+                                        <aspxform:XSelectUserButton id="XSelectUserButton1" runat="server" DataMap="Account->PMS:InstProjects.ApplyUser;DisplayName->PMS:InstProjects.ApplyName" Width="21px"></aspxform:XSelectUserButton>
                                     </td>
                                     <td width="84" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         填表日期</td>
                                     <td width="166" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XDateTimePicker id="XDateTimePicker1" runat="server" BorderColor="Gainsboro" BorderWidth="1px" XDataBind="PMS:InstProjects.FillAt" Width="163px" DisableExpress="1"></aspxform:XDateTimePicker>
+                                        <aspxform:XDateTimePicker id="XDateTimePicker1" runat="server" DisableExpress="1" XDataBind="PMS:InstProjects.FillAt" BorderWidth="1px" BorderColor="Gainsboro" Width="163px"></aspxform:XDateTimePicker>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid">
                                         專案編號</td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" colspan="5">
-                                        <aspxform:XTextBox id="XTextBox1" runat="server" BorderColor="#DCDCDC" BorderWidth="1" width="100%" XDataBind="PMS:InstProjects.PID"></aspxform:XTextBox>
+                                        <aspxform:XTextBox id="XTextBox1" runat="server" DisableExpress="1" PlaceHolder="系統自動產生" XDataBind="PMS:InstProjects.PID" width="100%" BorderWidth="1" BorderColor="#DCDCDC"></aspxform:XTextBox>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid">
                                         專案名稱</td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" colspan="5">
-                                        <aspxform:XTextBox id="XTextBox2" runat="server" BorderColor="#DCDCDC" BorderWidth="1" width="100%" XDataBind="PMS:InstProjects.Name"></aspxform:XTextBox>
+                                        <aspxform:XTextBox id="XTextBox2" runat="server" XDataBind="PMS:InstProjects.Name" width="100%" BorderWidth="1" BorderColor="#DCDCDC"></aspxform:XTextBox>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid">
                                         專案說明</td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" bgcolor="gainsboro" colspan="5">
-                                        <aspxform:XTextBox id="XTextBox3" runat="server" BorderColor="#DCDCDC" BorderWidth="1" width="100%" MaxLength="5" XDataBind="PMS:InstProjects.Desc" TextMode="MultiLine" Rows="5"></aspxform:XTextBox>
+                                        <aspxform:XTextBox id="XTextBox3" runat="server" XDataBind="PMS:InstProjects.Desc" width="100%" BorderWidth="1" BorderColor="#DCDCDC" MaxLength="5" Rows="5" TextMode="MultiLine"></aspxform:XTextBox>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td height="19" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid">
                                         專案類型</td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XDropDownList id="XDropDownList1" runat="server" XDataBind="PMS:InstProjects.ProjectType"></aspxform:XDropDownList>
+                                        <aspxform:XDropDownList id="XDropDownList1" runat="server" XDataBind="PMS:InstProjects.ProjectType" XDataSource='DataSource:PMS;TableName:SysParameter;Filter:Type->"ProjectType"' ValueColumn="Value" DisplayColumn="DisplayName"></aspxform:XDropDownList>
                                     </td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         專案負責人</td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XTextBox id="XTextBox8" runat="server" BorderColor="Gainsboro" BorderWidth="1px" width="50px" Max="0" Min="0" XDataBind="PMS:InstProjects.ManagerID" ValueToDisplayText HiddenInput="False" PlaceHolder DisableExpress="1"></aspxform:XTextBox>
-                                        -<aspxform:XTextBox id="XTextBox9" runat="server" BorderColor="Gainsboro" BorderWidth="1px" width="110px" Max="0" Min="0" XDataBind="PMS:InstProjects.ManagerName" ValueToDisplayText HiddenInput="False" PlaceHolder DisableExpress="1"></aspxform:XTextBox>
-                                        <aspxform:XSelectUserButton id="XSelectUserButton2" runat="server" Width="21px" DataMap="Account->PMS:InstProjects.ManagerID;DisplayName->PMS:InstProjects.ManagerName"></aspxform:XSelectUserButton>
+                                        <aspxform:XTextBox id="XTextBox8" runat="server" DisableExpress="1" PlaceHolder HiddenInput="False" ValueToDisplayText XDataBind="PMS:InstProjects.ManagerID" Min="0" Max="0" width="50px" BorderWidth="1px" BorderColor="Gainsboro"></aspxform:XTextBox>
+                                        -<aspxform:XTextBox id="XTextBox9" runat="server" DisableExpress="1" PlaceHolder HiddenInput="False" ValueToDisplayText XDataBind="PMS:InstProjects.ManagerName" Min="0" Max="0" width="110px" BorderWidth="1px" BorderColor="Gainsboro"></aspxform:XTextBox>
+                                        <aspxform:XSelectUserButton id="XSelectUserButton2" runat="server" DataMap="Account->PMS:InstProjects.ManagerID;DisplayName->PMS:InstProjects.ManagerName" Width="21px"></aspxform:XSelectUserButton>
                                     </td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         專案狀態</td>
@@ -99,12 +99,12 @@
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid">
                                         開始日期</td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XDateTimePicker id="XDateTimePicker2" runat="server" BorderColor="#DCDCDC" BorderWidth="1"></aspxform:XDateTimePicker>
+                                        <aspxform:XDateTimePicker id="XDateTimePicker2" runat="server" BorderWidth="1" BorderColor="#DCDCDC"></aspxform:XDateTimePicker>
                                     </td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         結束日期</td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XDateTimePicker id="XDateTimePicker3" runat="server" BorderColor="#DCDCDC" BorderWidth="1"></aspxform:XDateTimePicker>
+                                        <aspxform:XDateTimePicker id="XDateTimePicker3" runat="server" BorderWidth="1" BorderColor="#DCDCDC"></aspxform:XDateTimePicker>
                                     </td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                     </td>
@@ -119,28 +119,28 @@
                     <td width="729" align="center" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid">
                         目標明細</td>
                     <td width="67" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                        <aspxform:XAddBlockButton id="XAddBlockButton1" runat="server" Text="增加目標" TableName="InstGoals"></aspxform:XAddBlockButton>
+                        <aspxform:XAddBlockButton id="XAddBlockButton1" runat="server" TableName="InstGoals" Text="增加目標"></aspxform:XAddBlockButton>
                     </td>
                 </tr>
                 <tr>
                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid" colspan="2">
-                        <table width="100%" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none" border="0" cellspacing="0" cellpadding="0" dynamicarea="0,8" xdatasource="DataSource:PMS;TableName:InstGoals">
+                        <table width="100%" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none" border="0" cellspacing="0" cellpadding="0" xdatasource="DataSource:PMS;TableName:InstGoals" dynamicarea="0,8">
                             <tbody>
                                 <tr>
-                                    <td width="27" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid" bgcolor="#ffc0c0" rowspan="7">
-                                        <aspxform:XGridLineNo id="XGridLineNo1" runat="server" BorderWidth="1" Width="100%" BorderStyle="None" TextAlign="Center" BackColor="#FFC0C0">1</aspxform:XGridLineNo>
+                                    <td width="27" height="173" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid" bgcolor="#ffc0c0" rowspan="5">
+                                        <aspxform:XGridLineNo id="XGridLineNo1" runat="server" BorderWidth="1" Width="100%" BackColor="#FFC0C0" TextAlign="Center" BorderStyle="None">1</aspxform:XGridLineNo>
                                     </td>
                                     <td width="107" height="20" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         目標名稱</td>
                                     <td style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" colspan="6">
-                                        <aspxform:XTextBox id="XTextBox10" runat="server" BorderColor="#DCDCDC" BorderWidth="1" width="100%" XDataBind="PMS:InstGoals.Name"></aspxform:XTextBox>
+                                        <aspxform:XTextBox id="XTextBox10" runat="server" XDataBind="PMS:InstGoals.Name" width="100%" BorderWidth="1" BorderColor="#DCDCDC"></aspxform:XTextBox>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td height="79" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         目標說明</td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" colspan="6">
-                                        <aspxform:XTextBox id="XTextBox11" runat="server" BorderColor="#DCDCDC" BorderWidth="1" width="100%" XDataBind="PMS:InstGoals.Desc" TextMode="MultiLine" Rows="5"></aspxform:XTextBox>
+                                        <aspxform:XTextBox id="XTextBox11" runat="server" XDataBind="PMS:InstGoals.Desc" width="100%" BorderWidth="1" BorderColor="#DCDCDC" Rows="5" TextMode="MultiLine"></aspxform:XTextBox>
                                     </td>
                                 </tr>
                                 <tr>
@@ -152,13 +152,13 @@
                                     <td width="101" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         目標負責人</td>
                                     <td width="204" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XTextBox id="XTextBox12" runat="server" BorderColor="Gainsboro" BorderWidth="1px" width="58px" Max="0" Min="0" XDataBind="PMS:InstGoals.ManagerID" ValueToDisplayText HiddenInput="False" PlaceHolder DisableExpress="1"></aspxform:XTextBox>
-                                        -<aspxform:XTextBox id="XTextBox13" runat="server" BorderColor="Gainsboro" BorderWidth="1px" width="109px" Max="0" Min="0" XDataBind="PMS:InstGoals.ManagerName" ValueToDisplayText HiddenInput="False" PlaceHolder DisableExpress="1"></aspxform:XTextBox>
-                                        <aspxform:XSelectUserButton id="XSelectUserButton3" runat="server" Width="21px" DataMap="Account->PMS:InstGoals.ManagerID;DisplayName->PMS:InstProjects.ManagerName"></aspxform:XSelectUserButton>
+                                        <aspxform:XTextBox id="XTextBox12" runat="server" DisableExpress="1" PlaceHolder HiddenInput="False" ValueToDisplayText XDataBind="PMS:InstGoals.ManagerID" Min="0" Max="0" width="58px" BorderWidth="1px" BorderColor="Gainsboro"></aspxform:XTextBox>
+                                        -<aspxform:XTextBox id="XTextBox13" runat="server" DisableExpress="1" PlaceHolder HiddenInput="False" ValueToDisplayText XDataBind="PMS:InstGoals.ManagerName" Min="0" Max="0" width="109px" BorderWidth="1px" BorderColor="Gainsboro"></aspxform:XTextBox>
+                                        <aspxform:XSelectUserButton id="XSelectUserButton3" runat="server" DataMap="Account->PMS:InstGoals.ManagerID;DisplayName->PMS:InstProjects.ManagerName" Width="21px"></aspxform:XSelectUserButton>
                                     </td>
                                     <td width="90" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         目標狀態</td>
-                                    <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" colspan="2">
+                                    <td width="75" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" colspan="2">
                                         <aspxform:XDropDownList id="XDropDownList4" runat="server" XDataBind="PMS:InstGoals.GoalStatus"></aspxform:XDropDownList>
                                     </td>
                                 </tr>
@@ -166,12 +166,12 @@
                                     <td height="22" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         開始日期</td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XDateTimePicker id="XDateTimePicker4" runat="server" BorderColor="#DCDCDC" BorderWidth="1" XDataBind="PMS:InstGoals.StartDate"></aspxform:XDateTimePicker>
+                                        <aspxform:XDateTimePicker id="XDateTimePicker4" runat="server" XDataBind="PMS:InstGoals.StartDate" BorderWidth="1" BorderColor="#DCDCDC"></aspxform:XDateTimePicker>
                                     </td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                         結束日期</td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XDateTimePicker id="XDateTimePicker5" runat="server" BorderColor="#DCDCDC" BorderWidth="1" XDataBind="PMS:InstGoals.EndDate"></aspxform:XDateTimePicker>
+                                        <aspxform:XDateTimePicker id="XDateTimePicker5" runat="server" XDataBind="PMS:InstGoals.EndDate" BorderWidth="1" BorderColor="#DCDCDC"></aspxform:XDateTimePicker>
                                     </td>
                                     <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
                                     </td>
@@ -179,80 +179,9 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td height="20" align="center" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" colspan="6">
-                                        工作明細</td>
-                                    <td width="75" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                        <aspxform:XAddBlockButton id="XAddBlockButton2" runat="server" Text="增加工作" TableName="InstWorks"></aspxform:XAddBlockButton>
-                                    </td>
                                 </tr>
                                 <tr>
-                                </tr>
-                                <tr>
-                                    <td height="48" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" colspan="7">
-                                        <table width="100%" style="BORDER-TOP: medium none; BORDER-RIGHT: medium none; BORDER-BOTTOM: medium none; BORDER-LEFT: medium none" border="0" cellspacing="0" cellpadding="0" dynamicarea="0,5" xdatasource="DataSource:PMS;TableName:InstWorks">
-                                            <tbody>
-                                                <tr>
-                                                    <td width="21" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid" bgcolor="#ffe0c0" rowspan="4">
-                                                        <aspxform:XGridLineNo id="XGridLineNo2" runat="server" BorderWidth="1" Width="100%" BorderStyle="None" TextAlign="Center" BackColor="#FFE0C0">1</aspxform:XGridLineNo>
-                                                    </td>
-                                                    <td width="64" height="14" style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        工作名稱</td>
-                                                    <td style="BORDER-TOP: black 1px solid; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" colspan="5">
-                                                        <aspxform:XTextBox id="XTextBox14" runat="server" BorderColor="#DCDCDC" BorderWidth="1" width="100%" XDataBind="PMS:InstWorks.Name"></aspxform:XTextBox>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td height="14" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        工作說明</td>
-                                                    <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none" colspan="5">
-                                                        <aspxform:XTextBox id="XTextBox15" runat="server" BorderColor="#DCDCDC" BorderWidth="1" width="100%" XDataBind="PMS:InstWorks.Desc" TextMode="MultiLine" Rows="5"></aspxform:XTextBox>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td height="16" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        工作類型</td>
-                                                    <td width="136" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        <aspxform:XDropDownList id="XDropDownList5" runat="server" XDataBind="PMS:InstWorks.WorkType"></aspxform:XDropDownList>
-                                                    </td>
-                                                    <td width="88" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        工作負責人</td>
-                                                    <td width="226" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        <aspxform:XTextBox id="XTextBox16" runat="server" BorderColor="Gainsboro" BorderWidth="1px" width="61px" Max="0" Min="0" XDataBind="PMS:InstWorks.ManagerID" ValueToDisplayText HiddenInput="False" PlaceHolder DisableExpress="1"></aspxform:XTextBox>
-                                                        -<aspxform:XTextBox id="XTextBox17" runat="server" BorderColor="Gainsboro" BorderWidth="1px" width="125px" Max="0" Min="0" XDataBind="PMS:InstWorks.ManagerName" ValueToDisplayText HiddenInput="False" PlaceHolder DisableExpress="1"></aspxform:XTextBox>
-                                                        <aspxform:XSelectUserButton id="XSelectUserButton4" runat="server" Width="21px" DataMap="Account->PMS:InstWorks.ManagerID;DisplayName->PMS:InstProjects.ManagerName"></aspxform:XSelectUserButton>
-                                                    </td>
-                                                    <td width="77" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        工作狀態</td>
-                                                    <td width="142" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        <aspxform:XDropDownList id="XDropDownList6" runat="server" XDataBind="PMS:InstWorks.WorkStatus"></aspxform:XDropDownList>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td height="14" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        開始日期</td>
-                                                    <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        <aspxform:XDateTimePicker id="XDateTimePicker6" runat="server" BorderColor="#DCDCDC" BorderWidth="1" XDataBind="PMS:InstWorks.StartDate"></aspxform:XDateTimePicker>
-                                                    </td>
-                                                    <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        結束日期</td>
-                                                    <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                        <aspxform:XDateTimePicker id="XDateTimePicker7" runat="server" BorderColor="#DCDCDC" BorderWidth="1" XDataBind="PMS:InstWorks.EndDate"></aspxform:XDateTimePicker>
-                                                    </td>
-                                                    <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                    </td>
-                                                    <td style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: medium none">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td height="3" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid" colspan="7">
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td height="3" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid" colspan="8">
+                                    <td height="14" style="BORDER-TOP: medium none; BORDER-RIGHT: black 1px solid; BORDER-BOTTOM: black 1px solid; BORDER-LEFT: black 1px solid" colspan="8">
                                     </td>
                                 </tr>
                             </tbody>
