@@ -27,7 +27,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WEB", "WEB\", "{B4283D06-1A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PMS", "PMS\PMS.csproj", "{783A345F-6C1F-4443-A047-BCF45FBCA086}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTS.Lucene", "FTS.Lucene\FTS.Lucene.csproj", "{FAEE87AD-FDDB-401F-80DA-3E6C0AFD5021}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FTS", "FTS.Lucene\FTS.csproj", "{FAEE87AD-FDDB-401F-80DA-3E6C0AFD5021}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
