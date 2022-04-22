@@ -95,47 +95,10 @@ namespace FTS.PG
             indexWriter.Close();
             return true;
         }
-        public void CreateIndex() {
-            /*
-             * Store.YES 检索时可以用 IndexSearcher.Doc(i).GetField 获取内容。
-             *Store.NO 检索时不可用 IndexSearcher.Doc(i).GetField  获取内容，由于不保存内容所以节省空间。
-             *Store.COMPRESS 检索时可以用 IndexSearcher.Doc(i).GetField 获取内容，可以节省生成索引文件的空间。
-             */
-            // 索引目录
-            Lucene.Net.Store.Directory dir = FSDirectory.Open(new DirectoryInfo(IndexPath));
 
-            // 索引写入器
-            IndexWriter writer = new IndexWriter(dir, new PanGuAnalyzer(), IndexWriter.MaxFieldLength.LIMITED);
-
-            // 写入数据：Field -> Document -> IndexWriter
-            Field field11 = new Field("title", "机械维修技术", Field.Store.YES, Field.Index.ANALYZED);
-            Field field12 = new Field("content", "汽车维修、机床维修、水稻插秧机维修", Field.Store.YES, Field.Index.ANALYZED);
-            Field field13 = new Field("url", "http://www.itpow.com/1", Field.Store.YES, Field.Index.NO);
-            Document doc1 = new Document();
-            doc1.Add(field11);
-            doc1.Add(field12);
-            doc1.Add(field13);
-            writer.AddDocument(doc1);
-
-            // 写入数据：Field -> Document -> IndexWriter
-            Field field21 = new Field("title", "水稻栽培技术", Field.Store.YES, Field.Index.ANALYZED);
-            Field field22 = new Field("content", "第一节、育秧", Field.Store.YES, Field.Index.ANALYZED);
-            Field field23 = new Field("url", "http://www.itpow.com/2", Field.Store.YES, Field.Index.NO);
-            Document doc2 = new Document();
-            doc1.Add(field21);
-            doc1.Add(field22);
-            doc1.Add(field23);
-            writer.AddDocument(doc1);
-
-            // 关闭
-            writer.Optimize();
-            writer.Close();
-
-            dir.Close();
-        }
-
-        public void Search()
+        public void Search(string keyWord)
         {
+            int contentLength = Convert.ToInt32(ConfigurationManager.AppSettings["resultContentLength"]);
             DirectoryInfo directIndexPath = new DirectoryInfo(ConfigurationManager.AppSettings["indexPath"]);
             if (!directIndexPath.Exists)
                 directIndexPath.Create();
@@ -148,7 +111,7 @@ namespace FTS.PG
             //IndexSearcher searcher = new IndexSearcher(FSDirectory.Open(new DirectoryInfo(directIndexPath.FullName)), true);
 
             // 查询器
-            string q = GetKeyWordsSplitBySpace("AfterApprove", new PanGuTokenizer());
+            string q = GetKeyWordsSplitBySpace(keyWord, new PanGuTokenizer());
             // QueryParser qp = new QueryParser(Lucene.Net.Util.Version.LUCENE_29, "title", new PanGuAnalyzer(true));
             MultiFieldQueryParser qp = new MultiFieldQueryParser(Lucene.Net.Util.Version.LUCENE_29, new string[] { "title", "content" }, new PanGuAnalyzer(true));
             Query query = qp.Parse(q);
@@ -159,14 +122,18 @@ namespace FTS.PG
             {
                 Document doc = searcher.Doc(topDocs.scoreDocs[i].doc);
                 string title = doc.GetField("title").StringValue();
+                string content = doc.GetField("content").StringValue().Trim();
+                string path = doc.GetField("path").StringValue();
                 string url = doc.GetField("url").StringValue();
+                
+                int sIndex = content.ToLower().IndexOf(keyWord.ToLower());
+                string sContent = content.Substring(sIndex >= (contentLength / 2)? sIndex- (contentLength / 2):0 , contentLength);
 
-                Console.WriteLine(title + "\r\n" + url + "\r\n" + topDocs.scoreDocs[i].score);
+                Console.WriteLine("文件名稱 : ["+title+ "]\r\n路徑 : " + path + "\r\n關鍵字 : "+ keyWord + "\r\n內容 : " + sContent + "\r\n連接網址 : ==" + url + "==\r\n" + topDocs.scoreDocs[i].score);
+                Console.ReadLine();
             }
-
-            // 关闭
+            // 關閉
             searcher.Close();
-
             dir.Close();
         }
 
