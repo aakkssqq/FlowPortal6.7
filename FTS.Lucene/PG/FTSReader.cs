@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.Office.Interop.Word;
+//using Microsoft.Office.Interop.Word;
 using iTextSharp.text.pdf;
 using iTextSharp.text.pdf.parser;
 using System.IO;
 using System.Data;
-using Microsoft.Office.Interop.Excel;
+//using Microsoft.Office.Interop.Excel;
 using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 
@@ -22,17 +22,17 @@ namespace FTS.PG
                 case ".pdf":
                     return ContentPdf(file.FullName);
                 case ".doc":
-                    return ContentDoc(file.FullName);
+                    //return ContentDoc(file.FullName);
                 case ".docx":
-                    return ContentDoc(file.FullName);
+                    //return ContentDoc(file.FullName);
                 case ".ppt":
-                    return ContentPpt(file.FullName);
+                    //return ContentPpt(file.FullName);
                 case ".pptx":
-                    return ContentPpt(file.FullName);
+                    //return ContentPpt(file.FullName);
                 case ".xls":
                     return ContentExcel(file.FullName);
-                case ".xlsx":
-                    return ContentExcel(file.FullName);
+                //case ".xlsx":
+                //    return ContentExcel(file.FullName);
                 case ".txt":
                     return ContentTxt(file.FullName);
                 default:
@@ -45,49 +45,49 @@ namespace FTS.PG
         /// </summary>url
         /// <param name="filepath">文件路徑</param>
         /// <returns>字符串</returns>
-        private string ContentDoc(string filepath)
-        {
-            Microsoft.Office.Interop.Word.Application app = new Microsoft.Office.Interop.Word.Application();//能夠打開word程序
-            Document doc = null;//一會要記錄word打開的文檔
-            object unknow = Type.Missing;
-            app.Visible = true;
-            string str = filepath;
-            object file = str;
-            doc = app.Documents.Open(ref file,
-                ref unknow, ref unknow, ref unknow, ref unknow,
-                ref unknow, ref unknow, ref unknow, ref unknow,
-                ref unknow, ref unknow, ref unknow, ref unknow,
-                ref unknow, ref unknow, ref unknow);
-            //string temp = doc.Paragraphs[1].Range.Text.Trim();//分段讀取
-            string temp = doc.Content.Text;
-            return temp;
-        }
+        //private string ContentDoc(string filepath)
+        //{
+        //    Microsoft.Office.Interop.Word.Application app = new Microsoft.Office.Interop.Word.Application();//能夠打開word程序
+        //    Document doc = null;//一會要記錄word打開的文檔
+        //    object unknow = Type.Missing;
+        //    app.Visible = true;
+        //    string str = filepath;
+        //    object file = str;
+        //    doc = app.Documents.Open(ref file,
+        //        ref unknow, ref unknow, ref unknow, ref unknow,
+        //        ref unknow, ref unknow, ref unknow, ref unknow,
+        //        ref unknow, ref unknow, ref unknow, ref unknow,
+        //        ref unknow, ref unknow, ref unknow);
+        //    //string temp = doc.Paragraphs[1].Range.Text.Trim();//分段讀取
+        //    string temp = doc.Content.Text;
+        //    return temp;
+        //}
 
         /// <summary>
         /// 讀取ppt內容
         /// </summary>
         /// <param name="filepath"></param>
         /// <returns></returns>
-        private string ContentPpt(string filepath)
-        {
-            Microsoft.Office.Interop.PowerPoint.Application pa = new Microsoft.Office.Interop.PowerPoint.Application();
-            Microsoft.Office.Interop.PowerPoint.Presentation pp = pa.Presentations.Open(filepath,
-                            Microsoft.Office.Core.MsoTriState.msoTrue,
-                            Microsoft.Office.Core.MsoTriState.msoFalse,
-                            Microsoft.Office.Core.MsoTriState.msoFalse);
-            string pps = "";
-            foreach (Microsoft.Office.Interop.PowerPoint.Slide slide in pp.Slides)
-            {
-                foreach (Microsoft.Office.Interop.PowerPoint.Shape shape in slide.Shapes)
-                    try
-                    {
-                        pps += shape.TextFrame.TextRange.Text.ToString();
-                    }
-                    catch (Exception) { }
+        //private string ContentPpt(string filepath)
+        //{
+        //    Microsoft.Office.Interop.PowerPoint.Application pa = new Microsoft.Office.Interop.PowerPoint.Application();
+        //    Microsoft.Office.Interop.PowerPoint.Presentation pp = pa.Presentations.Open(filepath,
+        //                    Microsoft.Office.Core.MsoTriState.msoTrue,
+        //                    Microsoft.Office.Core.MsoTriState.msoFalse,
+        //                    Microsoft.Office.Core.MsoTriState.msoFalse);
+        //    string pps = "";
+        //    foreach (Microsoft.Office.Interop.PowerPoint.Slide slide in pp.Slides)
+        //    {
+        //        foreach (Microsoft.Office.Interop.PowerPoint.Shape shape in slide.Shapes)
+        //            try
+        //            {
+        //                pps += shape.TextFrame.TextRange.Text.ToString();
+        //            }
+        //            catch (Exception) { }
                     
-            }
-            return pps;
-        }
+        //    }
+        //    return pps;
+        //}
 
         /// <summary>
         /// 讀取含有文本的pdf
@@ -163,44 +163,44 @@ namespace FTS.PG
             return text;
         }
 
-        public string Word2String(FileInfo file)
-        {
-            object readOnly = true;
-            object missing = System.Reflection.Missing.Value;
-            object fileName = file.FullName;
-            Microsoft.Office.Interop.Word.Application wordapp = new Microsoft.Office.Interop.Word.Application();
+        //public string Word2String(FileInfo file)
+        //{
+        //    object readOnly = true;
+        //    object missing = System.Reflection.Missing.Value;
+        //    object fileName = file.FullName;
+        //    Microsoft.Office.Interop.Word.Application wordapp = new Microsoft.Office.Interop.Word.Application();
 
-            Document doc = wordapp.Documents.Open(ref fileName,
-            ref missing, ref readOnly, ref missing, ref missing, ref missing,
-            ref missing, ref missing, ref missing, ref missing, ref missing,
-            ref missing, ref missing, ref missing, ref missing, ref missing);
-            string text = doc.Content.Text;
+        //    Document doc = wordapp.Documents.Open(ref fileName,
+        //    ref missing, ref readOnly, ref missing, ref missing, ref missing,
+        //    ref missing, ref missing, ref missing, ref missing, ref missing,
+        //    ref missing, ref missing, ref missing, ref missing, ref missing);
+        //    string text = doc.Content.Text;
             
-            doc.Close(ref missing, ref missing, ref missing);
-            wordapp.Quit(ref missing, ref missing, ref missing);
-            //StreamWriter swWordChange = new StreamWriter(txtfile.FullName, false, Encoding.GetEncoding("gb2312"));
-            //swWordChange.Write(text);
-            //swWordChange.Close();
-            return text;
-        }
+        //    doc.Close(ref missing, ref missing, ref missing);
+        //    wordapp.Quit(ref missing, ref missing, ref missing);
+        //    //StreamWriter swWordChange = new StreamWriter(txtfile.FullName, false, Encoding.GetEncoding("gb2312"));
+        //    //swWordChange.Write(text);
+        //    //swWordChange.Close();
+        //    return text;
+        //}
 
-        public void ppt2txt(FileInfo file, FileInfo txtfile)
-        {
-            Microsoft.Office.Interop.PowerPoint.Application pa = new Microsoft.Office.Interop.PowerPoint.Application();
-            Microsoft.Office.Interop.PowerPoint.Presentation pp = pa.Presentations.Open(file.FullName,
-            Microsoft.Office.Core.MsoTriState.msoTrue,
-            Microsoft.Office.Core.MsoTriState.msoFalse,
-            Microsoft.Office.Core.MsoTriState.msoFalse);
-            string pps = "";
-            StreamWriter swPPtChange = new StreamWriter(txtfile.FullName, false, Encoding.GetEncoding("gb2312"));
-            foreach (Microsoft.Office.Interop.PowerPoint.Slide slide in pp.Slides)
-            {
-                foreach (Microsoft.Office.Interop.PowerPoint.Shape shape in slide.Shapes)
-                    pps += shape.TextFrame.TextRange.Text.ToString();
-            }
-            swPPtChange.Write(pps);
-            swPPtChange.Close();
+        //public void ppt2txt(FileInfo file, FileInfo txtfile)
+        //{
+        //    Microsoft.Office.Interop.PowerPoint.Application pa = new Microsoft.Office.Interop.PowerPoint.Application();
+        //    Microsoft.Office.Interop.PowerPoint.Presentation pp = pa.Presentations.Open(file.FullName,
+        //    Microsoft.Office.Core.MsoTriState.msoTrue,
+        //    Microsoft.Office.Core.MsoTriState.msoFalse,
+        //    Microsoft.Office.Core.MsoTriState.msoFalse);
+        //    string pps = "";
+        //    StreamWriter swPPtChange = new StreamWriter(txtfile.FullName, false, Encoding.GetEncoding("gb2312"));
+        //    foreach (Microsoft.Office.Interop.PowerPoint.Slide slide in pp.Slides)
+        //    {
+        //        foreach (Microsoft.Office.Interop.PowerPoint.Shape shape in slide.Shapes)
+        //            pps += shape.TextFrame.TextRange.Text.ToString();
+        //    }
+        //    swPPtChange.Write(pps);
+        //    swPPtChange.Close();
 
-        }
+        //}
     }
 }
