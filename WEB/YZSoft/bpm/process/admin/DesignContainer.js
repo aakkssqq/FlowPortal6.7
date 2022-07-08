@@ -1,4 +1,4 @@
-﻿Ext.define('YZSoft.bpm.process.admin.DesignContainer', {
+Ext.define('YZSoft.bpm.process.admin.DesignContainer', {
     extend: 'YZSoft.bpm.src.flowchart.DesignContainer',
 
     newProcess: function (data) {
