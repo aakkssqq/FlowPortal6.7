@@ -1,0 +1,240 @@
+﻿<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>金名山 sMES</title>
+
+    <style>
+        body,
+        html {
+            font-family: arial, sans-serif;
+            font-size: 11pt;
+        }
+
+        #visualization {
+            box-sizing: border-box;
+            width: 100%;
+            height: 300px;
+        }
+
+         body, input {
+             font: 12pt verdana;
+         }
+
+         /* custom styles for individual items, load this after vis-timeline-graph2d.min.css/vis-timeline-graph2d.min.css */
+
+         .vis-item.green {
+             background-color: greenyellow;
+             border-color: green;
+         }
+
+         /* create a custom sized dot at the bottom of the red item */
+         .vis-item.red {
+             background-color: red;
+             border-color: darkred;
+             /*color: white;*/
+             font-family: monospace;
+             box-shadow: 0 0 10px gray;
+         }
+
+         .vis-item.vis-dot.red {
+             border-radius: 9px;
+             border-width: 9px;
+         }
+
+         .vis-item.vis-line.red {
+             border-width: 5px;
+         }
+
+         .vis-item.vis-box.red {
+             border-radius: 0;
+             border-width: 2px;
+             font-size: 24pt;
+             font-weight: bold;
+         }
+
+         .vis-item.orange {
+             background-color: gold;
+             border-color: orange;
+         }
+
+         .vis-item.vis-selected.orange {
+             /* custom colors for selected orange items */
+             background-color: orange;
+             border-color: orangered;
+         }
+
+        .vis-item.steelblue {
+            background-color: steelblue;
+            border-color: whitesmoke;
+            color: white;
+            box-shadow: 0 0 10px gray;
+        }
+
+        .vis-item.deepskyblue {
+            background-color: deepskyblue;
+            border-color: whitesmoke;
+            color: white;
+            box-shadow: 0 0 10px gray;
+        }
+
+         /* our custom classes overrule the styles for selected events,
+        so lets define a new style for the selected events */
+         .vis-item.vis-selected {
+             background-color: white;
+             border-color: black;
+             color: black;
+             box-shadow: 0 0 10px gray;
+         }
+    </style>
+    <!-- note: moment.js must be loaded before vis-timeline-graph2d or the embedded version of moment.js is used -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>-->
+    <script src="js/axios.js"></script>
+    <script src="js/moment.min.js"></script>
+    <script src="js/moment-with-locales.js"></script>
+    <script src="js/vis-timeline-graph2d.min.js"></script>
+    <link href="css/vis-timeline-graph2d.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <p>
+    </p>
+    <div id="visualization"></div>
+
+    <script>
+        var sdt = [{
+            "group3": [],
+            "groups": [{
+                id: 10,
+                title: "台灣",
+                content: "台灣-金名山",
+                treeLevel: 1,
+                nestedGroups: [1, 2]//,
+                //showNested: false
+            }, {
+                id: 1,
+                content: "一廠",
+                treeLevel: 2,
+                nestedGroups: []//,
+                //showNested: false
+            }, {
+                id: 2,
+                treeLevel: 2,
+                content: "二三廠",
+                nestedGroups: [],
+                showNested: false
+            }],
+        }];
+
+        var data = axios('/PMS/Pages/CustomTimeLine/services/SMesDataMaintain.ashx', {
+            params: {
+                method: 'GetEquits',
+                token: '#6*@=3G4'
+            }
+        })
+            .then((response) =>
+                GroupAdd(response.data)
+                //alert(response.data.errorMessage)
+            )
+            .catch ((error) =>
+                alert(response.data.errorMessage)
+            );
+        
+
+        function GroupAdd(datas) {
+            for (var i = 0; i < datas.eqs.length; i++) {
+                sdt[0].group3.push({
+                    id: datas.eqs[i].id,
+                    content: datas.eqs[i].content,
+                    treeLevel: datas.eqs[i].treeLevel,
+                    visible: datas.eqs[i].visible
+                })
+                if (datas.eqs[i].id.indexOf("A") > -1) {
+                    sdt[0].groups[1].nestedGroups.push(datas.eqs[i].id)
+                } else {
+                    sdt[0].groups[2].nestedGroups.push(datas.eqs[i].id)
+                }
+            }
+            
+
+            let startDay = moment().minutes(-1440).seconds(0).milliseconds(0);
+            //let startDay = moment().startOf("month").startOf("week").startOf("day").isoWeekday(1);
+
+            // DOM element where the Timeline will be attached
+            var container = document.getElementById('visualization');
+
+            // Create a DataSet (allows two way data-binding)
+            //var items = new vis.DataSet(data.result);
+
+            var now = moment().minutes(0).seconds(0).milliseconds(0);
+            var itemCount = datas.points.length;
+
+            // create a data set with groups
+            var groups = new vis.DataSet();
+
+            groups.add(sdt[0].groups);
+            groups.add(sdt[0].group3);
+            //groups.add(sdt[0].group4);
+
+            // create a dataset with items
+            var items = new vis.DataSet();
+            var groupIds = groups.getIds();
+            var types = ['box', 'point', 'range', 'background']
+            for (var i = 0; i < itemCount; i++) {
+                items.add({
+                    id: i,
+                    group: datas.points[i].group,
+                    content: datas.points[i].content,
+                    start: datas.points[i].start,
+                    end: datas.points[i].end,
+                    type: datas.points[i].type,
+                    className: datas.points[i].className
+                });
+            }
+
+            //for (var i = 0; i < itemCount; i++) {
+            //    var rInt = randomIntFromInterval(1, 30);
+            //    var start = startDay.clone().add(rInt, 'hours');
+            //    var end = start.clone().add(2, 'hours');
+            //    var randomGroupId = groupIds[randomIntFromInterval(1, groupIds.length)];
+            //    var type = types[randomIntFromInterval(0, 3)]
+
+            //    items.add({
+            //        id: i,
+            //        group: randomGroupId,
+            //        content: 'item ' + i + ' ' + rInt,
+            //        start: start,
+            //        end: end,
+            //        type: type
+            //    });
+            //}
+
+            // specify options
+            let options = {
+                locale: moment.locale('zh-tw'),
+                start: startDay.toDate(),
+                end: new Date(1000 * 60 * 60 * 24 + (new Date()).valueOf()),
+                stack: true,
+                maxHeight: 800,
+                horizontalScroll: false,
+                verticalScroll: false,
+                //zoomKey: 'ctrlKey',
+                orientation: 'both'//,
+                //zoomMin: 1000 * 60 * 60 * 240
+            };
+
+            // create a Timeline
+            var timeline = new vis.Timeline(container, items, groups, options);
+        }
+
+        function randomIntFromInterval(min, max) {
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+
+      
+
+    </script>
+</body>
+
+</html>

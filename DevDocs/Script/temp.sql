@@ -1,0 +1,49 @@
+﻿
+ select 
+	'In'+ CONVERT(nvarchar,EventTime,120)  as id,
+	'進站' as DataType, 
+	LotNo,
+	LogGroupSerial,
+	OPNo,EventTime,
+	UserNo,
+	AreaNo,
+	InputQty,
+	0 as GOODQTY,
+	0 as SCRAPQTY,
+	TBLWIPCONT_PARTIALin.EQUIPMENTNO,
+	EquipmentName,
+	C_CombineLotSerial
+ from TBLWIPCONT_PARTIALin 
+	left join TBLEQPEQUIPMENTBASIS on TBLWIPCONT_PARTIALin.EQUIPMENTNO =TBLEQPEQUIPMENTBASIS.EQUIPMENTNO 
+ where  EventTime >  '2022/07/01' and LEN(TBLWIPCONT_PARTIALin.EQUIPMENTNO) > 4
+ union 
+ select 
+	'In'+ CONVERT(nvarchar,EventTime,120)  as id,
+	'出站' as DataType, 
+	LotNo,
+	LogGroupSerial,
+	OPNo,
+	EventTime,
+	UserNo,
+	AreaNo,
+	InputQty,
+	GOODQTY,
+	SCRAPQTY,
+	TBLWIPCONT_PARTIALOUT.EQUIPMENTNO,
+	EquipmentName,
+	C_CombineLotSerial
+ from TBLWIPCONT_PARTIALOUT 
+	left join TBLEQPEQUIPMENTBASIS on TBLWIPCONT_PARTIALOUT.EQUIPMENTNO =TBLEQPEQUIPMENTBASIS.EQUIPMENTNO 
+ where  EventTime >  '2022/07/01' and EventTime= max(EventTime)
+
+
+select * ,USERNO,SHIFTNO,LOGINDATE,LOGOUTDATE
+from [TBLWIPOPERATORLOG] 
+	left join TBLEQPEQUIPMENTBASIS on  LOGINPLACENO=TBLEQPEQUIPMENTBASIS.EQUIPMENTNO 
+where len(LOGINPLACENO)  > 4 and  LOGINDATE >'2022/07/01'
+
+
+select * 
+from [TBLWIPOPERATORSTATE]
+left join TBLEQPEQUIPMENTBASIS on  LOGINPLACENO=TBLEQPEQUIPMENTBASIS.EQUIPMENTNO 
+where len(LOGINPLACENO)  > 4 and  LOGINDATE >'2022/07/01'
